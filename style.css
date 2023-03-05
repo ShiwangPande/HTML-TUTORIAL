@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+body {
+  position: relative;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3 span {
+  color: #286090;
+}
+
+.jumbotron {
+  border-radius: 0px;
+  background: #5fb3ce;
+  margin-bottom: 0;
+}
+
+.jumbotron button {
+  margin-top: 10px;
+}
+
+section {
+  padding: 15px;
+  border-bottom: 1px solid #c1e1ec;
+  background: #ffffff;
+  box-shadow: 2px 2px 2px 2px #f0e9e9;
+}
+
+#web-development,
+#mobile-development {
+  padding-bottom: 0;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+.nav li {
+  background: #c1edfc57;
+  margin: 4px 0px;
+
+  padding: 0 10px;
+}
+.nav a {
+  color: #0a58ca;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav li a:hover,
+.nav li a:focus {
+  color: black;
+  background-color: #def7ffcd;
+  font-weight: 600;
+}
+
+.nav .active {
+  font-weight: bold;
+  background: #72bcd4;
+}
+
+.nav .nav {
+  display: none;
+}
+
+a:hover + .nav {
+  display: block;
+}
+
+.nav .active .nav {
+  display: block;
+}
+
+.nav .nav a {
+  font-weight: normal;
+  font-size: 0.85em;
+}
+
+.nav .nav span {
+  margin: 0 5px 0 2px;
+}
+
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+
+.nav .nav .active span,
+.nav .nav .active:hover span,
+.nav .nav .active:focus span {
+  display: none;
+}
+
+.application {
+  border-top: 1px solid #c1e1ec;
+}
+
+.affix-top {
+  position: relative;
+}
+
+.affix {
+  top: 20px;
+}
+
+.affix,
+.affix-bottom {
+  width: 213px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+footer {
+  border-top: 1px solid #c1e1ec;
+  height: 50px;
+}
+
+footer p {
+  line-height: 50px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .affix,
+  .affix-bottom {
+    width: 263px;
+  }
+}
+.text-boxes {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.text-boxes .text-box {
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+.text-boxes .text-box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: #265df2;
+  margin: 4px;
+}
+.text-boxes .text-box textarea {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+.text-box textarea::-webkit-scrollbar {
+  display: none;
+}
+.text-boxes .text-box button {
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #265df2;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.text-boxes .text-box button:hover {
+  background: #0e4bf1;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #5fb3ce; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 60px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media (max-width: 400px) {
+  .text-boxes .text-box button {
+    width: 100%;
+  }
+  #myBtn {
+    bottom: 150px;
+  }
+}
