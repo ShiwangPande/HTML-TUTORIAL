@@ -111,6 +111,15 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"
       ></script>
+      <script>
+         let HTMLBasicProgramsBox = document.getElementById("HTMLBasicProgramsBox");
+      let HTMLBasicProgramsButton = document.getElementById("HTMLBasicProgramsButton");
+  
+      HTMLBasicProgramsButton.onclick = function() {
+        HTMLBasicProgramsBox.select();
+        document.execCommand("copy");
+        HTMLBasicProgramsButton.innerText = "Codes Copied"
+      }
       </script>
 </body>
 </html>

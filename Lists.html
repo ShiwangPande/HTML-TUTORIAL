@@ -207,6 +207,41 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"
       ></script>
+      <script>
+          let HTMLListBox = document.getElementById("HTMLListBox");
+      let HTMLListButton = document.getElementById("HTMLListButton");
+  
+      HTMLListButton.onclick = function() {
+        HTMLListBox.select();
+        document.execCommand("copy");
+        HTMLListButton.innerText = "Codes Copied"
+      }
+    //   HTML ATTRIBUTES TAG
+      let HTMLUnorderListBox = document.getElementById("HTMLUnorderListBox");
+      let HTMLUnorderListButton = document.getElementById("HTMLUnorderListButton");
+  
+      HTMLUnorderListButton.onclick = function() {
+        HTMLUnorderListBox.select();
+        document.execCommand("copy");
+        HTMLUnorderListButton.innerText = "Codes Copied"
+      }
+    //   HTML ATTRIBUTES TAG
+      let HTMLCDLBox = document.getElementById("HTMLCDLBox");
+      let HTMLCDLButton = document.getElementById("HTMLCDLButton");
+  
+      HTMLCDLButton.onclick = function() {
+        HTMLCDLBox.select();
+        document.execCommand("copy");
+        HTMLCDLButton.innerText = "Codes Copied"
+      }
+      let HTMLColornlBox = document.getElementById("HTMLColornlBox");
+      let HTMLColornlButton = document.getElementById("HTMLColornlButton");
+  
+      HTMLColornlButton.onclick = function() {
+        HTMLColornlBox.select();
+        document.execCommand("copy");
+        HTMLColornlButton.innerText = "Codes Copied"
+      }
       </script>
 </body>
 </html>

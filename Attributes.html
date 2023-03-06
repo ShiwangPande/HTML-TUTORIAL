@@ -158,6 +158,23 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"
       ></script>
+      <script>
+              let HTMLAttributesBox = document.getElementById("HTMLAttributesBox");
+      let HTMLAttributesButton = document.getElementById("HTMLAttributesButton");
+  
+      HTMLAttributesButton.onclick = function() {
+        HTMLAttributesBox.select();
+        document.execCommand("copy");
+        HTMLAttributesButton.innerText = "Codes Copied"
+      }
+      let HTMLAttributestagBox = document.getElementById("HTMLAttributestagBox");
+      let HTMLAttributestagButton = document.getElementById("HTMLAttributestagButton");
+  
+      HTMLAttributestagButton.onclick = function() {
+        HTMLAttributestagBox.select();
+        document.execCommand("copy");
+        HTMLAttributestagButton.innerText = "Codes Copied"
+      }
       </script>
 </body>
 </html>
