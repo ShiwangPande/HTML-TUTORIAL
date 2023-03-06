@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>HTML TUTORIAL</h1>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-5 scrollspy" style="max-height: 40%; position: sticky;">
+            <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+              <li><a href="/index.html">HTML introduction</a></li>
+              <li>
+                <a href="/TextEditor.html">HTML Text Editors</a>
+              </li>
+              <li><a href="/Comments.html">HTML Comments</a></li>
+              <li><a href="/Basic-Programs.html">HTML Basic Programs</a></li>
+              <li><a href="/Attributes.html">HTML Attributes</a></li>
+              <li><a href="/Tags.html">HTML Tags</a></li>
+              <li><a href="/Headings.html">HTML Headings</a></li>
+              <li>
+                <a href="/Paragraphs.html">HTML Paragraphs</a>
+              </li>
+              <li><a href="/TextFormating.html">HTML Text Formating</a></li>
+              <li><a href="/Lists.html">HTML Lists</a></li>
+              <li><a href="/Colors.html">HTML Colors</a></li>
+              <li><a href="/Links.html">HTML Links</a></li>
+              <li><a href="/Images.html">HTML Images</a></li>
+              <li><a href="/favicons.html">HTML favicons</a></li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+        
+    
+            <section id="Attributes">
+              <h2><span class="fa fa-edit"></span> HTML Attributes</h2>
+              <hr>
+            <p>HTML (Hypertext Markup Language) attributes are additional properties that can be added to HTML elements to provide additional information about them. Attributes can be used to control how elements are displayed, how they interact with other elements on the page, and how they behave in response to user actions.
+              <br>
+              Here's a step-by-step guide to HTML attributes:
+              <br>
+              1. Understand the basics of HTML elements:
+              <br>
+              Before diving into HTML attributes, it's important to understand the basics of HTML elements. An HTML element is a container that encloses content and provides additional information about that content. Elements are made up of a starting tag, content, and an ending tag. For example, the <bold> "&#60;p&#62;"</bold> tag is used to define a paragraph, like this:
+
+<br>
+              <div class="text-boxes">
+                  <div class="text-box HTMLAttributesBox">
+                      <div class="topic">HTML Attributes Code:</div>
+                      <textarea id="HTMLAttributesBox" readonly >
+                          
+                          &#60; !DOCTYPE html&#62;
+                          &#60;html&#62;
+                              &#60;head&#62;
+                                  &#60;title&#62;Page Title&#60;/title&#62;
+                              &#60;/head&#62;
+                              &#60;body&#62;
+                                  &#60;p&#62;This is a paragraph.&#60;/p&#62;
+                              &#60;/body&#62;
+                          &#60;/html&#62;
+                      </pre>
+                      
+                      </textarea>
+                      <button id="HTMLAttributesButton">Copy Codes</button>
+                    </div>
+                  </div>
+                  <br>
+                  2. Learn how to add attributes to HTML elements:
+                  <br>
+                  Attributes are added to HTML elements using the element's starting tag. The general format for adding an attribute is as follows:
+                  <br>
+                  <div class="text-boxes">
+                      <div class="text-box HTMLAttributestagBox">
+                          <div class="topic">HTML Attributes Code:</div>
+                          <textarea id="HTMLAttributestagBox" readonly >
+                              
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                   &#60;tagname attribute_name="attribute_value"&#62;content.&#60;/tagname&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                          </pre>
+                          </textarea>
+                          <button id="HTMLAttributestagButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+                      3. Explore common HTML attributes:
+                      <br>
+                      There are many different HTML attributes that can be used to modify the behavior and appearance of elements. Here are some of the most commonly used attributes:
+                      <br>
+                      <div>
+                      <li>
+                          <strong>`id`</strong>: This attribute sets a unique identifier for an element, which can be used to target the element in CSS or JavaScript.
+                      </li>
+                      <li>
+                          <strong>`class`</strong>: This attribute sets one or more class names for an element, which can be used to apply CSS rules to multiple elements at once.
+                      </li>
+                      <li>
+                          <strong>`style`</strong>: This attribute sets inline CSS styles for an element, allowing you to modify its appearance directly.
+                      </li>
+                      <li>
+                          <strong>`src`</strong>: This attribute specifies the URL of an image or other media file to be displayed in an element, such as an <strong>`&#60;img&#62;`</strong>  tag.
+                      </li>
+                      <li>
+                          <strong>`href`</strong>: This attribute specifies the URL of a link destination for an <strong>`&#60;a&#62;`</strong> tag.
+                      </li>
+                      <li>
+                          <strong>`title`</strong>: This attribute sets a tooltip that appears when a user hovers over an element.
+                      </li>
+                      <li>
+                          <strong>`alt`</strong>: This attribute sets alternative text that is displayed when an image or other media file cannot be loaded.
+                      </li>
+                  </div>
+               </p>
+          </section>
+        </div>
+
+        <footer>
+          <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+        </footer>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      </script>
+</body>
+</html>

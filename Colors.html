@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>HTML TUTORIAL</h1>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-5 scrollspy" style="max-height: 40%; position: sticky;">
+            <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+                <li><a href="/index.html">HTML introduction</a></li>
+              <li>
+                <a href="/TextEditor.html">HTML Text Editors</a>
+              </li>
+              <li><a href="/Comments.html">HTML Comments</a></li>
+              <li><a href="/Basic-Programs.html">HTML Basic Programs</a></li>
+              <li><a href="/Attributes.html">HTML Attributes</a></li>
+              <li><a href="/Tags.html">HTML Tags</a></li>
+              <li><a href="/Headings.html">HTML Headings</a></li>
+              <li>
+                <a href="/Paragraphs.html">HTML Paragraphs</a>
+              </li>
+              <li><a href="/TextFormating.html">HTML Text Formating</a></li>
+              <li><a href="/Lists.html">HTML Lists</a></li>
+              <li><a href="/Colors">HTML Colors</a></li>
+              <li><a href="/Links.html">HTML Links</a></li>
+              <li><a href="/Images.html">HTML Images</a></li>
+              <li><a href="/favicons.html">HTML favicons</a></li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <section id="Colors">
+                <h2><span class="fa fa-edit"></span> HTML Colors</h2>
+                <p>
+                    HTML colors are a way to add visual appeal to your web pages. Colors can help you draw attention to important information or make your page look more inviting. In this tutorial, we will cover everything you need to know about HTML colors, including how to specify colors, how to use color names, and how to use color codes.
+                </p>
+                <h4>Color Basics
+                </h4>
+                <p>
+                    Before we dive into how to specify colors in HTML, it's important to understand the basics of color theory. Color is a perception that is created in our brains when light enters our eyes and activates our color receptors. There are three primary colors of light: red, green, and blue. When these colors are combined in equal amounts, they create white light. On the other end of the spectrum, there are three primary colors of pigment: cyan, magenta, and yellow. When these colors are combined in equal amounts, they create black.
+                </p>
+                <p>
+                    In HTML, colors are specified using either color names or color codes. Color names are easy to use and remember, but they have limited options. Color codes, on the other hand, give you a much wider range of colors to choose from.
+                </p>
+                <h4>Using Color Names</h4>
+                <p>HTML supports a limited number of color names that you can use to specify colors. Here are some examples:
+                </p>
+                <div class="text-boxes">
+                    <div class="text-box HTMLColornameBox">
+                        <div class="topic">HTML Code:</div>
+                      
+                    <textarea id="HTMLColornameBox" readonly >
+                        &#60; !DOCTYPE html&#62;
+                        &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Page Title&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1 style="color:Tomato;"&#62;This is a heading&#60;/h1&#62;
+                                &#60;p style="color:DodgerBlue;"&#62;This is a paragraph.&#60;/p&#62;
+                                &#60;p style="color:MediumSeaGreen;"&#62;This is another paragraph.&#60;/p&#62;
+                            &#60;/body&#62;
+                        &#60;/html&#62;
+                       
+                    
+                    </textarea>
+                    <button id="HTMLColornameButton">Copy Codes</button>
+                  </div>
+                </div>
+                <br>
+                <h4>Using Color Codes</h4>
+                <p>
+                    HTML also supports color codes that you can use to specify colors. Color codes are specified using hexadecimal values. A hexadecimal value is a number between 0 and 255 that represents the amount of red, green, or blue in a color. For example, the color red is specified by the hexadecimal value #ff0000, because it is the combination of the maximum amount of red (ff) and no green (00) and no blue (00).
+                </p>
+                <p>
+                    Here are some examples of color codes:
+                </p>
+                <div class="text-boxes">
+                    <div class="text-box HTMLCOLORCODEBox">
+                        <div class="topic">HTML Code:</div>
+                      
+                    <textarea id="HTMLCOLORCODEBox" readonly >
+                        &#60; !DOCTYPE html&#62;
+                        &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Page Title&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1 style="color:#ff0000;"&#62;This is a heading&#60;/h1&#62;
+                                &#60;p style="color:#0000ff;"&#62;This is a paragraph.&#60;/p&#62;
+                                &#60;p style="color:#00ff00;"&#62;This is another paragraph.&#60;/p&#62;
+                            &#60;/body&#62;
+                        &#60;/html&#62;
+                       
+                    
+                    </textarea>
+                    <button id="HTMLCOLORCODEButton">Copy Codes</button>
+                  </div>
+                </div>
+                <br>
+                <h4>Using RGB Values</h4>
+                <p>
+                    Another way to specify colors in HTML is by using RGB values. RGB stands for red, green, and blue. An RGB value is a combination of values for red, green, and blue (RGB). An RGB value specifies the amount of red, green, and blue in a color, as an integer between 0 and 255. For example, the color red is specified by the RGB value 255, 0, 0. The first value (255) defines the amount of red, the second value (0) defines the amount of green, and the third value (0) defines the amount of blue.
+                </p>
+                <p>
+                    Here are some examples of RGB values:
+                </p>
+                <div class="text-boxes">
+                    <div class="text-box HTMLRGBBox">
+                        <div class="topic">HTML Code:</div>
+                      
+                    <textarea id="HTMLRGBBox" readonly >
+                        &#60; !DOCTYPE html&#62;
+                        &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Page Title&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1 style="color:rgb(255, 0, 0);"&#62;This is a heading&#60;/h1&#62;
+                                &#60;p style="color:rgb(0, 0, 255);"&#62;This is a paragraph.&#60;/p&#62;
+                                &#60;p style="color:rgb(0, 255, 0);"&#62;This is another paragraph.&#60;/p&#62;
+                            &#60;/body&#62;
+                        &#60;/html&#62;
+                       
+                    
+                    </textarea>
+                    <button id="HTMLRGBButton">Copy Codes</button>
+                  </div>
+                </div>
+                <br>
+                <h4>Using RGBA Values</h4>
+                <p>
+                    Another way to specify colors in HTML is by using RGBA values. RGBA stands for red, green, blue, and alpha. An RGBA value is a combination of values for red, green, blue, and alpha (RGBA). An RGBA value specifies the amount of red, green, blue, and alpha in a color, as a number between 0 and 1. For example, the color red is specified by the RGBA value 255, 0, 0, 1. The first value (255) defines the amount of red, the second value (0) defines the amount of green, the third value (0) defines the amount of blue, and the fourth value (1) defines the opacity.
+                </p>
+                <p>
+                    Here are some examples of RGBA values:
+                </p>
+                <div class="text-boxes">
+                    <div class="text-box HTMLRGBABox">
+                        <div class="topic">HTML Code:</div>
+                      
+                    <textarea id="HTMLRGBABox" readonly >
+                        &#60; !DOCTYPE html&#62;
+                        &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Page Title&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1 style="color:rgba(255, 0, 0, 1);"&#62;This is a heading&#60;/h1&#62;
+                                &#60;p style="color:rgba(0, 0, 255, 1);"&#62;This is a paragraph.&#60;/p&#62;
+                                &#60;p style="color:rgba(0, 255, 0, 1);"&#62;This is another paragraph.&#60;/p&#62;
+                            &#60;/body&#62;
+                        &#60;/html&#62;
+                       
+                    
+                    </textarea>
+                    <button id="HTMLRGBAButton">Copy Codes</button>
+                  </div>
+                </div>
+                <br>
+                <h4>Using HSL Values</h4>
+                <p>
+                    Another way to specify colors in HTML is by using HSL values. HSL stands for hue, saturation, and lightness. An HSL value is a combination of values for hue, saturation, and lightness (HSL). An HSL value specifies the amount of hue, saturation, and lightness in a color, as a number between 0 and 100%. For example, the color red is specified by the HSL value 0, 100%, 50%. The first value (0) defines the amount of hue, the second value (100%) defines the amount of saturation, and the third value (50%) defines the amount of lightness.
+                </p>
+                <p>
+                    Here are some examples of HSL values:
+                </p>
+                <div class="text-boxes">
+                    <div class="text-box HTMLHSLBox">
+                        <div class="topic">HTML Code:</div>
+                      
+                    <textarea id="HTMLHSLBox" readonly >
+                        &#60; !DOCTYPE html&#62;
+                        &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Page Title&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1 style="color:hsl(0, 100%, 50%);"&#62;This is a heading&#60;/h1&#62;
+                                &#60;p style="color:hsl(240, 100%, 50%);"&#62;This is a paragraph.&#60;/p&#62;
+                                &#60;p style="color:hsl(120, 100%, 50%);"&#62;This is another paragraph.&#60;/p&#62;
+                            &#60;/body&#62;
+                        &#60;/html&#62;
+                       
+                    
+                    </textarea>
+                    <button id="HTMLHSLButton">Copy Codes</button>
+                  </div>
+                </div>
+                <br>
+                <h4>Conclusion</h4>
+                <p>HTML colors are an easy way to add visual appeal to your web pages. Whether you're using color names or color codes, make sure to choose colors that complement your design and make your content easy to read. With these tips, you should be well on your way to creating web pages that are both attractive and functional.</p>
+    
+              </section>
+        </div>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+              <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+          </footer>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      </script>
+</body>
+</html>

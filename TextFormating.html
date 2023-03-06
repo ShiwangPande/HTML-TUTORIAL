@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>HTML TUTORIAL</h1>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-5 scrollspy" style="max-height: 40%; position: sticky;">
+            <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+              <li><a href="/index.html">HTML introduction</a></li>
+              <li>
+                <a href="/TextEditor.html">HTML Text Editors</a>
+              </li>
+              <li><a href="/Comments.html">HTML Comments</a></li>
+              <li><a href="/Basic-Programs.html">HTML Basic Programs</a></li>
+              <li><a href="/Attributes.html">HTML Attributes</a></li>
+              <li><a href="/Tags.html">HTML Tags</a></li>
+              <li><a href="/Headings.html">HTML Headings</a></li>
+              <li>
+                <a href="/Paragraphs.html">HTML Paragraphs</a>
+              </li>
+              <li><a href="/TextFormating.html">HTML Text Formating</a></li>
+              <li><a href="/Lists.html">HTML Lists</a></li>
+              <li><a href="#Colors">HTML Colors</a></li>
+              <li><a href="#Links">HTML Links</a></li>
+              <li><a href="#Images">HTML Images</a></li>
+              <li><a href="#favicons">HTML favicons</a></li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <section id="Text-Formating">
+              <h2><span class="fa fa-edit"></span> HTML Text Formating</h2>
+              <p>HTML provides various ways to format text, including headings, paragraphs, lists, bold and italic text, and more. In this tutorial, we will explore some of the common HTML text formatting tags and their usage.
+              </p>
+              <h4>Headings</h4>
+              <p>
+                  Headings are used to create titles or subtitles for a page or section of a page. HTML provides six levels of headings, from &#60;h1> to &#60;h6>. &#60;h1> is the largest and most important heading, while &#60;h6> is the smallest.</p>
+                  <br>
+                  <div class="text-boxes">
+                      <div class="text-box HTMLTextFormatHeadBox">
+                          <div class="topic">HTML Code:</div>
+                        
+                      <textarea id="HTMLTextFormatHeadBox" readonly >
+                          &#60; !DOCTYPE html&#62;
+                          &#60;html&#62;
+                              &#60;head&#62;
+                                  &#60;title&#62;Page Title&#60;/title&#62;
+                              &#60;/head&#62;
+                              &#60;body&#62;
+                                  &#60;h1&#62;This is a level 1 heading&#60;/h1&#62;
+                                  &#60;h2&#62;This is a level 2 heading&#60;/h2&#62;
+                                  &#60;h3&#62;This is a level 3 heading&#60;/h3&#62;
+                                  &#60;h4&#62;This is a level 4 heading&#60;/h4&#62;
+                                  &#60;h5&#62;This is a level 5 heading&#60;/h5&#62;
+                                  &#60;h6&#62;This is a level 6 heading&#60;/h6&#62;
+                              &#60;/body&#62;
+                          &#60;/html&#62;
+                         
+                      
+                      </textarea>
+                      <button id="HTMLTextFormatHeadButton">Copy Codes</button>
+                    </div>
+                  </div>
+              <p>
+                  <h4>Paragraphs</h4>
+                  <p>
+                      Paragraphs are used to group together related text. To create a paragraph, use the &#60;p> tag:
+                      <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatParaBox">
+                              <div class="topic">HTML Code:</div>
+                            
+                          <textarea id="HTMLTextFormatParaBox" readonly >
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                      &#60;p&#62;This is a paragraph of text.&#60;/p&#62;
+                                      &#60;p&#62;This is another paragraph of text.&#60;/p&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                             
+                          
+                          </textarea>
+                          <button id="HTMLTextFormatParaButton">Copy Codes</button>
+                        </div>
+                      </div>
+                  </p>
+                  <h4>Lists</h4>
+                  <p>
+                      HTML provides two types of lists: ordered lists and unordered lists.
+                  </p>
+                  <h5>Ordered Lists</h3>
+                  <p>
+                      Ordered lists are used to present a sequence of items in a numbered format. To create an ordered list, use the &#60;ol> tag, and add each item as a &#60;li> (list item) within the &#60;ol>:
+                      <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatOrderListBox">
+                              <div class="topic">HTML Code:</div>
+                            
+                          <textarea id="HTMLTextFormatOrderListBox" readonly >
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                      &#60;ol&#62;
+                                          &#60;li&#62;Item 1&#60;/li&#62;
+                                          &#60;li&#62;Item 2&#60;/li&#62;
+                                          &#60;li&#62;Item 3&#60;/li&#62;
+                                      &#60;/ol&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                             
+                          
+                          </textarea>
+                          <button id="HTMLTextFormatOrderListButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+                  
+                  </p>
+                  <h5>Unordered Lists</h5>
+                  <p>
+                      Unordered lists are used to present a sequence of items in a bulleted format. To create an unordered list, use the &#60;ul> tag, and add each item as a &#60;li> (list item) within the &#60;ul>:
+                      <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatUnorderListBox">
+                              <div class="topic">HTML Code:</div>
+                            
+                          <textarea id="HTMLTextFormatUnorderListBox" readonly >
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                      &#60;ul&#62;
+                                          &#60;li&#62;Item 1&#60;/li&#62;
+                                          &#60;li&#62;Item 2&#60;/li&#62;
+                                          &#60;li&#62;Item 3&#60;/li&#62;
+                                      &#60;/ul&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                             
+                          
+                          </textarea>
+                          <button id="HTMLTextFormatUnorderListButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+                  
+                  </p>
+  
+                  <h4>Links</h4>
+  
+                  <p>
+                      Links are used to link to other web pages. To create a link, use the &#60;a> tag, and add the link address in the href attribute:
+                      <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatLinksBox">
+                              <div class="topic">HTML Code:</div>
+                            
+                          <textarea id="HTMLTextFormatLinksBox" readonly >
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                      &#60;a href="https://www.w3schools.com"&#62;Visit W3Schools.com!&#60;/a&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                             
+                          
+                          </textarea>
+                          <button id="HTMLTextFormatLinksButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+  
+                  </p>
+  
+                  <h4>Images</h4>
+  
+                  <p>
+                      Images are used to add visual content to a web page. To add an image, use the &#60;img> tag, and add the image address in the src attribute:
+                      <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatImagesBox">
+                              <div class="topic">HTML Code:</div>
+                            
+                          <textarea id="HTMLTextFormatImagesBox" readonly >
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                      &#60;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                             
+                          
+                          </textarea>
+                          <button id="HTMLTextFormatImagesButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+  
+                  </p>
+  
+                  <h4>Tables</h4>
+  
+                  <p>
+                      Tables are used to present data in a tabular format. To create a table, use the &#60;table> tag, and add each row as a &#60;tr> (table row) within the &#60;table>:
+                      <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatTableBox">
+                              <div class="topic">HTML Code:</div>
+                            
+                          <textarea id="HTMLTextFormatTableBox" readonly >
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                      &#60;table&#62;
+                                          &#60;tr&#62;
+                                              &#60;th&#62;Firstname&#60;/th&#62;
+                                              &#60;th&#62;Lastname&#60;/th&#62;
+                                              &#60;th&#62;Age&#60;/th&#62;
+                                          &#60;/tr&#62;
+                                          &#60;tr&#62;
+                                              &#60;td&#62;John&#60;/td&#62;
+                                              &#60;td&#62;Doe&#60;/td&#62;
+                                              &#60;td&#62;50&#60;/td&#62;
+                                          &#60;/tr&#62;
+                                      &#60;/table&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                             
+                          
+                          </textarea>
+                          <button id="HTMLTextFormatTableButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+  
+                  </p>
+  
+                  <h4>Forms</h4>
+  
+                  <p>
+                      Forms are used to collect user input. To create a form, use the &#60;form> tag, and add each input field as a &#60;label> (label) and &#60;input> (input field) within the &#60;form>:
+                      <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatFormsBox">
+                              <div class="topic">HTML Code:</div>
+                            
+                          <textarea id="HTMLTextFormatFormsBox" readonly >
+                              &#60; !DOCTYPE html&#62;
+                              &#60;html&#62;
+                                  &#60;head&#62;
+                                      &#60;title&#62;Page Title&#60;/title&#62;
+                                  &#60;/head&#62;
+                                  &#60;body&#62;
+                                      &#60;form action="/action_page.php"&#62;
+                                          First name:&#60;input type="text" name="firstname" value="John"&#62;&#60;br&#62;
+                                          Last name:&#60;input type="text" name="lastname" value="Doe"&#62;&#60;br&#62;
+                                          &#60;input type="submit" value="Submit"&#62;
+                                      &#60;/form&#62;
+                                  &#60;/body&#62;
+                              &#60;/html&#62;
+                             
+                          
+                          </textarea>
+                          <button id="HTMLTextFormatFormsButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+  
+                  </p>
+                  <h4>
+                      Conclusion
+                  </h4>
+                  <p>
+                      HTML provides a variety of text formatting options to make your content more visually appealing and easy to read. By using the tags discussed in this tutorial, you can create headings, paragraphs, lists, bold and italic text, links, and images in your HTML documents.
+                  </p>
+                  </section>
+        </div>
+
+        <footer>
+          <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+        </footer>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      </script>
+</body>
+</html>

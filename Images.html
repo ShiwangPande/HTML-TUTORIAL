@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>HTML TUTORIAL</h1>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-5 scrollspy" style="max-height: 40%; position: sticky;">
+            <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+              <li><a href="/index.html">HTML introduction</a></li>
+              <li>
+                <a href="/TextEditor.html">HTML Text Editors</a>
+              </li>
+              <li><a href="/Comments.html">HTML Comments</a></li>
+              <li><a href="/Basic-Programs.html">HTML Basic Programs</a></li>
+              <li><a href="/Attributes.html">HTML Attributes</a></li>
+              <li><a href="/Tags.html">HTML Tags</a></li>
+              <li><a href="/Headings.html">HTML Headings</a></li>
+              <li>
+                <a href="/Paragraphs.html">HTML Paragraphs</a>
+              </li>
+              <li><a href="/TextFormating.html">HTML Text Formating</a></li>
+              <li><a href="/Lists.html">HTML Lists</a></li>
+              <li><a href="/Colors">HTML Colors</a></li>
+              <li><a href="/Links.html">HTML Links</a></li>
+              <li><a href="/Images.html">HTML Images</a></li>
+              <li><a href="/favicons.html">HTML favicons</a></li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <section id="Images">
+              <h2>HTML Images</h2>
+              <p>
+                HTML images are a popular way to add visual content to a webpage. In this tutorial, we will cover the basics of how to add images to an HTML webpage.
+              </p>
+              <p>Step 1: Prepare the image file</p>
+              <p>Before adding an image to your webpage, you need to make sure that the image file is available in a format that web browsers can display. The most common image formats used on the web are JPEG, PNG, and GIF. Once you have your image in a web-friendly format, you can move on to the next step.</p>
+              <p>Step 2: Add the image to your HTML code</p>
+              <p>To add an image to your HTML code, you will use the &#60;img> tag. Here is an example of how to use the &#60;img> tag:</p>
+
+              <div class="text-boxes">
+                <div class="text-box HTMLImageFileBox">
+                    <div class="topic">HTML Code:</div>
+                  
+                <textarea id="HTMLImageFileBox" readonly >
+                            &#60;img src="image.jpg" alt="description of image"&#62;
+                   
+                
+                </textarea>
+                <button id="HTMLImageFileButton">Copy Codes</button>
+              </div>
+            </div>
+            <br>
+            <p>The <code>src</code> attribute of the <code>&#60;img&#62;</code> tag is set to <code>image.jpg</code>. This means that the image will be loaded from a file called <code>image.jpg</code> in the same directory as the current page.</p>
+            <p>The <code>alt</code> attribute of the <code>&#60;img&#62;</code> tag is set to <code>description of image</code>. This means that if the image cannot be displayed, the <code>alt</code> text will be displayed instead.</p>
+            <p>Step 3: Resize the image</p>
+            <p>By default, images will be displayed at their original size. If you want to resize the image, you can use the <code>width</code> and <code>height</code> attributes of the <code>&#60;img&#62;</code> tag. Here is an example of how to use the <code>width</code> and <code>height</code> attributes:</p>
+            <div class="text-boxes">
+                <div class="text-box HTMLResizeImageBox">
+                    <div class="topic">HTML Code:</div>
+                  
+                <textarea id="HTMLResizeImageBox" readonly >
+                            &#60;img src="image.jpg" alt="description of image" width="500" height="600"&#62;
+                   
+                
+                </textarea>
+                <button id="HTMLResizeImageButton">Copy Codes</button>
+              </div>
+            </div>
+            <br>
+            <p>The <code>width</code> attribute of the <code>&#60;img&#62;</code> tag is set to <code>500</code>. This means that the image will be displayed at a width of 500 pixels.</p>
+            <p>The <code>height</code> attribute of the <code>&#60;img&#62;</code> tag is set to <code>600</code>. This means that the image will be displayed at a height of 600 pixels.</p>
+            <p>Step 4: Add a caption to the image</p>
+            <p>If you want to add a caption to your image, you can use the <code>&#60;figcaption&#62;</code> tag. Here is an example of how to use the <code>&#60;figcaption&#62;</code> tag:</p>
+            <div class="text-boxes">
+                <div class="text-box HTMLCaptionImageBox">
+                    <div class="topic">HTML Code:</div>
+                  
+                <textarea id="HTMLCaptionImageBox" readonly >
+                            &#60;figure&#62;
+                              &#60;img src="image.jpg" alt="description of image" width="500" height="600"&#62;
+                              &#60;figcaption&#62;This is a caption for the image&#60;/figcaption&#62;
+                            &#60;/figure&#62;
+                   
+                
+                </textarea>
+                <button id="HTMLCaptionImageButton">Copy Codes</button>
+              </div>
+            </div>
+            <br>
+            <p>The <code>&#60;figure&#62;</code> tag is used to group an image and its caption together. The <code>&#60;figcaption&#62;</code> tag is used to add a caption to the image.</p>
+            <p>Step 5: Add a link to the image</p>
+            <p>If you want to add a link to your image, you can use the <code>&#60;a&#62;</code> tag. Here is an example of how to use the <code>&#60;a&#62;</code> tag:</p>
+            <div class="text-boxes">
+                <div class="text-box HTMLLinksImageBox">
+                    <div class="topic">HTML Code:</div>
+                  
+                <textarea id="HTMLLinksImageBox" readonly >
+                            &#60;a href="https://www.w3schools.com"&#62;
+                              &#60;img src="image.jpg" alt="description of image" width="500" height="600"&#62;
+                            &#60;/a&#62;
+                   
+                
+                </textarea>
+                <button id="HTMLLinksImageButton">Copy Codes</button>
+              </div>
+            </div>
+            <br>
+            <p>The <code>&#60;a&#62;</code> tag is used to add a link to the image. The <code>href</code> attribute of the <code>&#60;a&#62;</code> tag is set to <code>https://www.w3schools.com</code>. This means that the image will be linked to the <a href="https://www.w3schools.com">W3Schools website</a>.</p>
+            <p>Step 6: Add an image as a background</p>
+            <p>If you want to add an image as a background, you can use the <code>background-image</code> property. Here is an example of how to use the <code>background-image</code> property:</p>
+            <div class="text-boxes">
+                <div class="text-box HTMLBackgroundImageBox">
+                    <div class="topic">HTML Code:</div>
+                  
+                <textarea id="HTMLBackgroundImageBox" readonly >
+                            body {
+                              background-image: url("image.jpg");
+                            }
+                   
+                
+                </textarea>
+                <button id="HTMLBackgroundImageButton">Copy Codes</button>
+              </div>
+            </div>
+            <br>
+            <p>The <code>background-image</code> property is used to add an image as a background. The <code>url</code> function is used to specify the image to be used as a background. The <code>url</code> function is set to <code>"image.jpg"</code>. This means that the image will be loaded from a file called <code>image.jpg</code> in the same directory as the current page.</p>
+            <p>Step 7: Add an image as a bullet point</p>
+            <p>If you want to add an image as a bullet point, you can use the <code>list-style-image</code> property. Here is an example of how to use the <code>list-style-image</code> property:</p>
+            <div class="text-boxes">
+                <div class="text-box HTMLbulletimageBox">
+                    <div class="topic">HTML Code:</div>
+                  
+                <textarea id="HTMLbulletimageBox" readonly >
+                            ul {
+                              list-style-image: url("image.jpg");
+                            }
+                   
+                
+                </textarea>
+                <button id="HTMLbulletimageButton">Copy Codes</button>
+              </div>
+            </div>
+            <br>
+            <p>The <code>list-style-image</code> property is used to add an image as a bullet point. The <code>url</code> function is used to specify the image to be used as a bullet point. The <code>url</code> function is set to <code>"image.jpg"</code>. This means that the image will be loaded from a file called <code>image.jpg</code> in the same directory as the current page.</p>
+            <p>Step 8: Add an image as a border</p>
+            <p>If you want to add an image as a border, you can use the <code>border-image</code> property. Here is an example of how to use the <code>border-image</code> property:</p>
+            <div class="text-boxes">
+                <div class="text-box HTMLborderimageBox">
+                    <div class="topic">HTML Code:</div>
+                  
+                <textarea id="HTMLborderimageBox" readonly >
+                            div {
+                              border-image: url("image.jpg") 30 round;
+                            }
+                   
+                
+                </textarea>
+                <button id="HTMLborderimageButton">Copy Codes</button>
+              </div>
+            </div>
+            <br>
+            <p>The <code>border-image</code> property is used to add an image as a border. The <code>url</code> function is used to specify the image to be used as a border. The <code>url</code> function is set to <code>"image.jpg"</code>. This means that the image will be loaded from a file called <code>image.jpg</code> in the same directory as the current page. The <code>30</code> specifies the width of the border. The <code>round</code> specifies the shape of the corners.</p>
+
+            <h4>Conclusion</h4>
+            <p>
+                Adding images to an HTML webpage is easy with the &#60;img> tag. By using the src, alt, width, and height attributes, you can add visual content to your webpage that is both attractive and accessible.</p>
+            </section>
+    
+        </div>
+
+        <footer>
+          <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+        </footer>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      </script>
+</body>
+</html>
