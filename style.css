@@ -240,6 +240,15 @@ footer p {
 .round {
   border-radius: 50%;
 }
+.history__img {
+  width: 500px;
+}
+.history2__img {
+  width: 59vw;
+}
+.text_ed {
+  width: 59vw;
+}
 
 @media (max-width: 400px) {
   .text-boxes .text-box button {
