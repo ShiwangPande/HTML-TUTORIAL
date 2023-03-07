@@ -253,8 +253,17 @@ footer p {
 .text_ed {
   width: 59vw;
 }
+.viewport {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
+  .viewport {
+    display: flex;
+    flex-direction: column;
+  }
   .text-boxes .text-box button {
     width: 100%;
   }
@@ -377,6 +386,10 @@ footer p {
 }
 
 @media screen and (min-width: 400px) and (max-width: 781px) {
+  .viewport {
+    display: flex;
+    flex-direction: column;
+  }
   .text-boxes .text-box button {
     width: 100%;
   }
@@ -498,6 +511,10 @@ footer p {
   }
 }
 @media screen and (min-width: 781px) and (max-width: 900px) {
+  .viewport {
+    display: flex;
+    flex-direction: column;
+  }
   .text-boxes .text-box button {
     width: 100%;
   }
