@@ -257,4 +257,7 @@ footer p {
   #myBtn {
     bottom: 120px;
   }
+  .history__img {
+    width: 300px;
+  }
 }
