@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container">
+        <h3>HTML Form</h3>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="container" style="margin: 0;">
+      <div class="row">
+        <div class="col-md-3  scrollspy" style="max-height: 40%; position: sticky;">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+                <li><a href="/index.html">HTML Introduction</a></li>
+                <li><a href="/history.html">HTML History</a></li>
+                <li>
+                  <a href="/TextEditor.html">HTML Text Editors</a>
+                </li>
+                <li><a href="/Comments.html">HTML Comments</a></li>
+                <li><a href="/Basic-Programs.html">HTML Basic Programs</a></li>
+                <li><a href="/Attributes.html">HTML Attributes</a></li>
+                <li><a href="/Tags.html">HTML Tags</a></li>
+                <li><a href="/Headings.html">HTML Headings</a></li>
+                <li>
+                  <a href="/Paragraphs.html">HTML Paragraphs</a>
+                </li>
+                <li><a href="/TextFormating.html">HTML Text Formating</a></li>
+                <li><a href="/Lists.html">HTML Lists</a></li>
+                <li><a href="/Colors.html">HTML Colors</a></li>
+                <li><a href="/Links.html">HTML Links</a></li>
+                <li><a href="/Images.html">HTML Images</a></li>
+                <li><a href="/favicons.html">HTML favicons</a></li>
+                <li><a href="/Form.html">HTML Form</a></li>
+                <li><a href="/Responsive.html">HTML Responsive</a></li>
+              </ul>
+      </div>
+    </nav>
+      </div>
+          <div class="col-md-9">
+      
+            <section id="Form">
+              <h2>HTML Form</h2>
+              <hr>
+              <p>
+                Responsive web design is about creating web pages that look good on all devices!   </p>
+                <p>A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+              <img class="history__img my-3" src="/img/htmlresponsive.png" alt="">
+                <div class="text-boxes">
+                <div class="text-box HTMLfaviconBox">
+                    <div class="topic">HTML Code:</div>
+                <textarea id="HTMLFormBox" readonly >
+                  &#60;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </textarea>
+                <button id="HTMLFormButton">Copy Codes</button>
+                </div>
+                </div>
+                <h3>What is Responsive Web Design?</h3>
+                <p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):</p>
+                <hr>
+                <h3>Setting The Viewport</h3>
+                <p>When creating a responsive web design, the viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.</p>
+                <p>By default, the viewport is set like this:</p>
+                <p>width=device-width</p>
+                <p>height=device-height</p>
+                <p>initial-scale=1.0</p>
+                <p>user-scalable=yes</p>
+                <p>However, you should always specify the width and the initial-scale:</p>
+                <p>width=device-width, initial-scale=1.0</p>
+                <p>Tip: The viewport should be the first <meta> tag in your <head> section.</p>
+                <hr>
+                <p>Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:</p>
+                <div class="viewport">
+                  <div>
+                    <p>Without the viewport meta tag:</p>
+                    <img class="viewport1 my-3" src="/img/viewport1.png" alt="">
+                  </div>
+                  <div>
+                    <p>With the viewport meta tag:</p>
+                    <img class="viewport2 my-3" src="/img/viewport2.png" alt="">
+                  </div>
+                </div>
+
+                <h3>Responsive Images</h3>
+                <p>Responsive images are images that scale nicely to fit any browser size.</p>
+                <h4>Using the width Property</h4>
+                <h4>If the CSS width property is set to 100%, the image will be responsive and scale up and down:</h4>
+                <img src="/img/htmlreponsive1.png" alt="" style="width: 100%;" >
+                <div class="text-boxes">
+                  <div class="text-box HTMLfaviconBox">
+                      <div class="topic">HTML Code:</div>
+  
+                  <textarea id="HTMLFormBox" readonly >
+                    
+                    &#60;img src="img_girl.jpg" style="width:100%;">
+                 
+  
+                  </textarea>
+                  <button id="HTMLFormButton">Copy Codes</button>
+                </div>
+              </div>
+              
+                                <p>
+                                  Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.
+                                </p>
+                                <h4>Using the max-width Property</h4>
+                                <p>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:</p>
+                                <img src="/img/htmlreponsive1.png" alt="" style="max-width: 100%; height: auto;" >
+
+
+            </section>
+    
+        </div>
+      </div>
+      <div class="my-3" style="display: flex;  justify-content: flex-end;">
+        <a href="/Form.html" class="previous">&laquo; Previous</a> 
+        <a href="/index.html" class="next">Next &raquo;</a>
+        </div>
+
+    </div>
+
+        <footer>
+          <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+        </footer>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+              let HTMLFormBox = document.getElementById("HTMLFormBox");
+      let HTMLFormButton = document.getElementById("HTMLFormButton");
+  
+      HTMLFormButton.onclick = function() {
+        HTMLFormBox.select();
+        document.execCommand("copy");
+        HTMLFormButton.innerText = "Codes Copied"
+      }
+      // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+      </script>
+</body>
+</html>
