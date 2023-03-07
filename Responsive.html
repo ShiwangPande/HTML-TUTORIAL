@@ -17,7 +17,7 @@
   <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
     <div class="jumbotron">
       <div class="container">
-        <h3>HTML Form</h3>
+        <h3>HTML Responsive</h3>
       </div>
     </div>
     <!--end of .jumbotron-->
@@ -71,8 +71,8 @@
       </div>
           <div class="col-md-9">
       
-            <section id="Form">
-              <h2>HTML Form</h2>
+            <section id="Responsive">
+              <h2>HTML Responsive</h2>
               <hr>
               <p>
                 Responsive web design is about creating web pages that look good on all devices!   </p>
@@ -81,10 +81,10 @@
                 <div class="text-boxes">
                 <div class="text-box HTMLfaviconBox">
                     <div class="topic">HTML Code:</div>
-                <textarea id="HTMLFormBox" readonly >
+                <textarea id="HTMLviewportBox" readonly >
                   &#60;meta name="viewport" content="width=device-width, initial-scale=1.0">
                 </textarea>
-                <button id="HTMLFormButton">Copy Codes</button>
+                <button id="HTMLviewportButton">Copy Codes</button>
                 </div>
                 </div>
                 <h3>What is Responsive Web Design?</h3>
@@ -122,13 +122,13 @@
                   <div class="text-box HTMLfaviconBox">
                       <div class="topic">HTML Code:</div>
   
-                  <textarea id="HTMLFormBox" readonly >
+                  <textarea id="HTMLviewport1Box" readonly >
                     
                     &#60;img src="img_girl.jpg" style="width:100%;">
                  
   
                   </textarea>
-                  <button id="HTMLFormButton">Copy Codes</button>
+                  <button id="HTMLviewport1Button">Copy Codes</button>
                 </div>
               </div>
               
@@ -167,13 +167,21 @@
         crossorigin="anonymous"
       ></script>
       <script>
-              let HTMLFormBox = document.getElementById("HTMLFormBox");
-      let HTMLFormButton = document.getElementById("HTMLFormButton");
+              let HTMLviewport1Box = document.getElementById("HTMLviewport1Box");
+      let HTMLviewport1Button = document.getElementById("HTMLviewport1Button");
   
-      HTMLFormButton.onclick = function() {
-        HTMLFormBox.select();
+      HTMLviewport1Button.onclick = function() {
+        HTMLviewport1Box.select();
         document.execCommand("copy");
-        HTMLFormButton.innerText = "Codes Copied"
+        HTMLviewport1Button.innerText = "Codes Copied"
+      }
+              let HTMLviewportBox = document.getElementById("HTMLviewportBox");
+      let HTMLviewportButton = document.getElementById("HTMLviewportButton");
+  
+      HTMLviewportButton.onclick = function() {
+        HTMLviewportBox.select();
+        document.execCommand("copy");
+        HTMLviewportButton.innerText = "Codes Copied"
       }
       // Get the button:
 let mybutton = document.getElementById("myBtn");
