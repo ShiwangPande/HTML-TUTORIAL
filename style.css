@@ -260,4 +260,7 @@ footer p {
   .history__img {
     width: 300px;
   }
+  .text_ed {
+    width: 85vw;
+  }
 }
