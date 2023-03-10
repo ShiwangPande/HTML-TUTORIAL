@@ -404,7 +404,6 @@ footer p {
 }
 
 @media screen and (min-width: 400px) and (max-width: 781px) {
-  
   .viewport {
     display: flex;
     flex-direction: column;
@@ -539,7 +538,7 @@ footer p {
   .page_change {
     display: flex;
     justify-content: flex-end;
-    margin-right: 75px;
+    margin-right: 125px;
   }
 }
 @media screen and (min-width: 781px) and (max-width: 900px) {
