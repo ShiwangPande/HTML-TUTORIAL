@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>HTML Project</h1>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents" >
+      <div class="row">
+        <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky;">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+                <li><a href="./index.html">HTML Introduction</a></li>
+                <li><a href="./history.html">HTML History</a></li>
+                <li>
+                  <a href="./TextEditor.html">HTML Text Editors</a>
+                </li>
+                <li><a href="./Comments.html">HTML Comments</a></li>
+                <li><a href="./Basic-Programs.html">HTML Basic Programs</a></li>
+                <li><a href="./Attributes.html">HTML Attributes</a></li>
+                <li><a href="./Tags.html">HTML Tags</a></li>
+                <li><a href="./Headings.html">HTML Headings</a></li>
+                <li>
+                  <a href="./Paragraphs.html">HTML Paragraphs</a>
+                </li>
+                <li><a href="./TextFormating.html">HTML Text Formating</a></li>
+                <li><a href="./Lists.html">HTML Lists</a></li>
+                <li><a href="./Colors.html">HTML Colors</a></li>
+                <li><a href="./Links.html">HTML Links</a></li>
+                <li><a href="./Images.html">HTML Images</a></li>
+                <li><a href="./favicons.html">HTML favicons</a></li>
+                <li><a href="./Form.html">HTML Form</a></li>
+                <li><a href="./Responsive.html">HTML Responsive</a></li>
+                <li><a href="./project.html">HTML Project</a></li>
+              </ul>
+      </div>
+    </nav>
+      </div>
+          <div class="col-xl-9">
+            <section id="Text-Formating">
+              <h2><span class="fa fa-edit"></span> HTML Project</h2>
+              <hr>
+              <img class="history2__img my-3" src="./img/htmlformating.png" alt="">
+              <p>Here's a basic HTML code for a project:</p>
+             <br>
+                  <div class="text-boxes">
+                      <div class="text-box HTMLProjectFormBox">
+                          <div class="topic">HTML Code for Form:</div>
+                        
+                      <textarea id="HTMLProjectFormBox" readonly >
+                           &#60;!DOCTYPE html&#62;
+                           &#60;html&#62;
+                           &#60;head&#62;
+                               &#60;title&#62;Form&#60;/title&#62;
+                           &#60;/head&#62;
+                           &#60;body&#62;
+                               &#60;h1&#62;Registration Form&#60;/h1&#62;
+                               &#60;form&#62;
+                                   &#60;label for="name"&#62;Name:&#60;/label&#62;
+                                   &#60;input type="text" id="name" name="name"&#62;&#60;br&#62;&#60;br&#62;
+                                   &#60;label for="email"&#62;Email:&#60;/label&#62;
+                                   &#60;input type="email" id="email" name="email"&#62;&#60;br&#62;&#60;br&#62;
+                                   &#60;label for="password"&#62;Password:&#60;/label&#62;
+                                   &#60;input type="password" id="password" name="password"&#62;&#60;br&#62;&#60;br&#62;
+                                   &#60;label for="gender"&#62;Gender:&#60;/label&#62;
+                                   &#60;input type="radio" id="male" name="gender" value="male"&#62;
+                                   &#60;label for="male"&#62;Male&#60;/label&#62;
+                                   &#60;input type="radio" id="female" name="gender" value="female"&#62;
+                                   &#60;label for="female"&#62;Female&#60;/label&#62;&#60;br&#62;&#60;br&#62;
+                                   &#60;label for="country"&#62;Country:&#60;/label&#62;
+                                   &#60;select id="country" name="country"&#62;
+                                       &#60;option value="usa"&#62;USA&#60;/option&#62;
+                                       &#60;option value="canada"&#62;Canada&#60;/option&#62;
+                                       &#60;option value="mexico"&#62;Mexico&#60;/option&#62;
+                                   &#60;/select&#62;&#60;br&#62;&#60;br&#62;
+                                   &#60;label for="message"&#62;Message:&#60;/label&#62;
+                                   &#60;textarea id="message" name="message"&#62;&#60;/textarea&#62;&#60;br&#62;&#60;br&#62;
+                                   &#60;input type="submit" value="Submit"&#62;
+                               &#60;/form&#62;
+                           &#60;/body&#62;
+                           &#60;/html&#62;
+                           
+                         
+                      
+                      </textarea>
+                      <button id="HTMLProjectFormButton">Copy Codes</button>
+                    </div>
+                  </div>
+             <br>
+             <iframe src="/code/FormProject.html" width="100%" height="700"></iframe>
+             <p>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLProjectCalculatorBox">
+                              <div class="topic">HTML Calculator Code:</div>
+                            
+                          <textarea id="HTMLProjectCalculatorBox" readonly >
+                            &#60;!DOCTYPE html&#62;
+                            &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Calculator&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1&#62;Calculator&#60;/h1&#62;
+                                &#60;form&#62;
+                                    &#60;label for="num1"&#62;First number:&#60;/label&#62;
+                                    &#60;input type="number" id="num1" name="num1"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="num2"&#62;Second number:&#60;/label&#62;
+                                    &#60;input type="number" id="num2" name="num2"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;input type="button" value="+" onclick="document.getElementById('result').value = parseInt(document.getElementById('num1').value) + parseInt(document.getElementById('num2').value)"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;input type="button" value="-" onclick="document.getElementById('result').value = parseInt(document.getElementById('num1').value) - parseInt(document.getElementById('num2').value)"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;input type="button" value="*" onclick="document.getElementById('result').value = parseInt(document.getElementById('num1').value) * parseInt(document.getElementById('num2').value)"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;input type="button" value="/" onclick="document.getElementById('result').value = parseInt(document.getElementById('num1').value) / parseInt(document.getElementById('num2').value)"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="result"&#62;Result:&#60;/label&#62;
+                                    &#60;input type="text" id="result" name="result"&#62;&#60;br&#62;&#60;br&#62;
+                                &#60;/form&#62;
+                            &#60;/body&#62;
+                            &#60;/html&#62;
+                            
+                          
+                          </textarea>
+                          <button id="HTMLProjectCalculatorButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+                      <iframe src="/Calculator.html" width="100%" height="700"></iframe>
+                  
+                  </p>
+                
+                      <div class="text-boxes">
+                          <div class="text-box HTMLUnitConverterBox">
+                              <div class="topic">HTML Unit Converter Code:</div>
+                            
+                          <textarea id="HTMLUnitConverterBox" readonly >
+                            &#60;!DOCTYPE html&#62;
+                            &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Unit Converter&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1&#62;Unit Converter&#60;/h1&#62;
+                                &#60;form&#62;
+                                    &#60;label for="value"&#62;Value:&#60;/label&#62;
+                                    &#60;input type="number" id="value" name="value"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="from"&#62;From:&#60;/label&#62;
+                                    &#60;select id="from" name="from"&#62;
+                                        &#60;option value="meter"&#62;Meter&#60;/option&#62;
+                                        &#60;option value="kilometer"&#62;Kilometer&#60;/option&#62;
+                                        &#60;option value="mile"&#62;Mile&#60;/option&#62;
+                                        &#60;option value="yard"&#62;Yard&#60;/option&#62;
+                                        &#60;option value="foot"&#62;Foot&#60;/option&#62;
+                                        &#60;option value="inch"&#62;Inch&#60;/option&#62;
+                                    &#60;/select&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="to"&#62;To:&#60;/label&#62;
+                                    &#60;select id="to" name="to"&#62;
+                                        &#60;option value="meter"&#62;Meter&#60;/option&#62;
+                                        &#60;option value="kilometer"&#62;Kilometer&#60;/option&#62;
+                                        &#60;option value="mile"&#62;Mile&#60;/option&#62;
+                                        &#60;option value="yard"&#62;Yard&#60;/option&#62;
+                                        &#60;option value="foot"&#62;Foot&#60;/option&#62;
+                                        &#60;option value="inch"&#62;Inch&#60;/option&#62;
+                                    &#60;/select&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;input type="button" value="Convert" onclick="convert()"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="result"&#62;Result:&#60;/label&#62;
+                                    &#60;input type="text" id="result" name="result"&#62;&#60;br&#62;&#60;br&#62;
+                                &#60;/form&#62;
+                            
+                                &#60;script&#62;
+                                    function convert() {
+                                        var value = parseFloat(document.getElementById("value").value);
+                                        var from = document.getElementById("from").value;
+                                        var to = document.getElementById("to").value;
+                            
+                                        var meters;
+                            
+                                        switch(from) {
+                                            case "meter":
+                                                meters = value;
+                                                break;
+                                            case "kilometer":
+                                                meters = value * 1000;
+                                                break;
+                                            case "mile":
+                                                meters = value * 1609.34;
+                                                break;
+                                            case "yard":
+                                                meters = value * 0.9144;
+                                                break;
+                                            case "foot":
+                                                meters = value * 0.3048;
+                                                break;
+                                            case "inch":
+                                                meters = value * 0.0254;
+                                                break;
+                                        }
+                            
+                                        var result;
+                            
+                                        switch(to) {
+                                            case "meter":
+                                                result = meters;
+                                                break;
+                                            case "kilometer":
+                                                result = meters / 1000;
+                                                break;
+                                            case "mile":
+                                                result = meters / 1609.34;
+                                                break;
+                                            case "yard":
+                                                result = meters / 0.9144;
+                                                break;
+                                            case "foot":
+                                                result = meters / 0.3048;
+                                                break;
+                                            case "inch":
+                                                result = meters / 0.0254;
+                                                break;
+                                        }
+                            
+                                        document.getElementById("result").value = result.toFixed(2);
+                                    }
+                                &#60;/script&#62;
+                            &#60;/body&#62;
+                            &#60;/html&#62;
+                            
+                          
+                          </textarea>
+                          <button id="HTMLUnitConverterButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+                      <iframe src="/code/UnitConverter.html" width="100%" height="700"></iframe>
+                  
+                  </p>  <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTempConverterBox">
+                              <div class="topic">HTML Temperature Converter Code:</div>
+                            
+                          <textarea id="HTMLTempConverterBox" readonly >
+                            
+                            &#60;!DOCTYPE html&#62;
+                            &#60;html&#62;
+                            &#60;head&#62;
+                                &#60;title&#62;Temperature Converter&#60;/title&#62;
+                            &#60;/head&#62;
+                            &#60;body&#62;
+                                &#60;h1&#62;Temperature Converter&#60;/h1&#62;
+                                &#60;form&#62;
+                                    &#60;label for="value"&#62;Value:&#60;/label&#62;
+                                    &#60;input type="number" id="value" name="value"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="from"&#62;From:&#60;/label&#62;
+                                    &#60;select id="from" name="from"&#62;
+                                        &#60;option value="celsius"&#62;Celsius&#60;/option&#62;
+                                        &#60;option value="fahrenheit"&#62;Fahrenheit&#60;/option&#62;
+                                        &#60;option value="kelvin"&#62;Kelvin&#60;/option&#62;
+                                    &#60;/select&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="to"&#62;To:&#60;/label&#62;
+                                    &#60;select id="to" name="to"&#62;
+                                        &#60;option value="celsius"&#62;Celsius&#60;/option&#62;
+                                        &#60;option value="fahrenheit"&#62;Fahrenheit&#60;/option&#62;
+                                        &#60;option value="kelvin"&#62;Kelvin&#60;/option&#62;
+                                    &#60;/select&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;input type="button" value="Convert" onclick="convert()"&#62;&#60;br&#62;&#60;br&#62;
+                                    &#60;label for="result"&#62;Result:&#60;/label&#62;
+                                    &#60;input type="text" id="result" name="result"&#62;&#60;br&#62;&#60;br&#62;
+                                &#60;/form&#62;
+                            
+                                &#60;script&#62;
+                                    function convert() {
+                                        var value = parseFloat(document.getElementById("value").value);
+                                        var from = document.getElementById("from").value;
+                                        var to = document.getElementById("to").value;
+                            
+                                        var result;
+                            
+                                        switch(from) {
+                                            case "celsius":
+                                                switch(to) {
+                                                    case "celsius":
+                                                        result = value;
+                                                        break;
+                                                    case "fahrenheit":
+                                                        result = (value * 1.8) + 32;
+                                                        break;
+                                                    case "kelvin":
+                                                        result = value + 273.15;
+                                                        break;
+                                                }
+                                                break;
+                                            case "fahrenheit":
+                                                switch(to) {
+                                                    case "celsius":
+                                                        result = (value - 32) / 1.8;
+                                                        break;
+                                                    case "fahrenheit":
+                                                        result = value;
+                                                        break;
+                                                    case "kelvin":
+                                                        result = (value + 459.67) / 1.8;
+                                                        break;
+                                                }
+                                                break;
+                                            case "kelvin":
+                                                switch(to) {
+                                                    case "celsius":
+                                                        result = value - 273.15;
+                                                        break;
+                                                    case "fahrenheit":
+                                                        result = (value * 1.8) - 459.67;
+                                                        break;
+                                                    case "kelvin":
+                                                        result = value;
+                                                        break;
+                                                }
+                                                break;
+                                        }
+                            
+                                        document.getElementById("result").value = result.toFixed(2);
+                                    }
+                                &#60;/script&#62;
+                            &#60;/body&#62;
+                            &#60;/html&#62;
+                            
+                          
+                          </textarea>
+                          <button id="HTMLTempConverterButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+  
+                  </p>
+                  <iframe src="/code/tempconverter.html" width="100%" height="700"></iframe>
+
+  
+                  <h4>Images</h4>
+   <br>
+                      <div class="text-boxes">
+                          <div class="text-box HTMLTextFormatImagesBox">
+                              <div class="topic">HTML My Portfolio Code:</div>
+                            
+                          <textarea id="HTMLTextFormatImagesBox" readonly >
+                            &#60;!DOCTYPE html&#62;
+                            &#60;html&#62;
+                              &#60;head&#62;
+                                &#60;title&#62;My Portfolio&#60;/title&#62;
+                                &#60;meta charset="UTF-8" /&#62;
+                                &#60;meta name="viewport" content="width=device-width, initial-scale=1.0" /&#62;
+                                &#60;link rel="stylesheet" href="style.css" /&#62;
+                              &#60;/head&#62;
+                              &#60;style&#62;
+                                body {
+                                  font-family: Arial, sans-serif;
+                                  margin: 0;
+                                  padding: 0;
+                                }
+                            
+                                header {
+                                  background-color: #333;
+                                  color: #fff;
+                                  padding: 20px;
+                                }
+                            
+                                header h1 {
+                                  margin: 0;
+                                }
+                            
+                                nav ul {
+                                  margin: 0;
+                                  padding: 0;
+                                  list-style: none;
+                                }
+                            
+                                nav li {
+                                  display: inline-block;
+                                  margin-right: 20px;
+                                }
+                            
+                                nav li:last-child {
+                                  margin-right: 0;
+                                }
+                            
+                                nav a {
+                                  color: #fff;
+                                  text-decoration: none;
+                                }
+                            
+                                section {
+                                  padding: 50px 20px;
+                                }
+                            
+                                section h2 {
+                                  margin-bottom: 20px;
+                                }
+                            
+                                ul {
+                                  list-style: none;
+                                  padding: 0;
+                                }
+                            
+                                li {
+                                  margin-bottom: 20px;
+                                }
+                            
+                                label {
+                                  display: block;
+                                  margin-bottom: 10px;
+                                }
+                            
+                                input[type="text"],
+                                input[type="email"],
+                                textarea {
+                                  padding: 10px;
+                                  border-radius: 5px;
+                                  margin-bottom: 20px;
+                                }
+                            
+                                input[type="submit"] {
+                                  background-color: #333;
+                                  color: #fff;
+                                  padding: 10px 20px;
+                                  border-radius: 5px;
+                                  cursor: pointer;
+                                }
+                            
+                                footer {
+                                  background-color: #333;
+                                  color: #fff;
+                                  padding: 20px;
+                                  text-align: center;
+                                }
+                              &#60;/style&#62;
+                              &#60;body&#62;
+                                &#60;header&#62;
+                                  &#60;h1&#62;My Portfolio&#60;/h1&#62;
+                                  &#60;nav&#62;
+                                    &#60;ul&#62;
+                                      &#60;li&#62;&#60;a href="#about"&#62;About Me&#60;/a&#62;&#60;/li&#62;
+                                      &#60;li&#62;&#60;a href="#projects"&#62;My Projects&#60;/a&#62;&#60;/li&#62;
+                                      &#60;li&#62;&#60;a href="#contact"&#62;Contact Me&#60;/a&#62;&#60;/li&#62;
+                                    &#60;/ul&#62;
+                                  &#60;/nav&#62;
+                                &#60;/header&#62;
+                            
+                                &#60;section id="about"&#62;
+                                  &#60;h2&#62;About Me&#60;/h2&#62;
+                                  &#60;p&#62;Insert your description here.&#60;/p&#62;
+                                &#60;/section&#62;
+                            
+                                &#60;section id="projects"&#62;
+                                  &#60;h2&#62;My Projects&#60;/h2&#62;
+                                  &#60;ul&#62;
+                                    &#60;li&#62;
+                                      &#60;h3&#62;Project 1&#60;/h3&#62;
+                                      &#60;p&#62;Description of Project 1&#60;/p&#62;
+                                    &#60;/li&#62;
+                                    &#60;li&#62;
+                                      &#60;h3&#62;Project 2&#60;/h3&#62;
+                                      &#60;p&#62;Description of Project 2&#60;/p&#62;
+                                    &#60;/li&#62;
+                                    &#60;li&#62;
+                                      &#60;h3&#62;Project 3&#60;/h3&#62;
+                                      &#60;p&#62;Description of Project 3&#60;/p&#62;
+                                    &#60;/li&#62;
+                                  &#60;/ul&#62;
+                                &#60;/section&#62;
+                            
+                                &#60;section id="contact"&#62;
+                                  &#60;h2&#62;Contact Me&#60;/h2&#62;
+                                  &#60;form&#62;
+                                    &#60;label for="name"&#62;Name:&#60;/label&#62;
+                                    &#60;input type="text" id="name" name="name" /&#62;&#60;br /&#62;
+                            
+                                    &#60;label for="email"&#62;Email:&#60;/label&#62;
+                                    &#60;input type="email" id="email" name="email" /&#62;&#60;br /&#62;
+                            
+                                    &#60;label for="message"&#62;Message:&#60;/label&#62;
+                                    &#60;textarea id="message" name="message"&#62;&#60;/textarea&#62;&#60;br /&#62;
+                            
+                                    &#60;input type="submit" value="Send" /&#62;
+                                  &#60;/form&#62;
+                                &#60;/section&#62;
+                            
+                                &#60;footer&#62;
+                                  &#60;p&#62;&copy; 2023 My Portfolio&#60;/p&#62;
+                                &#60;/footer&#62;
+                              &#60;/body&#62;
+                            &#60;/html&#62;
+                            
+                             
+                          
+                            </textarea>
+                          <button id="HTMLTextFormatImagesButton">Copy Codes</button>
+                        </div>
+                      </div>
+                      <br>
+                      <iframe src="/code/Portfolio.html" width="100%" height="700"></iframe>
+  
+                  </p>
+  
+  
+                  </section>
+        </div>
+        </div>
+        <div class="page_change">
+          <a href="./Responsive.html" class="previous">&laquo; Previous</a> 
+          <a href="./index.html" class="next">Next &raquo;</a>
+        </div>
+        </div>
+
+        <footer>
+          <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+        </footer>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+        ></script>
+        <script>
+          let HTMLProjectCalculatorBox = document.getElementById("HTMLProjectCalculatorBox");
+          let HTMLProjectCalculatorButton = document.getElementById("HTMLProjectCalculatorButton");
+      
+          HTMLProjectCalculatorButton.onclick = function() {
+            HTMLProjectCalculatorBox.select();
+            document.execCommand("copy");
+            HTMLProjectCalculatorButton.innerText = "Codes Copied"
+          }
+            let HTMLProjectFormBox = document.getElementById("HTMLProjectFormBox");
+             let HTMLProjectFormButton = document.getElementById("HTMLProjectFormButton");
+          
+          HTMLProjectFormButton.onclick = function() {
+            HTMLProjectFormBox.select();
+            document.execCommand("copy");
+            HTMLProjectFormButton.innerText = "Codes Copied"
+          }
+          let HTMLUnitConverterBox = document.getElementById("HTMLUnitConverterBox");
+          let HTMLUnitConverterButton = document.getElementById("HTMLUnitConverterButton");
+      
+          HTMLUnitConverterButton.onclick = function() {
+            HTMLUnitConverterBox.select();
+            document.execCommand("copy");
+            HTMLUnitConverterButton.innerText = "Codes Copied"
+          }
+          let HTMLTempConverterBox = document.getElementById("HTMLTempConverterBox");
+          let HTMLTempConverterButton = document.getElementById("HTMLTempConverterButton");
+      
+          HTMLTempConverterButton.onclick = function() {
+            HTMLTempConverterBox.select();
+            document.execCommand("copy");
+            HTMLTempConverterButton.innerText = "Codes Copied"
+          }
+        //   HTML ATTRIBUTES TAG
+          let HTMLTextFormatParaBox = document.getElementById("HTMLTextFormatParaBox");
+          let HTMLTextFormatParaButton = document.getElementById("HTMLTextFormatParaButton");
+      
+          HTMLTextFormatParaButton.onclick = function() {
+            HTMLTextFormatParaBox.select();
+            document.execCommand("copy");
+            HTMLTextFormatParaButton.innerText = "Codes Copied"
+          }
+        //   HTML ATTRIBUTES TAG
+        //   HTML ATTRIBUTES TAG
+        //   HTML ATTRIBUTES TAG
+        //   HTML ATTRIBUTES TAG
+          let HTMLTextFormatImagesBox = document.getElementById("HTMLTextFormatImagesBox");
+          let HTMLTextFormatImagesButton = document.getElementById("HTMLTextFormatImagesButton");
+      
+          HTMLTextFormatImagesButton.onclick = function() {
+            HTMLTextFormatImagesBox.select();
+            document.execCommand("copy");
+            HTMLTextFormatImagesButton.innerText = "Codes Copied"
+          }
+        //   HTML ATTRIBUTES TAG
+          let HTMLTextFormatTableBox = document.getElementById("HTMLTextFormatTableBox");
+          let HTMLTextFormatTableButton = document.getElementById("HTMLTextFormatTableButton");
+      
+          HTMLTextFormatTableButton.onclick = function() {
+            HTMLTextFormatTableBox.select();
+            document.execCommand("copy");
+            HTMLTextFormatTableButton.innerText = "Codes Copied"
+          }
+        //   HTML ATTRIBUTES TAG
+          let HTMLTextFormatFormsBox = document.getElementById("HTMLTextFormatFormsBox");
+          let HTMLTextFormatFormsButton = document.getElementById("HTMLTextFormatFormsButton");
+      
+          HTMLTextFormatFormsButton.onclick = function() {
+            HTMLTextFormatFormsBox.select();
+            document.execCommand("copy");
+            HTMLTextFormatFormsButton.innerText = "Codes Copied"
+          }
+        </script>
+</body>
+</html>

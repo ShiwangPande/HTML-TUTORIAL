@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real-Time Editor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer type="text/javascript" src="app.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js"
+      integrity="sha512-tTsZnBXEzNdEaqUO9Ok8fUofS73xieiBa54pD/sxOSvayIgItM9MmEM0CnUjA13LDnJT22sfwmjf20+Bo2174g=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+    }
+    .container {
+      background: #e7e7e7;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 100vh;
+      margin: 3px;
+    }
+    .container textarea {
+      background-color: #121212;
+      border: 1px solid #0dddf0;
+      resize: none;
+      width: 100%;
+      height: 100%;
+      font-size: 1rem;
+      padding: 10px;
+      resize: vertical;
+      overflow-y: scroll;
+      color: white;
+    }
+    .container textarea:focus {
+      outline: none;
+      color: white;
+    }
+    .iframe-container {
+      background: white;
+      width: 50%;
+      height: 100vh;
+      margin: 3px;
+    }
+    #viewer {
+      width: 100%;
+      height: 100%;
+    }
+    .split {
+      width: 100%;
+      height: 100%;
+    }
+    .gutter {
+      cursor: e-resize;
+      height: 100%;
+      background: grey;
+    }
+    .gutter.gutter-horizontal {
+      cursor: ew-resize;
+    }
+    @media screen and (min-width: 300px) and (max-width: 900px) {
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <div class="container split">
+      <!-- Text area for Html Code  -->
+      <!-- <textarea
+        id="htmlCode"
+        placeholder="Type HTML code here"
+        spellcheck="false"
+        oninput="update(0)"
+        onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
+      ></textarea> -->
+      <textarea
+        id="htmlCode"
+        placeholder="Type HTML code here"
+        spellcheck="false"
+        oninput="update(0)"
+        onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
+      >
+      &#60;!DOCTYPE html&#62;
+      &#60;html&#62;
+      &#60;head&#62;
+          &#60;title&#62;Unit Converter&#60;/title&#62;
+      &#60;/head&#62;
+      &#60;body&#62;
+          &#60;h1&#62;Unit Converter&#60;/h1&#62;
+          &#60;form&#62;
+              &#60;label for="value"&#62;Value:&#60;/label&#62;
+              &#60;input type="number" id="value" name="value"&#62;&#60;br&#62;&#60;br&#62;
+              &#60;label for="from"&#62;From:&#60;/label&#62;
+              &#60;select id="from" name="from"&#62;
+                  &#60;option value="meter"&#62;Meter&#60;/option&#62;
+                  &#60;option value="kilometer"&#62;Kilometer&#60;/option&#62;
+                  &#60;option value="mile"&#62;Mile&#60;/option&#62;
+                  &#60;option value="yard"&#62;Yard&#60;/option&#62;
+                  &#60;option value="foot"&#62;Foot&#60;/option&#62;
+                  &#60;option value="inch"&#62;Inch&#60;/option&#62;
+              &#60;/select&#62;&#60;br&#62;&#60;br&#62;
+              &#60;label for="to"&#62;To:&#60;/label&#62;
+              &#60;select id="to" name="to"&#62;
+                  &#60;option value="meter"&#62;Meter&#60;/option&#62;
+                  &#60;option value="kilometer"&#62;Kilometer&#60;/option&#62;
+                  &#60;option value="mile"&#62;Mile&#60;/option&#62;
+                  &#60;option value="yard"&#62;Yard&#60;/option&#62;
+                  &#60;option value="foot"&#62;Foot&#60;/option&#62;
+                  &#60;option value="inch"&#62;Inch&#60;/option&#62;
+              &#60;/select&#62;&#60;br&#62;&#60;br&#62;
+              &#60;input type="button" value="Convert" onclick="convert()"&#62;&#60;br&#62;&#60;br&#62;
+              &#60;label for="result"&#62;Result:&#60;/label&#62;
+              &#60;input type="text" id="result" name="result"&#62;&#60;br&#62;&#60;br&#62;
+          &#60;/form&#62;
+      
+          &#60;script&#62;
+              function convert() {
+                  var value = parseFloat(document.getElementById("value").value);
+                  var from = document.getElementById("from").value;
+                  var to = document.getElementById("to").value;
+      
+                  var meters;
+      
+                  switch(from) {
+                      case "meter":
+                          meters = value;
+                          break;
+                      case "kilometer":
+                          meters = value * 1000;
+                          break;
+                      case "mile":
+                          meters = value * 1609.34;
+                          break;
+                      case "yard":
+                          meters = value * 0.9144;
+                          break;
+                      case "foot":
+                          meters = value * 0.3048;
+                          break;
+                      case "inch":
+                          meters = value * 0.0254;
+                          break;
+                  }
+      
+                  var result;
+      
+                  switch(to) {
+                      case "meter":
+                          result = meters;
+                          break;
+                      case "kilometer":
+                          result = meters / 1000;
+                          break;
+                      case "mile":
+                          result = meters / 1609.34;
+                          break;
+                      case "yard":
+                          result = meters / 0.9144;
+                          break;
+                      case "foot":
+                          result = meters / 0.3048;
+                          break;
+                      case "inch":
+                          result = meters / 0.0254;
+                          break;
+                  }
+      
+                  document.getElementById("result").value = result.toFixed(2);
+              }
+          &#60;/script&#62;
+      &#60;/body&#62;
+      &#60;/html&#62;
+      </textarea>
+    </div>
+    <!-- iframe for live rendering -->
+    <button
+      class="btn btn-primary"
+      style="position: absolute; top: 10px; right: 10px"
+      onclick="update(0)"
+    >
+      Run
+    </button>
+    <div class="iframe-container split">
+      <iframe id="viewer"></iframe>
+    </div>
+  </body>
+  <script>
+    var j = 0;
+    //Function for live Rendering
+    function update(i) {
+      if (i == 0) {
+        let htmlCode = document.getElementById("htmlCode").value;
+        let text = htmlCode + "<style>";
+        let iframe = document.getElementById("viewer").contentWindow.document;
+        iframe.open();
+        iframe.write(text);
+        iframe.close();
+      } else if (i == 1) {
+        let htmlCode = document.getElementById("htmlCode").value;
+        let html = htmlCode.slice(0, htmlCode.length);
+        document.getElementById("htmlCode").value = html;
+        j = 1;
+      }
+    }
+  </script>
+</html>

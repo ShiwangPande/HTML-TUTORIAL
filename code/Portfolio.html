@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real-Time Editor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer type="text/javascript" src="app.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js"
+      integrity="sha512-tTsZnBXEzNdEaqUO9Ok8fUofS73xieiBa54pD/sxOSvayIgItM9MmEM0CnUjA13LDnJT22sfwmjf20+Bo2174g=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+    }
+    .container {
+      background: #e7e7e7;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 100vh;
+      margin: 3px;
+    }
+    .container textarea {
+      background-color: #121212;
+      border: 1px solid #0dddf0;
+      resize: none;
+      width: 100%;
+      height: 100%;
+      font-size: 1rem;
+      padding: 10px;
+      resize: vertical;
+      overflow-y: scroll;
+      color: white;
+    }
+    .container textarea:focus {
+      outline: none;
+      color: white;
+    }
+    .iframe-container {
+      background: white;
+      width: 50%;
+      height: 100vh;
+      margin: 3px;
+    }
+    #viewer {
+      width: 100%;
+      height: 100%;
+    }
+    .split {
+      width: 100%;
+      height: 100%;
+    }
+    .gutter {
+      cursor: e-resize;
+      height: 100%;
+      background: grey;
+    }
+    .gutter.gutter-horizontal {
+      cursor: ew-resize;
+    }
+    @media screen and (min-width: 300px) and (max-width: 900px) {
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <div class="container split">
+      <!-- Text area for Html Code  -->
+      <!-- <textarea
+        id="htmlCode"
+        placeholder="Type HTML code here"
+        spellcheck="false"
+        oninput="update(0)"
+        onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
+      ></textarea> -->
+      <textarea
+        id="htmlCode"
+        placeholder="Type HTML code here"
+        spellcheck="false"
+        oninput="update(0)"
+        onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
+      >
+      &#60;!DOCTYPE html&#62;
+      &#60;html&#62;
+        &#60;head&#62;
+          &#60;title&#62;My Portfolio&#60;/title&#62;
+          &#60;meta charset="UTF-8" /&#62;
+          &#60;meta name="viewport" content="width=device-width, initial-scale=1.0" /&#62;
+          &#60;link rel="stylesheet" href="style.css" /&#62;
+        &#60;/head&#62;
+        &#60;style&#62;
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+      
+          header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+          }
+      
+          header h1 {
+            margin: 0;
+          }
+      
+          nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+      
+          nav li {
+            display: inline-block;
+            margin-right: 20px;
+          }
+      
+          nav li:last-child {
+            margin-right: 0;
+          }
+      
+          nav a {
+            color: #fff;
+            text-decoration: none;
+          }
+      
+          section {
+            padding: 50px 20px;
+          }
+      
+          section h2 {
+            margin-bottom: 20px;
+          }
+      
+          ul {
+            list-style: none;
+            padding: 0;
+          }
+      
+          li {
+            margin-bottom: 20px;
+          }
+      
+          label {
+            display: block;
+            margin-bottom: 10px;
+          }
+      
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+          }
+      
+          input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+      
+          footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+          }
+        &#60;/style&#62;
+        &#60;body&#62;
+          &#60;header&#62;
+            &#60;h1&#62;My Portfolio&#60;/h1&#62;
+            &#60;nav&#62;
+              &#60;ul&#62;
+                &#60;li&#62;&#60;a href="#about"&#62;About Me&#60;/a&#62;&#60;/li&#62;
+                &#60;li&#62;&#60;a href="#projects"&#62;My Projects&#60;/a&#62;&#60;/li&#62;
+                &#60;li&#62;&#60;a href="#contact"&#62;Contact Me&#60;/a&#62;&#60;/li&#62;
+              &#60;/ul&#62;
+            &#60;/nav&#62;
+          &#60;/header&#62;
+      
+          &#60;section id="about"&#62;
+            &#60;h2&#62;About Me&#60;/h2&#62;
+            &#60;p&#62;Insert your description here.&#60;/p&#62;
+          &#60;/section&#62;
+      
+          &#60;section id="projects"&#62;
+            &#60;h2&#62;My Projects&#60;/h2&#62;
+            &#60;ul&#62;
+              &#60;li&#62;
+                &#60;h3&#62;Project 1&#60;/h3&#62;
+                &#60;p&#62;Description of Project 1&#60;/p&#62;
+              &#60;/li&#62;
+              &#60;li&#62;
+                &#60;h3&#62;Project 2&#60;/h3&#62;
+                &#60;p&#62;Description of Project 2&#60;/p&#62;
+              &#60;/li&#62;
+              &#60;li&#62;
+                &#60;h3&#62;Project 3&#60;/h3&#62;
+                &#60;p&#62;Description of Project 3&#60;/p&#62;
+              &#60;/li&#62;
+            &#60;/ul&#62;
+          &#60;/section&#62;
+      
+          &#60;section id="contact"&#62;
+            &#60;h2&#62;Contact Me&#60;/h2&#62;
+            &#60;form&#62;
+              &#60;label for="name"&#62;Name:&#60;/label&#62;
+              &#60;input type="text" id="name" name="name" /&#62;&#60;br /&#62;
+      
+              &#60;label for="email"&#62;Email:&#60;/label&#62;
+              &#60;input type="email" id="email" name="email" /&#62;&#60;br /&#62;
+      
+              &#60;label for="message"&#62;Message:&#60;/label&#62;
+              &#60;textarea id="message" name="message"&#62;&#60;/textarea&#62;&#60;br /&#62;
+      
+              &#60;input type="submit" value="Send" /&#62;
+            &#60;/form&#62;
+          &#60;/section&#62;
+      
+          &#60;footer&#62;
+            &#60;p&#62;&copy; 2023 My Portfolio&#60;/p&#62;
+          &#60;/footer&#62;
+        &#60;/body&#62;
+      &#60;/html&#62;
+      </textarea>
+    </div>
+    <!-- iframe for live rendering -->
+    <button
+      class="btn btn-primary"
+      style="position: absolute; top: 10px; right: 10px"
+      onclick="update(0)"
+    >
+      Run
+    </button>
+    <div class="iframe-container split">
+      <iframe id="viewer"></iframe>
+    </div>
+  </body>
+  <script>
+    var j = 0;
+    //Function for live Rendering
+    function update(i) {
+      if (i == 0) {
+        let htmlCode = document.getElementById("htmlCode").value;
+        let text = htmlCode + "<style>";
+        let iframe = document.getElementById("viewer").contentWindow.document;
+        iframe.open();
+        iframe.write(text);
+        iframe.close();
+      } else if (i == 1) {
+        let htmlCode = document.getElementById("htmlCode").value;
+        let html = htmlCode.slice(0, htmlCode.length);
+        document.getElementById("htmlCode").value = html;
+        j = 1;
+      }
+    }
+  </script>
+</html>
