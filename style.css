@@ -259,6 +259,24 @@ footer p {
   justify-content: space-around;
 }
 
+#menu {
+  position: absolute;
+  top: 0;
+  /* bottom: -86px; */
+  width: 260px;
+  max-height: 92vh;
+  /* scroll-behavior: smooth; */
+  overflow-y: scroll;
+}
+#menuToggle {
+  width: 77%;
+}
+.page_change {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 400px) {
   .viewport {
     display: flex;
@@ -297,7 +315,7 @@ footer p {
   }
   #menu {
     position: absolute;
-    width: 400px;
+    width: 362px;
 
     margin: -56px 0 0 -57px;
     padding: 50px;
@@ -386,6 +404,7 @@ footer p {
 }
 
 @media screen and (min-width: 400px) and (max-width: 781px) {
+  
   .viewport {
     display: flex;
     flex-direction: column;
@@ -510,6 +529,19 @@ footer p {
     transform: rotate(-45deg) translate(0, -1px);
   }
 }
+@media screen and (min-width: 900px) {
+  .col-xl-9 {
+    margin-left: 50px;
+  }
+  .contents {
+    margin-left: 10px;
+  }
+  .page_change {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 75px;
+  }
+}
 @media screen and (min-width: 781px) and (max-width: 900px) {
   .viewport {
     display: flex;
@@ -548,7 +580,7 @@ footer p {
   }
   #menu {
     position: absolute;
-    width: 400px;
+    width: 345px;
 
     margin: -57px 0 0 -50px;
     padding: 50px;
@@ -655,19 +687,11 @@ footer p {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu {
-  position: absolute;
-  top: 0;
-  /* bottom: -86px; */
-  width: 325px;
-  max-height: 92vh;
-  /* scroll-behavior: smooth; */
-  overflow-y: scroll;
-}
 
 #menu li {
-  padding: 10px 0;
+  padding: 2px 0;
   font-size: 22px;
+  padding-left: 30px;
 }
 
 /*

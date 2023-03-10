@@ -1,145 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
 
-    <title>HTML TUTORIAL</title>
-  </head>
-  <body
-    data-spy="scroll"
-    data-target=".scrollspy"
-    style="background-color: #e9ecef"
-  >
-    <div class="jumbotron">
-      <div class="container">
-        <h1>HTML History</h1>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <title>HTML TUTORIAL</title>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>HTML History</h1>
     </div>
-    <!--end of .jumbotron-->
+  </div>
+  <!--end of .jumbotron-->
 
-    <div class="container" style="margin: 0">
-      <div class="row">
-        <div class="col-md-3  scrollspy" style="max-height: 40%; position: sticky;">
-            <nav role="navigation">
-              <div id="menuToggle">
-                <!--
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky;">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
                 A fake / hidden checkbox is used as click reciever,
                 so you can use the :checked selector on it.
                 -->
-                <input type="checkbox" />
-                
-                <!--
+            <input type="checkbox" />
+
+            <!--
                 Some spans to act as a hamburger.
                 
                 They are acting like a real hamburger,
                 not that McDonalds stuff.
                 -->
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
-    
-                    <li><a href="/index.html">HTML Introduction</a></li>
-                    <li><a href="/history.html">HTML History</a></li>
-                    <li>
-                      <a href="/TextEditor.html">HTML Text Editors</a>
-                    </li>
-                    <li><a href="/Comments.html">HTML Comments</a></li>
-                    <li><a href="/Basic-Programs.html">HTML Basic Programs</a></li>
-                    <li><a href="/Attributes.html">HTML Attributes</a></li>
-                    <li><a href="/Tags.html">HTML Tags</a></li>
-                    <li><a href="/Headings.html">HTML Headings</a></li>
-                    <li>
-                      <a href="/Paragraphs.html">HTML Paragraphs</a>
-                    </li>
-                    <li><a href="/TextFormating.html">HTML Text Formating</a></li>
-                    <li><a href="/Lists.html">HTML Lists</a></li>
-                    <li><a href="/Colors.html">HTML Colors</a></li>
-                    <li><a href="/Links.html">HTML Links</a></li>
-                    <li><a href="/Images.html">HTML Images</a></li>
-                    <li><a href="/favicons.html">HTML favicons</a></li>
-                    <li><a href="/Form.html">HTML Form</a></li>
-                    <li><a href="/Responsive.html">HTML Responsive</a></li>
-                  </ul>
-        </div>
-      </nav>
-        </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix">
 
-        <div class="col-md-9">
-          <section id="History">
-            <h2><span class="fa fa-edit"></span> HTML History</h2>
-            <!-- <br> -->
-            <p>
-              HTML was created by Sir Tim Berners-Lee in late 1991 but was not
-              officially released. It was published in 1995 as HTML 2.0. HTML
-              4.01 was published in late 1999 and was a major version of HTML.
-            </p>
-            <img class="history__img" src="/img/struce antony.png" alt="" />
-            <p>
-              HTML is a very evolving markup language and has evolved with
-              various versions updating. Long before its revised standards and
-              specifications are carried in, each version has allowed its user
-              to create web pages in a much easier and prettier way and make
-              sites very efficient.
-            </p>
-            <img class="history2__img" src="/img/htmlhistory.png" alt="">
-            <p>
-                <ul>
-                    <li>
-                        HTML 1.0 was released in 1993 with the intention of sharing information that can be readable and accessible via web browsers. But not many of the developers were involved in creating websites. So the language was also not growing.
-
-                    </li>
-                    <hr>
-                    <li>
-                        Then comes HTML 2.0, published in 1995, which contains all the features of HTML 1.0 along with a few additional features, which remained the standard markup language for designing and creating websites until January 1997 and refined various core features of HTML.
-                    </li>
-                    <hr>
-                    <li>
-                        Then comes HTML 3.0, where Dave Raggett introduced a fresh paper or draft on HTML. It included improved new features of HTML, giving more powerful characteristics for webmasters in designing web pages. But these powerful features of the new HTML slowed down the browser in applying further improvements.
-                    </li>
-                    <hr>
-                    <p>
-                       <li>
-                        Then comes HTML 4.01, which is widely used and was a successful version of HTML before HTML 5.0, which is currently released and used worldwide. HTML 5 can be said for an extended version of HTML 4.01, which was published in the year 2012.
-                  
-                       </li>  </p>
-                </ul>
-            </p>
-          </section>
-        </div>
+              <li><a href="./index.html">HTML Introduction</a></li>
+              <li><a href="./history.html">HTML History</a></li>
+              <li>
+                <a href="./TextEditor.html">HTML Text Editors</a>
+              </li>
+              <li><a href="./Comments.html">HTML Comments</a></li>
+              <li><a href="./Basic-Programs.html">HTML Basic Programs</a></li>
+              <li><a href="./Attributes.html">HTML Attributes</a></li>
+              <li><a href="./Tags.html">HTML Tags</a></li>
+              <li><a href="./Headings.html">HTML Headings</a></li>
+              <li>
+                <a href="./Paragraphs.html">HTML Paragraphs</a>
+              </li>
+              <li><a href="./TextFormating.html">HTML Text Formating</a></li>
+              <li><a href="./Lists.html">HTML Lists</a></li>
+              <li><a href="./Colors.html">HTML Colors</a></li>
+              <li><a href="./Links.html">HTML Links</a></li>
+              <li><a href="./Images.html">HTML Images</a></li>
+              <li><a href="./favicons.html">HTML favicons</a></li>
+              <li><a href="./Form.html">HTML Form</a></li>
+              <li><a href="./Responsive.html">HTML Responsive</a></li>
+              <li><a href="./project.html">HTML Project</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <div class="my-3" style="display: flex; justify-content: flex-end">
-        <a href="/index.html" class="previous">&laquo; Previous</a>
-        <a href="/TextEditor.html" class="next">Next &raquo;</a>
+
+      <div class="col-xl-9">
+        <section id="History">
+          <h2><span class="fa fa-edit"></span> HTML History</h2>
+          <!-- <br> -->
+          <p>
+            HTML was created by Sir Tim Berners-Lee in late 1991 but was not
+            officially released. It was published in 1995 as HTML 2.0. HTML
+            4.01 was published in late 1999 and was a major version of HTML.
+          </p>
+          <img class="history__img" src="./img/struce antony.png" alt="" />
+          <p>
+            HTML is a very evolving markup language and has evolved with
+            various versions updating. Long before its revised standards and
+            specifications are carried in, each version has allowed its user
+            to create web pages in a much easier and prettier way and make
+            sites very efficient.
+          </p>
+          <img class="history2__img" src="./img/htmlhistory.png" alt="">
+          <p>
+          <ul>
+            <li>
+              HTML 1.0 was released in 1993 with the intention of sharing information that can be readable and
+              accessible via web browsers. But not many of the developers were involved in creating websites. So the
+              language was also not growing.
+
+            </li>
+            <hr>
+            <li>
+              Then comes HTML 2.0, published in 1995, which contains all the features of HTML 1.0 along with a few
+              additional features, which remained the standard markup language for designing and creating websites until
+              January 1997 and refined various core features of HTML.
+            </li>
+            <hr>
+            <li>
+              Then comes HTML 3.0, where Dave Raggett introduced a fresh paper or draft on HTML. It included improved
+              new features of HTML, giving more powerful characteristics for webmasters in designing web pages. But
+              these powerful features of the new HTML slowed down the browser in applying further improvements.
+            </li>
+            <hr>
+            <p>
+              <li>
+                Then comes HTML 4.01, which is widely used and was a successful version of HTML before HTML 5.0, which
+                is currently released and used worldwide. HTML 5 can be said for an extended version of HTML 4.01, which
+                was published in the year 2012.
+
+              </li>
+            </p>
+          </ul>
+          </p>
+        </section>
       </div>
     </div>
+    <div class="page_change">
+      <a href="./index.html" class="previous">&laquo; Previous</a>
+      <a href="./TextEditor.html" class="next">Next &raquo;</a>
+    </div>
+  </div>
 
-    <footer>
-      <a
-        href="https://www.linkedin.com/in/shiwang-pandey/"
-        style="text-decoration: none"
-      >
-        <p class="text-center">© Copyright by Shiwang Pandey</p></a
-      >
-    </footer>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
-  ></script>
+  <footer>
+    <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none">
+      <p class="text-center">© Copyright by Shiwang Pandey</p>
+    </a>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </html>
