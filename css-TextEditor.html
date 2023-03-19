@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <title>HTML TUTORIAL</title>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+  <div class="jumbotron">
+    <div class="container ">
+      <ul>
+        <li>
+          <button type="button" class=" btn btn-info"> <a href="/">HTML TUTORIAL</a> </button>
+
+        </li>
+        <li>
+          <button type="button" class="btn btn-info active"> <a href="/Css.html">CSS TUTORIAL</a> </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--end of .jumbotron-->
+
+  <div class="contents">
+    <div class="row">
+      <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+            <input type="checkbox" />
+
+            <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix">
+
+              <li><a href="./Css.html">CSS Introduction</a></li>
+              <li><a href="./CSS-history.html">CSS History</a></li>
+              <li>
+                <a href="./css-TextEditor.html">CSS Text Editors</a>
+              </li>
+              <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+              <li><a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a></li>
+              <li><a href="./CSS-Responsive-Design.html">CSS Responsive Design</a></li>
+              <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+              <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+              <li>
+                <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+              </li>
+              <li><a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a></li>
+              <li><a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a></li>
+              <li><a href="./CSS-Color&Background.html">CSS Color & Background</a></li>
+              <li><a href="./CSS-Project.html">CSS Project</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xl-8">
+
+        <section id="Text-Editors">
+          <h2><span class="fa fa-edit"></span> CSS Text Editors</h2>
+          <hr>
+          <img class="text_ed" src="./img_css/cssTexditor.png" alt="">
+          <p>
+          <ul>
+            <li type="none">&#10148; &nbsp;&nbsp; A CSS text editor is a software tool used for creating, editing, and
+              managing CSS code.
+
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp; CSS text editors provide a range of features, such as syntax
+              highlighting, code completion, and error checking, to make the process of writing CSS easier and more
+              efficient.</li>
+            <li type="none">&#10148; &nbsp;&nbsp; There are many different CSS text editors available, including both
+              standalone applications and browser-based tools.</li>
+            <li type="none">&#10148; &nbsp;&nbsp; Some popular standalone CSS text editors include Adobe Dreamweaver,
+              Atom, Sublime Text, and Visual Studio Code.</li>
+            <li type="none">&#10148; &nbsp;&nbsp; Browser-based CSS text editors, such as CodePen and JSFiddle, offer a
+              convenient way to quickly test and experiment with CSS code online.</li>
+            <li type="none">&#10148; &nbsp;&nbsp; Many CSS text editors also offer integration with other web
+              development tools, such as version control systems like Git and collaboration platforms like Slack.</li>
+            <li type="none">&#10148; &nbsp;&nbsp; In addition to basic CSS editing functionality, some CSS text editors
+              also offer advanced features like CSS grid and flexbox generators, which can help streamline the process
+              of creating complex layouts.</li>
+            <li type="none">&#10148; &nbsp;&nbsp; Overall, CSS text editors play a key role in the web development
+              process, helping developers to create clean, efficient, and well-organized CSS code that can be easily
+              maintained and updated over time.</li>
+          </ul>
+          </p>
+          <h4><span class="fa fa-edit"></span>&starf; The integration of CSS in an HTML text editor</h4>
+          <p>
+          <ul>
+            <li type="none">&#10148; &nbsp;&nbsp; HTML and CSS are two separate languages that work together to create
+              visually appealing web pages.
+
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              CSS is used to control the presentation of HTML elements, including their layout, color, font, and other
+              visual properties.</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              CSS can be integrated into an HTML text editor in several ways, depending on the editor's features and
+              capabilities.</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              Many modern text editors, such as Visual Studio Code and Atom, provide built-in support for CSS, including
+              syntax highlighting and code completion.</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              In these editors, CSS code can be written in a separate file or included directly in an HTML file using
+              the <strong>&#60;style></strong>  tag.</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              CSS classes can also be defined in a separate file and referenced in HTML elements using the <strong>class</strong>
+              attribute.</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              Some text editors also provide tools for organizing and managing CSS files, such as code snippets,
+              auto-formatting, and search and replace.</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              To ensure that CSS is applied correctly to HTML elements, it's important to use valid CSS syntax and
+              follow best practices for structuring and organizing CSS code.</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              Testing and debugging CSS is also an important part of the integration process, using tools like browser
+              dev tools to inspect and modify CSS styles in real-time.</li>
+          </ul>
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="page_change">
+      <a href="./CSS-history.html" class="previous">&laquo; Previous</a>
+      <a href="./CSS-Basics.html" class="next">Next &raquo;</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+      <p class="text-center">© Copyright by Shiwang Pandey</p>
+    </a>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</script>
+</body>
+
+</html>

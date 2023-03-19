@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>HTML TUTORIAL</title>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+        <div class="container ">
+            <ul>
+                <li>
+                    <button type="button" class=" btn btn-info"> <a href="/">HTML TUTORIAL</a> </button>
+
+                </li>
+                <li>
+                    <button type="button" class="btn btn-info active"> <a href="/Css.html">CSS TUTORIAL</a> </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents">
+        <div class="row">
+            <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                        <input type="checkbox" />
+
+                        <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix">
+
+                            <li><a href="./Css.html">CSS Introduction</a></li>
+                            <li><a href="./CSS-history.html">CSS History</a></li>
+                            <li>
+                                <a href="./css-TextEditor.html">CSS Text Editors</a>
+                            </li>
+                            <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+                            <li><a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a></li>
+                            <li><a href="./CSS-Responsive-Design.html">CSS Responsive Design</a></li>
+                            <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+                            <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+                            <li>
+                                <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+                            </li>
+                            <li><a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a></li>
+                            <li><a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a></li>
+                            <li><a href="./CSS-Color&Background.html">CSS Color & Background</a></li>
+                            <li><a href="./CSS-Project.html">CSS Project</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="col-xl-8">
+                <section id="introduction">
+                    <h2><span class="fa fa-edit">&#10026;</span> CSS Color & Background</h2>
+                    <hr>
+                    <p>
+                        CSS margin is a property that defines the space between an element's border and the surrounding
+                        elements. It allows you to create a gap or distance between the element and other elements on
+                        the page. </p>
+                    <p>CSS padding is a property that adds space between an element's content and its border. It allows
+                        you to control the amount of space between the content and the edge of the element, without
+                        affecting the layout or size of the element itself.</p>
+                    <img class="history__img" src="./img_css/csscolor.png" alt="">
+                    <h4><span class="fa fa-edit"></span>&starf;Margin:</h4>
+                    <p>
+                    <ul>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS allows you to specify colors using a variety of
+                            methods, including named colors (e.g. "red", "blue", etc.), hexadecimal values (e.g. #FF0000
+                            for red), RGB values (e.g. rgb(255, 0, 0) for red), and HSL values (e.g. hsl(0, 100%, 50%)
+                            for red)</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS also allows you to specify transparency for colors
+                            using the rgba() or hsla() functions, where the last value specifies the opacity level (from
+                            0 to 1).</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; You can apply color to various elements in HTML using the
+                            "color" property in CSS. For example, to make all the text in a document red, you can use:
+                        </li>
+
+                        <li type="none">&#10148; &nbsp;&nbsp;
+                            <div class="text-boxes">
+                                <div class="text-box CSSColorBox">
+                                    <div class="topic">HTML Code:</div>
+                                    <textarea id="CSSColorBox" readonly>
+                        body {
+                            color: red;
+                          }
+                          
+                        
+                    </textarea>
+                                    <button id="CSSColorButton">Copy Codes</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS also allows you to specify background colors using the
+                            same methods as for foreground colors. The "background-color" property is used to specify
+                            the background color of an element. For example:</li>
+                        <li type="none">&#10148; &nbsp;&nbsp;
+                            <div class="text-boxes">
+                                <div class="text-box CSSBackgorundBox">
+                                    <div class="topic">HTML Code:</div>
+                                    <textarea id="CSSBackgorundBox" readonly>
+                                body {
+                                    background-color: #FFFFFF;
+                                  }
+                                  
+
+                            </textarea>
+                                    <button id="CSSBackgorundButton">Copy Codes</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4><span class="fa fa-edit"></span>&starf; Padding:</h4>
+                    <p>
+                    <ul>
+                        <li type="none">&#10148; &nbsp;&nbsp;
+                            In addition to solid background colors, you can also apply gradients or images to
+                            backgrounds using CSS. For example:</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; <div class="text-boxes">
+                                <div class="text-box CSSgradientBox">
+                                    <div class="topic">HTML Code:</div>
+                                    <textarea id="CSSgradientBox" readonly>
+                        body {
+                            background: linear-gradient(to bottom, #FFFFFF, #000000);
+                          }
+                          
+                          /* Or using an image */
+                          body {
+                            background-image: url('path/to/image.jpg');
+                            background-size: cover;
+                          }
+                          
+
+                        
+                    </textarea>
+                                    <button id="CSSgradientButton">Copy Codes</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS also provides several shorthand properties for setting
+                            both color and background properties at once. For example:</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; <div class="text-boxes">
+                                <div class="text-box CSSBgColorBox">
+                                    <div class="topic">HTML Code:</div>
+                                    <textarea id="CSSBgColorBox" readonly>
+                        body {
+                            color: red;
+                            background-color: white;
+                          }
+                          
+                          /* Can be shortened to */
+                          body {
+                            color: red;
+                            background: white;
+                          }
+                          </textarea>
+                                    <button id="CSSBgColorButton">Copy Codes</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li type="none">&#10148; &nbsp;&nbsp; These are just a few key points about CSS color and
+                            background. There are many more nuances and options available, so it's always a good idea to
+                            consult the official documentation or a reliable CSS reference guide for more information.
+                        </li>
+                    </ul>
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class="page_change">
+            <a href="./CSS-Margin&Padding.html" class="previous">&laquo; Previous</a>
+            <a href="./CSS-Project.html" class="next">Next &raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p>
+        </a>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</script>
+<script>
+    let CSSColorBox = document.getElementById("CSSColorBox");
+    let CSSColorButton = document.getElementById("CSSColorButton");
+
+    CSSColorButton.onclick = function () {
+        CSSColorBox.select();
+        document.execCommand("copy");
+        CSSColorButton.innerText = "Codes Copied"
+    }
+    let CSSBackgorundBox = document.getElementById("CSSBackgorundBox");
+    let CSSBackgorundButton = document.getElementById("CSSBackgorundButton");
+
+    CSSBackgorundButton.onclick = function () {
+        CSSBackgorundBox.select();
+        document.execCommand("copy");
+        CSSBackgorundButton.innerText = "Codes Copied"
+    }
+
+    let CSSBgColorBox = document.getElementById("CSSBgColorBox");
+    let CSSBgColorButton = document.getElementById("CSSBgColorButton");
+
+    CSSBgColorButton.onclick = function () {
+        CSSBgColorBox.select();
+        document.execCommand("copy");
+        CSSBgColorButton.innerText = "Codes Copied"
+    }
+    let CSSgradientBox = document.getElementById("CSSgradientBox");
+    let CSSgradienttButton = document.getElementById("CSSgradienttButton");
+
+    CSSgradientButton.onclick = function () {
+        CSSgradientBox.select();
+        document.execCommand("copy");
+        CSSgradientButton.innerText = "Codes Copied"
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container ">
+       <ul>
+        <li >
+          <button type="button" class=" btn btn-info"> <a   href="/">HTML TUTORIAL</a> </button>
+
+        </li>
+        <li>
+          <button type="button" class="btn btn-info active"> <a  href="/Css.html">CSS TUTORIAL</a> </button>
+        </li>
+       </ul>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents" >
+      <div class="row">
+        <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+                <li><a href="./Css.html">CSS Introduction</a></li>
+                <li><a href="./CSS-history.html">CSS History</a></li>
+                <li>
+                  <a href="./css-TextEditor.html">CSS Text Editors</a>
+                </li>
+                <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+                <li><a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a></li>
+                <li><a href="./CSS-Responsive-Design.html">CSS Responsive Design</a></li>
+                <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+                <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+                <li>
+                    <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+                  </li>
+                  <li><a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a></li>
+                  <li><a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a></li>
+                  <li><a href="./CSS-Color&Background.html">CSS Color & Background</a></li>
+                  <li><a href="./CSS-Project.html">CSS Project</a></li>
+              </ul>
+      </div>
+    </nav>
+      </div>
+      
+
+        <div class="col-xl-8">
+            <section id="introduction">
+                <h2><span class="fa fa-edit">&#10026;</span> CSS Basics</h2>
+                <hr>
+                <p>
+                    This topic could cover the fundamental concepts of CSS, such as selectors, properties, and values, as well as how to apply styles to HTML elements using inline, internal, and external stylesheets.
+                </p>
+                <img class="history__img" src="./img_css/css.webp" alt="">
+                <br>
+                <h4><span class="fa fa-edit"></span>&starf; Basics of CSS</h4>
+            <p>
+            <ul>
+              <li type="none">&#10148;  &nbsp;&nbsp;  CSS stands for Cascading Style Sheets and is a language used for describing the presentation of a document written in HTML or XML.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS allows you to style various HTML elements, such as text, links, images, and backgrounds.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS styles are defined using selectors, properties, and values. A selector is used to select an HTML element, a property is the attribute you want to style, and a value is the value of that attribute..</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS styles can be added to an HTML document in several ways, including using an external stylesheet, adding styles within the head section of an HTML document, or using inline styles.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS has several types of selectors, including element selectors, class selectors, ID selectors, and pseudo-class selectors.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS properties can be grouped together in a style declaration block, which is enclosed in curly braces {}</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS styles can be inherited from a parent element to its child elements, but you can also override inherited styles using specific selectors and styles..</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS can also be used for layout and positioning of HTML elements using properties like display, position, and float.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS has a variety of units of measurement, including pixels, ems, rems, percentages, and more.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; Finally, CSS has many advanced features, such as media queries, animations, and responsive design, which allow you to create beautiful and responsive web designs.</li>
+            </ul>
+            </p>
+            <div class="text-boxes">
+                <div class="text-box CSSBasicProgramsBox">
+                    <div class="topic">CSS Basic  Code:</div>
+                    <textarea id="CSSBasicProgramsBox" readonly >
+                        
+                        /* Selects all paragraphs and sets the font size to 16px */
+                        p {
+                          font-size: 16px;
+                        }
+                        
+                        /* Selects all links and sets the color to blue */
+                        a {
+                          color: blue;
+                        }
+                        
+                        /* Selects the header element and sets the background color to gray */
+                        header {
+                          background-color: gray;
+                        }
+                        
+                        /* Selects all images and sets the width to 100% */
+                        img {
+                          width: 100%;
+                        }
+                        
+                        /* Selects the navigation menu and sets the display to flex */
+                        nav {
+                          display: flex;
+                        }
+                        
+                        </pre>
+                    
+                    </textarea>
+                    <button id="CSSBasicProgramsButton">Copy Codes</button>
+                  </div>
+                </div>
+          </section>
+          </div>
+        </div>
+        <div class="page_change">
+        <a href="./css-TextEditor.html" class="previous">&laquo; Previous</a> 
+        <a href="./CSS-Layout&Positioning.html" class="next">Next &raquo;</a>
+      </div>
+      </div>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+        <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  </script>
+      <script>
+         let CSSBasicProgramsBox = document.getElementById("CSSBasicProgramsBox");
+      let CSSBasicProgramsButton = document.getElementById("CSSBasicProgramsButton");
+  
+      CSSBasicProgramsButton.onclick = function() {
+        CSSBasicProgramsBox.select();
+        document.execCommand("copy");
+        CSSBasicProgramsButton.innerText = "Codes Copied"
+      }
+      </script>
+
+
+</html>

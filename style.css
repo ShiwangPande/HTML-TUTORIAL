@@ -14,6 +14,21 @@ h3 span {
   color: #286090;
 }
 
+.container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  gap: 2rem;
+}
+.container ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 .jumbotron {
   border-radius: 0px;
   background: #5fb3ce;
@@ -278,6 +293,26 @@ footer p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
+  .container {
+    padding: 0;
+  }
+  .container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    gap: 1rem;
+  }
+  .container ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .container ul li button {
+    padding: 6px;
+  }
   .viewport {
     display: flex;
     flex-direction: column;
@@ -404,6 +439,23 @@ footer p {
 }
 
 @media screen and (min-width: 400px) and (max-width: 781px) {
+  .container {
+    padding: 0;
+  }
+  .container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  .container ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
   .viewport {
     display: flex;
     flex-direction: column;
@@ -529,6 +581,24 @@ footer p {
   }
 }
 @media screen and (min-width: 900px) {
+  .container {
+    padding: 0;
+  }
+  .container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  .container ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
   .col-xl-9 {
     margin-left: 50px;
   }

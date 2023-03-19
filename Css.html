@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container ">
+       <ul>
+        <li >
+          <button type="button" class=" btn btn-info"> <a   href="/">HTML TUTORIAL</a> </button>
+
+        </li>
+        <li>
+          <button type="button" class="btn btn-info active"> <a  href="/Css.html">CSS TUTORIAL</a> </button>
+        </li>
+       </ul>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents" >
+      <div class="row">
+        <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+                <li><a href="./Css.html">CSS Introduction</a></li>
+                <li><a href="./CSS-history.html">CSS History</a></li>
+                <li>
+                    <a href="./css-TextEditor.html">CSS Text Editors</a>
+                  </li>
+                  <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+                  <li><a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a></li>
+                  <li><a href="./CSS-Responsive-Design.html">CSS Responsive Design</a></li>
+                  <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+                  <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+                  <li>
+                    <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+                  </li>
+                  <li><a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a></li>
+                  <li><a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a></li>
+                  <li><a href="./CSS-Color&Background.html">CSS Color & Background</a></li>
+                  <li><a href="./CSS-Project.html">CSS Project</a></li>
+              </ul>
+      </div>
+    </nav>
+      </div>
+      
+
+        <div class="col-xl-8">
+            <section id="introduction">
+                <h2><span class="fa fa-edit">&#10026;</span> HTML Introduction</h2>
+                <hr>
+                <img class="history__img" src="./img_css/css.webp" alt="">
+                <h4><span class="fa fa-edit"></span>&starf; What is CSS?</h4>
+            <p>
+            <ul>
+              <li type="none">&#10148;  &nbsp;&nbsp;  CSS stands for  <strong>Cascading Style Sheets</strong>.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS is used to control the appearance and layout of HTML documents.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS allows developers to separate the content of a webpage from its presentation, making it easier to maintain and update.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS uses selectors to target specific HTML elements and apply styles to them.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS is a cascading language, meaning that styles can be inherited or overridden based on their specificity and order.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS defines a box model for HTML elements, which includes properties such as width, height, padding, border, and margin.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS provides a range of layout options, including positioning, floating, and display properties.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS allows you to control the appearance of text using properties such as font-family, font-size, line-height, and text-align.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS allows you to apply color and background images to HTML elements using properties such as background-color, color, and background-image.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS includes properties and functions for creating animations and transitions, such as keyframes, transform, and transition.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS allows you to define and use variables to store and reuse values such as colors, fonts, and sizes.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS preprocessors such as Sass and Less allow you to write CSS in a more efficient and organized way, with features such as nesting, variables, and mixins.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; CSS can be applied to HTML documents using external stylesheets or embedded within the HTML document using the style tag.</li>
+            </ul>
+            </p>
+       
+            <h4><span class="fa fa-edit"></span>&starf; Features of CSS</h4>
+            <!-- <br> -->
+            <p>
+            <ul>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong> Selectors</strong>: CSS uses selectors to target specific HTML elements and apply styles to them. Selectors can be based on element type, class, ID, attribute, or any combination of these.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Cascading</strong>: CSS is a cascading language, which means that styles can be inherited from parent elements or overridden by more specific styles applied to child elements.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Box model</strong>: CSS defines a box model for HTML elements, which includes properties such as width, height, padding, border, and margin. These properties control the size and spacing of elements on the page.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Layout</strong>: CSS provides a range of layout options, including positioning, floating, and display properties. These properties can be used to control the placement and arrangement of elements on the page.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Typography</strong>: CSS includes a range of properties for controlling the appearance of text, such as font-family, font-size, line-height, and text-align.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Color and imagery</strong>: CSS allows you to apply color and background images to HTML elements using properties such as background-color, color, and background-image.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Animations and transitions</strong>: CSS includes properties and functions for creating animations and transitions, such as keyframes, transform, and transition.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Media queries</strong>: CSS provides a way to apply different styles to a page based on the device or screen size using media queries.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong>Variables</strong>: CSS allows you to define and use variables to store and reuse values such as colors, fonts, and sizes.</li>
+              <li type="none">&#10148;  &nbsp;&nbsp; <strong> Preprocessors</strong>: CSS preprocessors such as Sass and Less allow you to write CSS in a more efficient and organized way, with features such as nesting, variables, and mixins.</li>
+            </ul>
+            </p>
+          </section>
+          </div>
+        </div>
+        <div class="page_change">
+        <a href="./CSS-Project.html" class="previous">&laquo; Previous</a> 
+        <a href="./CSS-history.html" class="next">Next &raquo;</a>
+      </div>
+      </div>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+        <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+
+
+</html>

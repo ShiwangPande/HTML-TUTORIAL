@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>HTML TUTORIAL</title>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+        <div class="container ">
+            <ul>
+                <li>
+                    <button type="button" class=" btn btn-info"> <a href="/">HTML TUTORIAL</a> </button>
+
+                </li>
+                <li>
+                    <button type="button" class="btn btn-info active"> <a href="/Css.html">CSS TUTORIAL</a> </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents">
+        <div class="row">
+            <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                        <input type="checkbox" />
+
+                        <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix">
+
+                            <li><a href="./Css.html">CSS Introduction</a></li>
+                            <li><a href="./CSS-history.html">CSS History</a></li>
+                            <li>
+                                <a href="./css-TextEditor.html">CSS Text Editors</a>
+                            </li>
+                            <li><a href="./CSS-Basic.html">CSS Basics</a></li>
+                            <li><a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a></li>
+                            <li><a href="./CSS-Responsive-Design.html">CSS Responsive Design</a></li>
+                            <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+                <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+                <li>
+                    <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+                  </li>
+                  <li><a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a></li>
+                  <li><a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a></li>
+                  <li><a href="./CSS-Color&Background.html">CSS Color & Background</a></li>
+                  <li><a href="./CSS-Project.html">CSS Project</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="col-xl-8">
+                <section id="introduction">
+                    <h2><span class="fa fa-edit">&#10026;</span> CSS Responsive Design</h2>
+                    <hr>
+                    <p>
+                        This topic could cover how to use CSS to create responsive layouts that adapt to different
+                        screen sizes and devices, including media queries, viewport units, and responsive design
+                        frameworks.
+
+                    </p>
+                    <img class="history__img" src="./img_css/media-queries.png" alt="">
+                    <br>
+                    <h4><span class="fa fa-edit"></span>&starf; CSS Responsive Design</h4>
+                    <p>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS stands for Cascading Style Sheets, and it's a language
+                            used for describing the presentation of a document written in HTML or XML.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Responsive Design is a technique used to create websites
+                            that adjust their layout and content based on the user's device, screen size, and
+                            orientation.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Responsive Design aims to provide an optimal user
+                            experience regardless of the device or platform used to access the website.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS provides several techniques to create responsive
+                            layouts, such as media queries, flexible grids, and fluid images.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Media queries are CSS rules that apply specific styles
+                            based on the user's device characteristics, such as screen size, orientation, resolution,
+                            and aspect ratio.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Flexible grids use relative units like percentages, ems,
+                            or rems to define the layout's dimensions, allowing the content to adapt to the available
+                            screen space.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Fluid images use the max-width property to limit the
+                            image's size to its container, ensuring that it doesn't overflow or distort the layout.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp;CSS frameworks like Bootstrap or Foundation provide
+                            pre-built responsive components, such as menus, forms, and grids, that developers can use to
+                            create responsive designs quickly..</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Responsive Design is essential for modern web development,
+                            as users expect websites to be accessible and easy to use on any device or platform.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Testing and optimizing responsive designs require tools
+                            like browser dev tools, responsive design checkers, and user testing to ensure that the
+                            website looks and works as intended on various devices and scenarios.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Responsive design is an approach to web design that allows a website to adapt to different screen sizes and devices.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS (Cascading Style Sheets) is a styling language used to control the presentation of web content.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; To create a responsive design, CSS can be used to apply different styles to a webpage based on the screen size of the device being used.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Media queries are a key feature of CSS that allow you to specify different styles for different devices. For example, you can set different font sizes or layout rules based on whether the screen width is above or below a certain threshold.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Mobile-first design is a popular approach to responsive design, where the focus is on designing for mobile devices first, then adding styles for larger screens as needed.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Flexbox and Grid are two CSS layout techniques that can help create responsive designs by allowing you to easily adjust the positioning and sizing of content based on screen size.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; CSS frameworks such as Bootstrap and Foundation provide pre-made CSS styles and templates that can be used to create responsive designs more quickly and easily.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp; It's important to test your responsive design on different devices and screen sizes to ensure that it looks good and functions well on all platforms.</li>
+                        </ul>
+                    </p>
+                    <div class="text-boxes">
+                        <div class="text-box CSSResDesignBox">
+                            <div class="topic">HTML Code:</div>
+                            <textarea id="CSSResDesignBox" readonly>
+
+                                /* Set the default font size */
+                                html {
+                                  font-size: 16px;
+                                }
+                                
+                                /* Media query for screens smaller than 768px */
+                                @media (max-width: 767px) {
+                                  /* Adjust font size for smaller screens */
+                                  html {
+                                    font-size: 14px;
+                                  }
+                                  
+                                  /* Center the navigation menu and make it full width */
+                                  .navigation {
+                                    text-align: center;
+                                    width: 100%;
+                                  }
+                                  
+                                  /* Stack the navigation links vertically */
+                                  .navigation a {
+                                    display: block;
+                                    margin-bottom: 10px;
+                                  }
+                                  
+                                  /* Adjust the size and position of the logo */
+                                  .logo {
+                                    width: 50px;
+                                    margin: 10px auto;
+                                  }
+                                }
+                                
+                                /* Media query for screens larger than 768px */
+                                @media (min-width: 768px) {
+                                  /* Adjust font size for larger screens */
+                                  html {
+                                    font-size: 18px;
+                                  }
+                                  
+                                  /* Float the navigation links to the right */
+                                  .navigation a {
+                                    float: right;
+                                    margin-left: 20px;
+                                  }
+                                  
+                                  /* Center the logo */
+                                  .logo {
+                                    margin: 10px auto;
+                                  }
+                                }
+                                
+                    </textarea>
+                            <button id="CSSResDesignButton">Copy Codes</button>
+                        </div>
+                    </div>
+                    <p>In this example, we're setting different styles based on the screen size using media queries. For screens smaller than 768px, we're adjusting the font size, centering and stacking the navigation links, and resizing and positioning the logo. For screens larger than 768px, we're adjusting the font size, floating the navigation links to the right, and centering the logo. This allows the design to adapt to different screen sizes and provide the best user experience on all devices.</p>
+                </section>
+            </div>
+        </div>
+        <div class="page_change">
+            <a href="./CSS-Layout&Positioning.html" class="previous">&laquo; Previous</a>
+            <a href="./CSS-Typography.html" class="next">Next &raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p>
+        </a>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+></script>
+<script>
+    let CSSResDesignBox = document.getElementById("CSSResDesignBox");
+    let CSSResDesignButton = document.getElementById("CSSResDesignButton");
+
+    CSSResDesignButton.onclick = function () {
+        CSSResDesignBox.select();
+        document.execCommand("copy");
+        CSSResDesignButton.innerText = "Codes Copied"
+    }
+</script>
+
+
+</html>

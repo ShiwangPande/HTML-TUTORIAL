@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <title>HTML TUTORIAL</title>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef">
+  <div class="jumbotron">
+    <div class="container ">
+      <ul>
+       <li >
+         <button type="button" class=" btn btn-info"> <a   href="/">HTML TUTORIAL</a> </button>
+
+       </li>
+       <li>
+         <button type="button" class="btn btn-info active"> <a  href="/Css.html">CSS TUTORIAL</a> </button>
+       </li>
+      </ul>
+     </div>
+  </div>
+  <!--end of .jumbotron-->
+
+  <div class="contents">
+    <div class="row">
+      <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+            <input type="checkbox" />
+
+            <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+              <li><a href="./Css.html">CSS Introduction</a></li>
+              <li><a href="./CSS-history.html">CSS History</a></li>
+              <li>
+                <a href="./css-TextEditor.html">CSS Text Editors</a>
+              </li>
+              <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+              <li><a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a></li>
+              <li><a href="./CSS-Responsive-Design.html">CSS Responsive Design</a></li>
+              <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+              <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+              <li>
+                <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+              </li>
+              <li><a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a></li>
+              <li><a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a></li>
+              <li><a href="./CSS-Color&Background.html">CSS Color & Background</a></li>
+              <li><a href="./CSS-Project.html">CSS Project</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-xl-8">
+        <section id="History">
+          <h2><span class="fa fa-edit">&#10026;</span> CSS History</h2>
+          <hr>
+          <img class="history__img" src="./img_css/css-history.png" alt="">
+          
+      <p>
+      <ul>
+        <li type="none">&#10148;  &nbsp;&nbsp;  In 1996, the World Wide Web Consortium (W3C) released the first official version of CSS, called CSS1.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS1 was initially supported by only a few web browsers, including Internet Explorer 3 and Netscape Navigator 4.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS2 was released in 1998, introducing new features such as positioning, text effects, and a wide range of selectors.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; Despite its popularity among web designers, CSS2 took several years to become widely adopted by web browsers.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS3 was introduced in 1999 and included new features such as animations, transitions, and multiple background images.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; In the mid-2000s, web designers started using CSS frameworks to simplify the development process and improve cross-browser compatibility.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; With the advent of responsive web design in the early 2010s, CSS became increasingly important for creating flexible, mobile-friendly layouts.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; In recent years, CSS preprocessors like Sass and Less have gained popularity, offering advanced features like variables, mixins, and functions.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS continues to evolve, with new features like CSS Grid Layout and CSS Flexbox offering even more powerful layout options for web designers.</li>
+      </ul>
+      </p>
+      <h4><span class="fa fa-edit"></span>&starf; CSS1 History</h4>
+      <p>
+      <ul>
+        <li type="none">&#10148;  &nbsp;&nbsp;  CSS1 was first released by the World Wide Web Consortium (W3C) in December 1996.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; It was designed to separate the presentation of a web page from its content, allowing for greater flexibility and control over page layout.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS1 included a limited set of selectors and properties for controlling font size, color, background, and text alignment.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; It also introduced the concept of a "box model," allowing designers to specify the size and positioning of page elements.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS1 was initially supported by only a few web browsers, including Internet Explorer 3 and Netscape Navigator 4.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; Despite its limitations, CSS1 laid the foundation for the future development of CSS, paving the way for more advanced layout and styling options in later versions.</li>
+      </ul>
+      </p>
+      <h4><span class="fa fa-edit"></span>&starf; CSS2 History</h4>
+      <p>
+      <ul>
+        <li type="none">&#10148;  &nbsp;&nbsp;  CSS2 was introduced in 1998 as the second version of Cascading Style Sheets.
+
+        </li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS2 introduced many new features to CSS, including positioning, text effects, and a wide range of selectors</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; It was a significant improvement over CSS1, introducing a wider range of selectors, positioning options, and other features.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS2 added support for media-specific stylesheets, allowing developers to specify styles for different devices and screen sizes.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp;The standardization of CSS2 took several years, with the final recommendation not released until 2004.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; During this time, web browsers began to implement various parts of CSS2, leading to inconsistent support across different browsers.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; Despite these challenges, CSS2 became a popular tool for web designers, allowing them to create more complex and sophisticated designs.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; Some of the key features introduced in CSS2 include absolute and relative positioning, z-index, background properties, and more advanced typography options.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS2 also included support for internationalization and accessibility, making it easier for designers to create websites that could be accessed by people around the world.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; While CSS2 has been largely replaced by newer versions of CSS, it remains an important part of the history of web design and a foundational technology for modern websites.</li>
+      </ul>
+      </p>
+      <h4><span class="fa fa-edit"></span>&starf; CSS2 History</h4>
+      <p>
+      <ul>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS3 was first proposed in 1999 by the World Wide Web Consortium (W3C), the organization responsible for developing web standards.
+        </li>
+        <li type="none">&#10148;  &nbsp;&nbsp; It was intended to be the next major version of CSS, following CSS2.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; CSS3 was designed to include a wide range of new features, such as advanced selectors, animations, and 3D transformations.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; The development of CSS3 took several years, with different modules being released at different times.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp;The first CSS3 module to be released was the Selectors module in 2001, which introduced new selector types like attribute selectors and pseudo-elements.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; Other notable CSS3 modules include the Box Model module, the Backgrounds and Borders module, and the Animations module.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; The release of CSS3 modules was often accompanied by a slow adoption by web browsers, with some features taking years to become widely supported.</li>
+        <li type="none">&#10148;  &nbsp;&nbsp; Despite these challenges, CSS3 has become an essential tool for web designers, offering a wide range of advanced layout and styling options.        </li>
+        <li type="none">&#10148;  &nbsp;&nbsp; In recent years, newer CSS modules like Flexbox and Grid Layout have further expanded the capabilities of CSS for creating complex, responsive layouts.</li>
+      </ul>
+      </p>
+        </section>
+      </div>
+    </div>
+    <div class="page_change">
+      <a href="./Css.html" class="previous">&laquo; Previous</a>
+      <a href="./css-TextEditor.html" class="next">Next &raquo;</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none">
+      <p class="text-center">© Copyright by Shiwang Pandey</p>
+    </a>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</html>
