@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>HTML TUTORIAL</title>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+        <div class="container ">
+            <ul>
+                <li>
+                    <button type="button" class=" btn btn-info"> <a href="/">HTML TUTORIAL</a> </button>
+
+                </li>
+                <li>
+                    <button type="button" class="btn btn-info active"> <a href="/Css.html">CSS TUTORIAL</a> </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents">
+        <div class="row">
+            <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                        <input type="checkbox" />
+
+                        <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix">
+
+                            <li><a href="./Css.html">CSS Introduction</a></li>
+                            <li><a href="./CSS-history.html">CSS History</a></li>
+                            <li>
+                                <a href="./css-TextEditor.html">CSS Text Editors</a>
+                            </li>
+                            <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+                            <li><a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a></li>
+                            <li><a href="./CSS-Responsive-Design.html">CSS Responsive Design</a></li>
+                            <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+                            <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+                            <li>
+                                <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+                            </li>
+                            <li><a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a></li>
+                            <li><a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a></li>
+                            <li><a href="./CSS-Color&Background.html">CSS Color & Background</a></li>
+                            <li><a href="./CSS-Button.html">CSS Button And Hover</a></li>
+                            <li><a href="./CSS-Project.html">CSS Project</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="col-xl-8">
+                <section id="introduction">
+                    <h2><span class="fa fa-edit">&#10026;</span> CSS Button And Hover</h2>
+                    <hr>
+                    <p>
+                        </p>
+                    <img class="history__img" src="./img_css/csscolor.png" alt="">
+                    <h4><span class="fa fa-edit"></span>&starf;Button & Hover:</h4>
+                    <p>
+                    <ul>
+                        <li type="none">&#10148; &nbsp;&nbsp; In CSS, a button can be created using the &#60;button> HTML element, and styled using CSS properties. </li>
+                        <li type="none">&#10148; &nbsp;&nbsp; Hover effects in HTML and CSS can be used to add interactivity to a web page by changing the appearance of an element when the user hovers over it with their mouse.</li>
+                        <li type="none">&#10148; &nbsp;&nbsp;  Here's an example of how to create a simple hover effect using CSS:</li>
+
+                        <li type="none">&#10148; &nbsp;&nbsp;
+                            <div class="text-boxes">
+                                <div class="text-box CSSColorBox">
+                                    <div class="topic">HTML Code:</div>
+                                    <textarea id="CSSColorBox" readonly>
+                                        &#60;!DOCTYPE html&#62;
+      &#60;html&#62;
+      &#60;head&#62;
+      &#60;title&#62;Page Title&#60;/title&#62;
+      &#60;/head&#62;
+           &#60;body&#62;
+           &#60;div class="container">
+            &#60;div>
+              &#60;button class="shrink-border">Shiwang&#60;/button>
+              &#60;button class="material-bubble">Pandey&#60;/button>
+            &#60;/div>
+           &#60;/div>
+          &#60;/body&#62;
+      &#60;/html&#62;
+
+                          
+                        
+                    </textarea>
+                                    <button id="CSSColorButton">Copy Codes</button>
+                                </div>
+                            </div>
+                        </li>
+                            <div class="text-boxes">
+                                <div class="text-box CSSBackgorundBox">
+                                    <div class="topic">HTML Code:</div>
+                                    <textarea id="CSSBackgorundBox" readonly>
+                                        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+                                        *, *::after, *::before {
+                                          box-sizing: border-box; }
+                                        
+                                        body {
+                                          background-color: #32323c; }
+                                        
+                                        .container {
+                                          display: flex;
+                                          flex-direction: column;
+                                          justify-content: center;
+                                          height: 100vh;
+                                          width: 90vw;
+                                          text-align: center; }
+                                        
+                                        button {
+                                          font-family: 'Montserrat', sans-serif;
+                                          text-transform: uppercase; }
+                                        
+                                        button {
+                                          position: relative;
+                                          border: none;
+                                          font-size: 18px;
+                                          transition: color 0.5s, transform 0.2s, background-color 0.2s;
+                                          outline: none;
+                                          border-radius: 3px;
+                                          margin: 0 10px;
+                                          padding: 23px 33px;
+                                          border: 3px solid transparent; }
+                                          button:active {
+                                            transform: translateY(3px); }
+                                          button::after, button::before {
+                                            border-radius: 3px; }
+                                        
+                                        .shrink-border {
+                                          background-color: transparent;
+                                          color: #1b1b20; }
+                                          .shrink-border:hover {
+                                            background-color: transparent;
+                                            box-shadow: none;
+                                            color: #e6e6e6; }
+                                          .shrink-border::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            border: 3px solid #1b1b20;
+                                            transition: opacity 0.3s, border 0.3s; }
+                                          .shrink-border:hover::before {
+                                            opacity: 0; }
+                                          .shrink-border::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: transparent;
+                                            border: 3px solid #e6e6e6;
+                                            opacity: 0;
+                                            z-index: -1;
+                                            transform: scaleX(1.1) scaleY(1.3);
+                                            transition: transform 0.3s, opacity 0.3s; }
+                                          .shrink-border:hover::after {
+                                            opacity: 1;
+                                            transform: scaleX(1) scaleY(1); }
+                                        
+                                        .material-bubble {
+                                          background-color: transparent;
+                                          color: #1b1b20;
+                                          border: none;
+                                          overflow: hidden;
+                                          box-shadow: none; }
+                                          .material-bubble:hover {
+                                            color: #e6e6e6; }
+                                          .material-bubble::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            border: 3px solid #1b1b20;
+                                            transition: opacity 0.3s, border 0.3s; }
+                                          .material-bubble:hover::before {
+                                            opacity: 0; }
+                                          .material-bubble::after {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 200px;
+                                            height: 200px;
+                                            background-color: #494958;
+                                            border-color: transparent;
+                                            border-radius: 50%;
+                                            transform: translate(-10px, -70px) scale(0.1);
+                                            opacity: 0;
+                                            z-index: -1;
+                                            transition: transform 0.3s, opacity 0.3s, background-color 0.3s; }
+                                          .material-bubble:hover::after {
+                                            opacity: 1;
+                                            transform-origin: 100px 100px;
+                                            transform: scale(1) translate(-10px, -70px); }
+                                        
+                                                                            
+
+                            </textarea>
+                                    <button id="CSSBackgorundButton">Copy Codes</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                        <iframe src="/code/Cssbuttoncode.html" width="100%" height="500"></iframe>
+                        <li type="none">&#10148; &nbsp;&nbsp; In this example, we have a div element with the class of "box". We set the width, height, and background color of the box using CSS. We also set a transition property, which tells the browser to animate any changes to the background color of the box over a duration of 0.3 seconds with an ease animation.
+                        </li>
+                        <li type="none">&#10148; &nbsp;&nbsp; 
+
+                            Then, we use the :hover pseudo-class to target the box element when the user hovers over it with their mouse. When the user hovers over the box, we change the background color to red using the background-color property.
+                            
+                        </li>
+                        <li type="none">&#10148; &nbsp;&nbsp; 
+
+                          
+                            When the user moves their mouse away from the box, the background color will smoothly transition back to its original color because of the transition property we set earlier.
+                            
+                        </li>
+                        <li type="none">&#10148; &nbsp;&nbsp; 
+
+                          
+                           
+                            You can modify the CSS properties within the :hover selector to create different types of hover effects, such as changing the font color or adding a border to the element.
+                        </li>
+                    </ul>
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div class="page_change">
+            <a href="./CSS-Color&Background.html" class="previous">&laquo; Previous</a>
+            <a href="./CSS-Project.html" class="next">Next &raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+            <p class="text-center">© Copyright by Shiwang Pandey</p>
+        </a>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</script>
+<script>
+    let CSSColorBox = document.getElementById("CSSColorBox");
+    let CSSColorButton = document.getElementById("CSSColorButton");
+
+    CSSColorButton.onclick = function () {
+        CSSColorBox.select();
+        document.execCommand("copy");
+        CSSColorButton.innerText = "Codes Copied"
+    }
+    let CSSBackgorundBox = document.getElementById("CSSBackgorundBox");
+    let CSSBackgorundButton = document.getElementById("CSSBackgorundButton");
+
+    CSSBackgorundButton.onclick = function () {
+        CSSBackgorundBox.select();
+        document.execCommand("copy");
+        CSSBackgorundButton.innerText = "Codes Copied"
+    }
+
+    let CSSBgColorBox = document.getElementById("CSSBgColorBox");
+    let CSSBgColorButton = document.getElementById("CSSBgColorButton");
+
+    CSSBgColorButton.onclick = function () {
+        CSSBgColorBox.select();
+        document.execCommand("copy");
+        CSSBgColorButton.innerText = "Codes Copied"
+    }
+    let CSSgradientBox = document.getElementById("CSSgradientBox");
+    let CSSgradienttButton = document.getElementById("CSSgradienttButton");
+
+    CSSgradientButton.onclick = function () {
+        CSSgradientBox.select();
+        document.execCommand("copy");
+        CSSgradientButton.innerText = "Codes Copied"
+    }
+</script>
+
+
+</html>
