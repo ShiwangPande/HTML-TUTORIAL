@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodePen - Greensock animated slider</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    @charset "UTF-8";
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+    body,
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-color: #d4dad9;
+        font-family: "Raleway", sans-serif;
+        overflow: hidden;
+    }
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: 28%;
+        color: #252525;
+        font-family: "Source Sans Pro", sans-serif;
+    }
+
+    .cards {
+        width: 90vmin;
+        height: 55vmin;
+        display: flex;
+        box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.35);
+        background-color: #fff;
+    }
+
+    .card__img {
+        background-position: center;
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #img01 {
+        background-image: url("https://images.unsplash.com/photo-1599837565318-67429bde7162?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    }
+
+    #img02 {
+        background-image: url("https://images.unsplash.com/photo-1601714582667-574b826b99a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    }
+
+    #img03 {
+        background-image: url("https://images.unsplash.com/photo-1575314027842-c33656c1f3dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    }
+
+    .card__content {
+        padding: 5% 5%;
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    .card__content-theme {
+        font-weight: 900;
+        font-size: 1.7vmin;
+    }
+
+    .card__content-header {
+        font-weight: 900;
+        font-size: 54px;
+        font-size: 5vmin;
+        text-transform: capitalize;
+        letter-spacing: 0.01em;
+        line-height: 0.91;
+        margin: 2vmin 0 2vmin;
+    }
+
+    .card__content-paragraph {
+        font-size: 1.6vmin;
+        line-height: 1.7;
+        font-weight: 300;
+        margin-bottom: 2.5vmin;
+    }
+
+    .card__content-link {
+        color: #ba3428;
+        font-size: 1.8vmin;
+        display: block;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+
+    .card__content-link:hover {
+        opacity: 1;
+    }
+
+    .card__content-link:after {
+        content: " →";
+    }
+
+    .prevnext {
+        position: absolute;
+        width: 4vmin;
+        height: 8vmin;
+        right: 2%;
+        bottom: 0;
+        top: 0;
+        margin: auto 0;
+    }
+
+    .prevnext-button {
+        width: 100%;
+        height: 50%;
+        border: 0;
+        background-color: transparent;
+        font-size: 20px;
+    }
+
+    #prev,
+    #next {
+        position: relative;
+        cursor: pointer;
+    }
+
+    #prev:hover:after,
+    #prev:hover:after,
+    #next:hover:after,
+    #next:hover:after {
+        opacity: 1;
+    }
+
+    #prev:after,
+    #next:after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+    }
+
+    #prev:after {
+        content: "↑";
+    }
+
+    #next:after {
+        content: "↓";
+    }
+    @media screen and (min-width: 400px) and (max-width: 781px) {
+        .cards {
+        width: 90vmin;
+        height: 90vmin;
+        display: flex;
+        box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.35);
+        background-color: #fff;
+    }
+    ul li{
+        font-size: 3vmin;
+    }
+    .text-boxes .text-box textarea{
+        font-size: 10px;
+    }
+    .text-boxes {
+padding: 0;
+}
+    }
+    @media screen and (min-width: 781px) and (max-width: 900px) {
+        .cards {
+        width: 90vmin;
+        height: 90vmin;
+        display: flex;
+        box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.35);
+        background-color: #fff; 
+    }
+    ul li{
+        font-size: 3vmin;
+    }
+    .text-boxes .text-box textarea{
+        font-size: 10px;
+    }
+    .text-boxes {
+padding: 0;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+       .cards {
+        width: 90vmin;
+        height: 90vmin;
+        display: flex;
+        box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.35);
+        background-color: #fff; 
+    }
+    .card__content {
+    padding: 2% 2%;
+    box-sizing: border-box;
+    width: 50%;
+    
+}
+ul li{
+        font-size: 3vmin;
+    }
+    .text-boxes .text-box textarea{
+        font-size: 10px;
+    }
+    .text-boxes {
+padding: 0;
+}
+}
+ 
+    
+</style>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef">
+    <div class="jumbotron">
+        <div class="container">
+            <ul>
+                <li>
+                    <button type="button" class="btn btn-info">
+                        <a href="/">HTML TUTORIAL</a>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-info active">
+                        <a href="/Css.html">CSS TUTORIAL</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents">
+        <div class="row">
+            <div class="col-xl-2 scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!--
+                      A fake / hidden checkbox is used as click reciever,
+                      so you can use the :checked selector on it.
+                      -->
+                        <input type="checkbox" />
+
+                        <!--
+                      Some spans to act as a hamburger.
+                      
+                      They are acting like a real hamburger,
+                      not that McDonalds stuff.
+                      -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix">
+                            <li><a href="./Css.html">CSS Introduction</a></li>
+                            <li><a href="./CSS-history.html">CSS History</a></li>
+                            <li>
+                                <a href="./css-TextEditor.html">CSS Text Editors</a>
+                            </li>
+                            <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+                            <li>
+                                <a href="./CSS-Layout&Positioning.html">CSS Layout & Positioning</a>
+                            </li>
+                            <li>
+                                <a href="./CSS-Responsive-Design.html">CSS Responsive Design</a>
+                            </li>
+                            <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+                            <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+                            <li>
+                                <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+                            </li>
+                            <li>
+                                <a href="./CSS-Animation&Transition.html">CSS Animations & Transitions</a>
+                            </li>
+                            <li>
+                                <a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a>
+                            </li>
+                            <li>
+                                <a href="./CSS-Color&Background.html">CSS Color & Background</a>
+                            </li>
+                            <li><a href="./CSS-Button.html">CSS Button And Hover</a></li>
+                            <li><a href="./CSS-Project.html">CSS Project</a></li>
+                            <li><a href="./CSS-gscode.html">CSS Slider Animation</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-xl-8">
+                <div class="slide active">
+                    <div class="cards">
+                        <div class="card__img" id="img01"></div>
+                        <div class="card__content">
+                            <p class="card__content-theme">CSS Tutorial</p>
+                            <h2 class="card__content-header">What is CSS Animation?</h2>
+                            <p class="card__content-paragraph">
+                            <ul>
+                                <li>CSS animation is a way to create movement or dynamic effects on an HTML element
+                                    using CSS.
+                                </li>
+                                <li>
+                                    CSS animation allows designers to create visually appealing web pages without using
+                                    complex programming languages.
+                                </li>
+                            </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cards">
+                        <div class="card__img" id="img02"></div>
+                        <div class="card__content">
+                            <p class="card__content-theme">CSS Tutorial</p>
+                            <h2 class="card__content-header">What is CSS Animation?</h2>
+                            <p class="card__content-paragraph">
+                              <ul>
+                                
+                                <li>
+                                    With CSS animation, designers can change the style or position of an element over a
+                                    specified duration of time.
+                                </li>
+                                <li>
+                                    CSS animations are created using keyframes, which define the style changes at
+                                    specific points in the animation.
+
+                                </li>
+                              </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cards">
+                        <div class="card__img" id="img03"></div>
+                        <div class="card__content">
+                            <p class="card__content-theme">CSS Tutorial</p>
+                            <h2 class="card__content-header">What is CSS Animation?</h2>
+                            <p class="card__content-paragraph">
+                                <ul>
+                                    
+                                <li>
+
+                                    By specifying a set of keyframes with different styles, designers can create complex
+                                    animations that can be triggered by user interactions.
+
+                                </li>
+                                <li>
+
+                                    CSS animations are supported by most modern web browsers and can be used to enhance
+                                    the user experience on any website or web application.
+
+                                </li>
+                                </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cards">
+                        <div class="card__img" id="img03"></div>
+                        <div class="card__content">
+                            <p class="card__content-theme">CSS Tutorial</p>
+                            <h2 class="card__content-header">What is CSS Transition?</h2>
+                            <p class="card__content-paragraph">
+                                <ul>
+                                    
+                                <li>
+                                    In CSS, transitions refer to the gradual change of a CSS property's value over a specified duration of time.
+
+                                </li>
+                                <li>
+                                    Transitions are used to create smooth and animated effects on web pages, such as hover effects or menu animations.
+
+                                </li>
+                                </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cards">
+                        <div class="card__img" id="img03"></div>
+                        <div class="card__content">
+                            <p class="card__content-theme">CSS Tutorial</p>
+                            <h2 class="card__content-header">What is CSS Transition?</h2>
+                            <p class="card__content-paragraph">
+                                <ul>
+                                    
+                                <li>
+                                    Transitions in CSS are defined using the transition property, which specifies the CSS properties to transition, the duration of the transition, and any additional transition-related properties. 
+
+                                </li>
+                                <li>
+                                    The duration of the transition can be specified in seconds (s) or milliseconds (ms).
+
+                                </li>
+                                </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cards">
+                        <div class="card__img" id="">
+                            <div class="text-boxes">
+                                <div class="text-box HtmlProjectBox">
+                                    <div class="topic">HTML Code:</div>
+                                    <textarea id="HtmlProjectBox" readonly style="height: 80%;">    
+                                        div {
+                                            background-color: blue;
+                                            transition: background-color 0.5s;
+                                          }
+                                          
+                                          div:hover {
+                                            background-color: red;
+                                          }
+                                          
+                                        
+                                        
+                                    </textarea>
+                                    <button id="HtmlProjectButton">Copy Codes</button>
+                                  </div>
+                                </div></div>
+                        <div class="card__content">
+                            <p class="card__content-theme">CSS Tutorial</p>
+                            <h2 class="card__content-header">What is CSS Transition?</h2>
+                            <p class="card__content-paragraph">
+                                <ul>
+                                    
+                                <li>
+                                    For example, the following CSS code creates a transition effect on the background-color property that lasts for 0.5 seconds:
+
+                                </li>
+                                <li>
+                                    When the user hovers over the div element, the background-color property will gradually change from blue to red over a duration of 0.5 seconds.
+                                </li>
+    
+
+                                </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <div class="cards">
+                        <div class="card__img" id="img03"></div>
+                        <div class="card__content">
+                            <p class="card__content-theme">CSS Tutorial</p>
+                            <h2 class="card__content-header">What is CSS Transition?</h2>
+                            <p class="card__content-paragraph">
+                                <ul>
+                                    
+                            
+                                  <li>
+        Note that there is no such thing as "transition in points" in CSS. Points (pt) are a unit of measurement typically used for typography, whereas transitions in CSS are specified in seconds (s) or milliseconds (ms).
+                                       </li>
+                                </ul>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="prevnext">
+                    <button class="prevnext-button" id="prev"></button>
+                    <button class="prevnext-button" id="next"></button>
+                </div>
+            </div>
+        </div>
+        <div class="page_change">
+            <a href="./Css.html" class="previous">&laquo; Previous</a>
+            <a href="./css-TextEditor.html" class="next">Next &raquo;</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none">
+            <p class="text-center">© Copyright by Shiwang Pandey</p>
+        </a>
+    </footer>
+    <!-- partial:index.partial.html -->
+
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script>
+           let HtmlProjectBox = document.getElementById("HtmlProjectBox");
+let HtmlProjectButton = document.getElementById("HtmlProjectButton");
+
+HtmlProjectButton.onclick = function() {
+  HtmlProjectBox.select();
+  document.execCommand("copy");
+  HtmlProjectButton.innerText = "Codes Copied"
+}
+
+        var $activeSlide = $(".active"),
+            $homeSlide = $(".slide"),
+            $slideNavPrev = $("#prev"),
+            $slideNavNext = $("#next");
+
+        function init() {
+            TweenMax.set($homeSlide.not($activeSlide), { autoAlpha: 0 });
+            TweenMax.set($slideNavPrev, { autoAlpha: 0.2 });
+        }
+
+        init();
+
+        function goToNextSlide(slideOut, slideIn, slideInAll) {
+            var tl = new TimelineLite(),
+                slideOutContent = slideOut.find(".card__content"),
+                slideInContent = slideIn.find(".card__content"),
+                slideOutImg = slideOut.find(".card__img"),
+                slideInImg = slideIn.find(".card__img"),
+                index = slideIn.index(),
+                size = $homeSlide.length;
+            console.log(index);
+
+            if (slideIn.length !== 0) {
+                tl.set(slideIn, { autoAlpha: 1, className: "+=active" })
+                    .set(slideOut, { className: "-=active" })
+                    .to(
+                        slideOutContent,
+                        0.65,
+                        { y: "+=40px", ease: Power3.easeInOut },
+                        0
+                    )
+                    .to(
+                        slideOutImg,
+                        0.65,
+                        { backgroundPosition: "bottom", ease: Power3.easeInOut },
+                        0
+                    )
+                    .to(slideInAll, 1, { y: "-=100%", ease: Power3.easeInOut }, 0)
+                    .fromTo(
+                        slideInContent,
+                        0.65,
+                        { y: "-=40px" },
+                        { y: 0, ease: Power3.easeInOut },
+                        "-=0.7"
+                    )
+                    .fromTo(
+                        slideInImg,
+                        0.65,
+                        { backgroundPosition: "top" },
+                        { backgroundPosition: "bottom", ease: Power3.easeInOut },
+                        "-=0.7"
+                    );
+            }
+
+            TweenMax.set($slideNavPrev, { autoAlpha: 1 });
+
+            if (index === size - 1) {
+                TweenMax.to($slideNavNext, 0.3, {
+                    autoAlpha: 0.2,
+                    ease: Linear.easeNone,
+                });
+            }
+        }
+
+        $slideNavNext.click(function (e) {
+            e.preventDefault();
+
+            var slideOut = $(".slide.active"),
+                slideIn = $(".slide.active").next(".slide"),
+                slideInAll = $(".slide");
+
+            goToNextSlide(slideOut, slideIn, slideInAll);
+        });
+
+        function goToPreviousSlide(slideOut, slideIn, slideInAll) {
+            var tl = new TimelineLite(),
+                slideOutContent = slideOut.find(".card__content"),
+                slideInContent = slideIn.find(".card__content"),
+                slideOutImg = slideOut.find(".card__img"),
+                slideInImg = slideIn.find(".card__img"),
+                index = slideIn.index(),
+                size = $homeSlide.length;
+
+            if (slideIn.length !== 0) {
+                tl.set(slideIn, { autoAlpha: 1, className: "+=active" })
+                    .set(slideOut, { className: "-=active" })
+                    .to(
+                        slideOutContent,
+                        0.65,
+                        { y: "-=40px", ease: Power3.easeInOut },
+                        0
+                    )
+                    .to(
+                        slideOutImg,
+                        0.65,
+                        { backgroundPosition: "top", ease: Power3.easeInOut },
+                        0
+                    )
+                    .to(slideInAll, 1, { y: "+=100%", ease: Power3.easeInOut }, 0)
+                    .fromTo(
+                        slideInContent,
+                        0.65,
+                        { y: "+=40px" },
+                        { y: 0, ease: Power3.easeInOut },
+                        "-=0.7"
+                    )
+                    .fromTo(
+                        slideInImg,
+                        0.65,
+                        { backgroundPosition: "bottom" },
+                        { backgroundPosition: "top", ease: Power3.easeInOut },
+                        "-=0.7"
+                    );
+            }
+
+            TweenMax.set($slideNavNext, { autoAlpha: 1 });
+
+            if (index === 0) {
+                TweenMax.to($slideNavPrev, 0.3, {
+                    autoAlpha: 0.2,
+                    ease: Linear.easeNone,
+                });
+            }
+        }
+
+        $slideNavPrev.click(function (e) {
+            e.preventDefault();
+
+            var slideOut = $(".slide.active"),
+                slideIn = $(".slide.active").prev(".slide"),
+                slideInAll = $(".slide");
+
+            goToPreviousSlide(slideOut, slideIn, slideInAll);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
