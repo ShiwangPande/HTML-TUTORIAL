@@ -291,6 +291,109 @@ footer p {
   justify-content: flex-end;
   margin: 0;
 }
+.change_color {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+.change_bg {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+.change_rotate {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+.change_Border {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+.change_Boxshadow {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+.change_fadeinout {
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+.change_color:hover {
+  color: red;
+}
+.change_bg:hover {
+  background-color: red;
+}
+.change_rotate:hover {
+  transform: rotate(180deg);
+  transition-delay: 400ms;
+}
+.change_Border:hover {
+  border: 2px solid red;
+}
+.change_Boxshadow:hover {
+  box-shadow: 0 0 10px red;
+}
+.change_fadeinout:hover {
+  opacity: 0.5;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
   .container {

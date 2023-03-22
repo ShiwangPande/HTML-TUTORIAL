@@ -93,15 +93,27 @@
       &#60;title&#62;Page Title&#60;/title&#62;
       &#60;/head&#62;
            &#60;body&#62;
-           &#60;div class="container">
-            &#60;div>
-              &#60;button class="shrink-border">Shiwang&#60;/button>
-              &#60;button class="material-bubble">Pandey&#60;/button>
-            &#60;/div>
-           &#60;/div>
+           &#60;body>
+            &#60;button class="change_color">
+              &#60;span>Hover&#60;/span>
+            &#60;/button>
+            &#60;button class="change_bg">
+              &#60;span>Hover&#60;/span>
+            &#60;/button>
+            &#60;button class="change_rotate">
+              &#60;span>Hover&#60;/span>
+            &#60;/button>
+            &#60;button class="change_Border">
+              &#60;span>Hover&#60;/span>
+            &#60;/button>
+            &#60;button class="change_Boxshadow">
+              &#60;span>Hover&#60;/span>
+            &#60;/button>
+            &#60;button class="change_fadeinout">
+              &#60;span>Hover&#60;/span>
+            &#60;/button>
           &#60;/body&#62;
-      &#60;/html&#62;
-    </textarea
+      &#60;/html&#62;</textarea
       >
       <!-- Text area for Css Code  -->
       <textarea
@@ -111,113 +123,39 @@
         oninput="update(0)"
         onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
       >
-      @import url(https://fonts.googleapis.com/css?family=Montserrat);
-      *, *::after, *::before {
-        box-sizing: border-box; }
-      
-      body {
-        background-color: #32323c; }
-      
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-        width: 90vw;
-        text-align: center; }
-      
       button {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase; }
-      
-      button {
-        position: relative;
+        background-color: #f1f1f1;
         border: none;
-        font-size: 18px;
-        transition: color 0.5s, transform 0.2s, background-color 0.2s;
-        outline: none;
-        border-radius: 3px;
-        margin: 0 10px;
-        padding: 23px 33px;
-        border: 3px solid transparent; }
-        button:active {
-          transform: translateY(3px); }
-        button::after, button::before {
-          border-radius: 3px; }
-      
-      .shrink-border {
-        background-color: transparent;
-        color: #1b1b20; }
-        .shrink-border:hover {
-          background-color: transparent;
-          box-shadow: none;
-          color: #e6e6e6; }
-        .shrink-border::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: 3px solid #1b1b20;
-          transition: opacity 0.3s, border 0.3s; }
-        .shrink-border:hover::before {
-          opacity: 0; }
-        .shrink-border::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: transparent;
-          border: 3px solid #e6e6e6;
-          opacity: 0;
-          z-index: -1;
-          transform: scaleX(1.1) scaleY(1.3);
-          transition: transform 0.3s, opacity 0.3s; }
-        .shrink-border:hover::after {
-          opacity: 1;
-          transform: scaleX(1) scaleY(1); }
-      
-      .material-bubble {
-        background-color: transparent;
-        color: #1b1b20;
-        border: none;
-        overflow: hidden;
-        box-shadow: none; }
-        .material-bubble:hover {
-          color: #e6e6e6; }
-        .material-bubble::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: 3px solid #1b1b20;
-          transition: opacity 0.3s, border 0.3s; }
-        .material-bubble:hover::before {
-          opacity: 0; }
-        .material-bubble::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 200px;
-          height: 200px;
-          background-color: #494958;
-          border-color: transparent;
-          border-radius: 50%;
-          transform: translate(-10px, -70px) scale(0.1);
-          opacity: 0;
-          z-index: -1;
-          transition: transform 0.3s, opacity 0.3s, background-color 0.3s; }
-        .material-bubble:hover::after {
-          opacity: 1;
-          transform-origin: 100px 100px;
-          transform: scale(1) translate(-10px, -70px); }
-      
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        font-size: large;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        border-radius: 8px;
+      }
+      .change_color:hover {
+        color: rgb(255, 0, 0);
+      }
+      .change_bg:hover {
+        background-color: rgb(255, 0, 0);
+      }
+      .change_rotate:hover {
+        transform: rotate(360deg);
+      }
+      .change_Border:hover {
+        border: 2px solid rgb(255, 0, 0);
+      }
+      .change_Boxshadow:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
+      .change_fadeinout:hover {
+        opacity: 0.5;
+      }
        
     </textarea
       >
