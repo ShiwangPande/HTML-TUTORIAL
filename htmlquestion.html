@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Paper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        
+   
+      $(document).ready(function () {
+        $("form").submit(function (event) {
+          event.preventDefault(); // prevent form submission
+          var q1 = $("input[name='q1']:checked").val();
+          var q2 = $("input[name='q2']:checked").val();
+          var q3 = $("input[name='q3']:checked").val();
+          var q4 = $("input[name='q4']:checked").val();
+          var q5 = $("input[name='q5']:checked").val();
+          var q6 = $("input[name='q6']:checked").val();
+          var q7 = $("input[name='q7']:checked").val();
+          var q8 = $("input[name='q8']:checked").val();
+          var q9 = $("input[name='q9']:checked").val();
+          var q10 = $("input[name='q10']:checked").val();
+          var q11 = $("input[name='q11']:checked").val();
+          var q12 = $("input[name='q12']:checked").val();
+          var q13 = $("input[name='q13']:checked").val();
+          var q14 = $("input[name='q14']:checked").val();
+          var q15 = $("input[name='q15']:checked").val();
+          var q16 = $("input[name='q16']:checked").val();
+          var q17 = $("input[name='q17']:checked").val();
+          var q18 = $("input[name='q18']:checked").val();
+          var q19 = $("input[name='q19']:checked").val();
+          var q20 = $("input[name='q20']:checked").val();
+          var q21 = $("input[name='q21']:checked").val();
+          var q22 = $("input[name='q22']:checked").val();
+          var q23 = $("input[name='q23']:checked").val();
+          var q24 = $("input[name='q24']:checked").val();
+          var q25 = $("input[name='q25']:checked").val();
+          var q26 = $("input[name='q26']:checked").val();
+          var q27 = $("input[name='q27']:checked").val();
+          var q28 = $("input[name='q28']:checked").val();
+          var q29 = $("input[name='q29']:checked").val();
+          var q30 = $("input[name='q30']:checked").val();
+          var q31 = $("input[name='q31']:checked").val();
+          var q32 = $("input[name='q32']:checked").val();
+          var q33 = $("input[name='q33']:checked").val();
+          var q34 = $("input[name='q34']:checked").val();
+          var q35 = $("input[name='q35']:checked").val();
+          var q36 = $("input[name='q36']:checked").val();
+          var q37 = $("input[name='q37']:checked").val();
+          var q38 = $("input[name='q38']:checked").val();
+          var q39 = $("input[name='q39']:checked").val();
+          var q40 = $("input[name='q40']:checked").val();
+          var q41 = $("input[name='q41']:checked").val();
+          var q42 = $("input[name='q42']:checked").val();
+          var q43 = $("input[name='q43']:checked").val();
+          var q44 = $("input[name='q44']:checked").val();
+          var q45 = $("input[name='q45']:checked").val();
+          var q46 = $("input[name='q46']:checked").val();
+          var q47 = $("input[name='q47']:checked").val();
+          var q48 = $("input[name='q48']:checked").val();
+          var q49 = $("input[name='q49']:checked").val();
+          var q50 = $("input[name='q50']:checked").val();
+          var q51 = $("input[name='q51']:checked").val();
+          var q52 = $("input[name='q52']:checked").val();
+          var q53 = $("input[name='q53']:checked").val();
+          var q54 = $("input[name='q54']:checked").val();
+          var q55 = $("input[name='q55']:checked").val();
+          var q56 = $("input[name='q56']:checked").val();
+          var q57 = $("input[name='q57']:checked").val();
+          var q58 = $("input[name='q58']:checked").val();
+          var q59 = $("input[name='q59']:checked").val();
+          var q60 = $("input[name='q60']:checked").val();
+          var q61 = $("input[name='q61']:checked").val();
+
+          // check if all questions are answered
+          if (
+            q1 &&
+            q2 &&
+            q3 &&
+            q4 &&
+            q5 &&
+            q6 &&
+            q7 &&
+            q8 &&
+            q9 &&
+            q10 &&
+            q11 &&
+            q12 &&
+            q13 &&
+            q14 &&
+            q15 &&
+            q16 &&
+            q17 &&
+            q18 &&
+            q19 &&
+            q20 &&
+            q21 &&
+            q22 &&
+            q23 &&
+            q24 &&
+            q25 &&
+            q26 &&
+            q27 &&
+            q28 &&
+            q29 &&
+            q30 &&
+            q31 &&
+            q32 &&
+            q33 &&
+            q34 &&
+            q35 &&
+            q36 &&
+            q37 &&
+            q38 &&
+            q39 &&
+            q40 &&
+            q41 &&
+            q42 &&
+            q43 &&
+            q44 &&
+            q45 &&
+            q46 &&
+            q47 &&
+            q48 &&
+            q49 &&
+            q50 &&
+            q51 &&
+            q52 &&
+            q53 &&
+            q54 &&
+            q55 &&
+            q56 &&
+            q57 &&
+            q58 &&
+            q59 &&
+            q60 &&
+            q61
+          ) {
+            // check answers
+            var correctAnswers = [
+              "a",
+              "a",
+              "a",
+              "a",
+              "b",
+              "b",
+              "a",
+              "a",
+              "c",
+              "b",
+              "a",
+              "a",
+              "c",
+              "b",
+              "a",
+              "a",
+              "c",
+              "c",
+              "d",
+              "a",
+              "b",
+              "c",
+              "a",
+              "d",
+              "b",
+              "a",
+              "b",
+              "b",
+              "b",
+              "d",
+              "c",
+              "a",
+              "a",
+              "d",
+              "b",
+              "a",
+              "a",
+              "a",
+              "a",
+              "d",
+              "a",
+              "a",
+              "a",
+              "a",
+              "a",
+              "c",
+              "b",
+              "b",
+              "b",
+              "b",
+              "c",
+              "c",
+              "b",
+              "d",
+              "d",
+              "d",
+              "a",
+              "c",
+              "b",
+              "d",
+              "a",
+            ];
+            var userAnswers = [
+              q1,
+              q2,
+              q3,
+              q4,
+              q5,
+              q6,
+              q7,
+              q8,
+              q9,
+              q10,
+              q11,
+              q12,
+              q13,
+              q14,
+              q15,
+              q16,
+              q17,
+              q18,
+              q19,
+              q20,
+              q21,
+              q22,
+              q23,
+              q24,
+              q25,
+              q26,
+              q27,
+              q28,
+              q29,
+              q30,
+              q31,
+              q32,
+              q33,
+              q34,
+              q35,
+              q36,
+              q37,
+              q38,
+              q39,
+              q40,
+              q41,
+              q42,
+              q43,
+              q44,
+              q45,
+              q46,
+              q47,
+              q48,
+              q49,
+              q50,
+              q51,
+              q52,
+              q53,
+              q54,
+              q55,
+              q56,
+              q57,
+              q58,
+              q59,
+              q60,
+              q61,
+            ];
+            var score = 0;
+            var feedback = "";
+            for (var i = 0; i < correctAnswers.length; i++) {
+              if (userAnswers[i] === correctAnswers[i]) {
+                score++;
+                feedback += "<p>Question " + (i + 1) + ": Correct</p>";
+              } else {
+                feedback += "<p>Question " + (i + 1) + ": Incorrect</p>";
+              }
+            }
+            feedback +=
+              "<p>Score: " + score + "/" + correctAnswers.length + "</p>";
+            $("#feedback").html(feedback);
+          } else {
+            alert("Please answer all questions.");
+          }
+    
+      
+        });
+      });
+    </script>
+  </head>
+  <style>
+    label {
+      font-size: large;
+      display: flex;
+      align-items: center;
+    }
+    label input {
+      width: 34px;
+      height: 22px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    p {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* .container{
+    width: 176px;
+    height: 94px;
+    display: flex;
+} */
+
+/* button{
+    width: 165px;
+    height: 59px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+} */
+:root {
+  --background-color: #ffe5e5;
+  --color: #000000;
+  --feedback-bg-color: #ffffff;
+  --feedback-secondary-color: #ffacac;
+  --feedback-primary-color: #53488d;
+  --feedback-icon-color: #ffffff;
+  --feedback-form-input: #f4f4f4;
+}
+
+/* body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--feedback-primary-color);
+} */
+
+.center-content, .submit-feedback, .containers {
+  display: grid;
+  place-content: center;
+}
+
+.containers {
+  /* height: 100vh; */
+}
+
+.submit-feedback input{
+    padding: 5px 19px;
+    font-size: 22px;
+  cursor: pointer;
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  background-color: var(--feedback-secondary-color);
+  color: var(--feedback-primary-color);
+  transition: all 0.3s;
+}
+.submit-feedback input:hover {
+  border-radius: 0px;
+  color: var(--feedback-primary-color);
+  background-color: var(--background-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffacac' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  animation: animatedBackground 5s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+    @media only screen and (min-width: 320px) and (max-width: 400px) {
+      label input {
+        width: 35px;
+        height: 22px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      label {
+        font-size: 20px;
+      }
+      p {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 21px;
+      }
+    }
+    @media screen and (min-width: 400px) and (max-width: 781px) {
+      label input {
+        width: 35px;
+        height: 22px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      label {
+        font-size: 20px;
+      }
+      p {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 21px;
+      }
+    }
+    @media screen and (min-width: 781px) and (max-width: 900px) {
+      label input {
+        width: 35px;
+        height: 22px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      label {
+        font-size: 20px;
+      }
+      p {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 21px;
+      }
+    }
+  </style>
+ <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container ">
+       <ul>
+        <li >
+          <button type="button" class=" btn btn-info"> <a   href="/">HTML TUTORIAL</a> </button>
+
+        </li>
+        <li>
+          <button type="button" class="btn btn-info active"> <a  href="/Css.html">CSS TUTORIAL</a> </button>
+        </li>
+       </ul>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents" >
+      <div class="row">
+        <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+                <li><a href="./index.html">HTML Introduction</a></li>
+                <li><a href="./history.html">HTML History</a></li>
+                <li>
+                  <a href="./TextEditor.html">HTML Text Editors</a>
+                </li>
+                <li><a href="./Comments.html">HTML Comments</a></li>
+                <li><a href="./Basic-Programs.html">HTML Basic Programs</a></li>
+                <li><a href="./Attributes.html">HTML Attributes</a></li>
+                <li><a href="./Tags.html">HTML Tags</a></li>
+                <li><a href="./Headings.html">HTML Headings</a></li>
+                <li>
+                  <a href="./Paragraphs.html">HTML Paragraphs</a>
+                </li>
+                <li><a href="./TextFormating.html">HTML Text Formating</a></li>
+                <li><a href="./Lists.html">HTML Lists</a></li>
+                <li><a href="./Colors.html">HTML Colors</a></li>
+                <li><a href="./Links.html">HTML Links</a></li>
+                <li><a href="./Images.html">HTML Images</a></li>
+                <li><a href="./favicons.html">HTML favicons</a></li>
+                <li><a href="./Form.html">HTML Form</a></li>
+                <li><a href="./Responsive.html">HTML Responsive</a></li>
+                <li><a href="./project.html">HTML Project</a></li>
+                <li><a href="./htmlquestion.html">HTML MCQ Question</a></li>
+              </ul>
+      </div>
+    </nav>
+      </div>
+      <div class="col-xl-8">
+        <section id="introduction">
+            <h2><span class="fa fa-edit">&#10026;</span> HTML MCQ Question</h2>
+            <hr>
+
+    <form>
+      <p>1. What does HTML stand for?</p>
+      <label>
+        <input type="radio" name="q1" value="a" /> a) Hypertext Markup Language </label
+      ><br />
+      <label>
+        <input type="radio" name="q1" value="b" /> b) Hyperlink Markup Language </label
+      ><br />
+      <label>
+        <input type="radio" name="q1" value="c" /> c) Hyperspace Markup Language </label
+      ><br />
+      <label>
+        <input type="radio" name="q1" value="d" /> d) Hypermedia Markup Language </label
+      ><br />
+
+      <p>2. Which tag is used to display an image in HTML?</p>
+      <label> <input type="radio" name="q2" value="a" /> a) &#60;img> </label
+      ><br />
+      <label> <input type="radio" name="q2" value="b" /> b) &#60;image> </label
+      ><br />
+      <label>
+        <input type="radio" name="q2" value="c" /> c) &#60;picture> </label
+      ><br />
+      <label> <input type="radio" name="q2" value="d" /> d) &#60;media> </label
+      ><br />
+
+      <p>3. Which tag is used to define a heading in HTML?</p>
+      <label> <input type="radio" name="q3" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q3" value="b" /> b) &#60;head> </label
+      ><br />
+      <label> <input type="radio" name="q3" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q3" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>4. Which tag is used to create a line break in HTML?</p>
+      <label> <input type="radio" name="q4" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q4" value="b" /> b) &#60;head> </label
+      ><br />
+      <label> <input type="radio" name="q4" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q4" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>5. Which tag is used to create a horizontal line in HTML?</p>
+      <label> <input type="radio" name="q5" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q5" value="b" /> b) &#60;head> </label
+      ><br />
+      <label> <input type="radio" name="q5" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q5" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>
+        6. Which attribute is used to specify the alternative text for an image
+        in HTML?
+      </p>
+      <label> <input type="radio" name="q6" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q6" value="b" /> b) &#60;head> </label
+      ><br />
+      <label> <input type="radio" name="q6" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q6" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>7. Which tag is used to define a paragraph in HTML?</p>
+      <label> <input type="radio" name="q7" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q7" value="b" /> b) &#60;head> </label
+      ><br />
+      <label> <input type="radio" name="q7" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q7" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>8. Which tag is used to create a hyperlink in HTML?</p>
+      <label> <input type="radio" name="q8" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q8" value="b" /> b) &#60;head> </label
+      ><br />
+      <label> <input type="radio" name="q8" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q8" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>9. Which tag is used to define an unordered list in HTML?</p>
+      <label> <input type="radio" name="q9" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q9" value="b" /> b) &#60;head> </label
+      ><br />
+      <label> <input type="radio" name="q9" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q9" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>
+        10. Which attribute is used to specify the URL of the image in the
+        <img /> tag?
+      </p>
+      <label> <input type="radio" name="q10" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q10" value="b" /> b) &#60;head> </label
+      ><br />
+      <label>
+        <input type="radio" name="q10" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q10" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>
+        11. Which attribute is used to specify the alignment of an image in
+        HTML?
+      </p>
+      <label> <input type="radio" name="q11" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q11" value="b" /> b) &#60;head> </label
+      ><br />
+      <label>
+        <input type="radio" name="q11" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q11" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>12. Which tag is used to define a table in HTML?</p>
+      <label> <input type="radio" name="q12" value="a" /> a) &#60;h1> </label
+      ><br />
+      <label> <input type="radio" name="q12" value="b" /> b) &#60;head> </label
+      ><br />
+      <label>
+        <input type="radio" name="q12" value="c" /> c) &#60;header> </label
+      ><br />
+      <label> <input type="radio" name="q12" value="c" /> d) &#60;title> </label
+      ><br />
+      <p>
+        13.Which version of HTML introduced semantic tags like &#60;header>,
+        &#60;nav>, and &#60;section>?
+      </p>
+      <label> <input type="radio" name="q13" value="a" /> a) HTML 4 </label
+      ><br />
+      <label> <input type="radio" name="q13" value="b" /> b) XHTML </label
+      ><br />
+      <label> <input type="radio" name="q13" value="c" /> c) HTML5 </label
+      ><br />
+      <label> <input type="radio" name="q13" value="d" /> d) HTML+ </label
+      ><br />
+      Answer: c) HTML5
+      <p>14. Which attribute is used to specify the URL of the webpage that the link goes to?</p>
+
+        <label> <input type="radio" name="q14" value="a" /> a) src </label><br />
+        <label> <input type="radio" name="q14" value="b" /> b) href </label><br />
+        <label> <input type="radio" name="q14" value="c" /> c) alt </label><br />
+        <label> <input type="radio" name="q14" value="d" /> d) title </label><br />
+        Answer: b) href
+        <p>15. Which tag is used to define a form in HTML? </p>
+
+        <label> <input type="radio" name="q15" value="a" />a) &#60;form> </label><br />
+        <label> <input type="radio" name="q15" value="b" />b) &#60;input></label><br />
+        <label> <input type="radio" name="q15" value="c" />c) &#60;select> </label><br />
+        <label> <input type="radio" name="q15" value="d" />d) &#60;label> </label><br />
+        Answer: a) &#60;form>
+        <p>16. Which attribute is used to specify the name of the input field in an HTML form?</p>
+
+        <label> <input type="radio" name="q16" value="a" />a)name </label><br />
+        <label> <input type="radio" name="q16" value="b" />b) id</label><br />
+        <label> <input type="radio" name="q16" value="c" />c) type </label><br />
+        <label> <input type="radio" name="q16" value="d" />d) value </label><br />
+        Answer: a) name
+        <p>
+           17. Which attribute is used to specify the type of the input field in an HTML form?</p>
+        <label> <input type="radio" name="q17" value="a" />a)name </label><br />
+        <label> <input type="radio" name="q17" value="b" />b) id</label><br />
+        <label> <input type="radio" name="q17" value="c" />c) type </label><br />
+        <label> <input type="radio" name="q17" value="d" />d) value </label><br />
+        Answer: c) type
+        <p>
+          18.  Which tag is used to define a drop-down list in an HTML form?</p>
+        <label> <input type="radio" name="q18" value="a" />a) &#60;form> </label><br />
+        <label> <input type="radio" name="q18" value="b" />b) &#60;input></label><br />
+        <label> <input type="radio" name="q18" value="c" />c) &#60;select> </label><br />
+        <label> <input type="radio" name="q18" value="d" />d) &#60;label> </label><br />
+        Answer: c) &#60;select>
+        <p>
+        19. Which attribute is used to specify the value of the input field in an HTML form?</p>
+        <label> <input type="radio" name="q19" value="a" />a)name </label><br />
+        <label> <input type="radio" name="q19" value="b" />b) id</label><br />
+        <label> <input type="radio" name="q19" value="c" />c) type </label><br />
+        <label> <input type="radio" name="q19" value="d" />d) value </label><br />
+        Answer: d) value
+        <p>
+           20. Which attribute is used to specify the alignment of an image in HTML?</p>
+        <label> <input type="radio" name="q20" value="a" />a) align </label><br />
+        <label> <input type="radio" name="q20" value="b" />b) valign</label><br />
+        <label> <input type="radio" name="q20" value="c" />c) halign </label><br />
+        <label> <input type="radio" name="q20" value="d" />d) float </label><br />
+        Answer: a) align
+        <p>
+           21. Which attribute is used to specify whether an HTML element should be displayed or hidden?</p>
+        <label> <input type="radio" name="q21" value="a" />a) display </label><br />
+        <label> <input type="radio" name="q21" value="b" />b) visibility</label><br />
+        <label> <input type="radio" name="q21" value="c" />c) opacity </label><br />
+        <label> <input type="radio" name="q21" value="d" />d) overflow </label><br />
+        Answer: b) visibility
+        <p>
+          22. Which attribute is used to specify the width and height of an image in HTML?</p>
+        <label> <input type="radio" name="q22" value="a" />a) size </label><br />
+        <label> <input type="radio" name="q22" value="b" />b) length</label><br />
+        <label> <input type="radio" name="q22" value="c" />c) width and height </label><br />
+        <label> <input type="radio" name="q22" value="d" />d) style </label><br />
+        Answer: c) width and height
+        <p>
+          23. Which tag is used to define a hyperlink in HTML?</p>
+
+        <label> <input type="radio" name="q23" value="a" />a) &#60;a> </label><br />
+        <label> <input type="radio" name="q23" value="b" />b) &#60;p></label><br />
+        <label> <input type="radio" name="q23" value="c" />c) &#60;img> </label><br />
+        <label> <input type="radio" name="q23" value="d" />d) &#60;h1> </label><br />
+        Answer: a) &#60;a>
+
+        <p>
+           24. Which tag is used to define a table header in HTML?
+        </p>
+        <label> <input type="radio" name="q24" value="a" />a) &#60;table> </label><br />
+        <label> <input type="radio" name="q24" value="b" />b) &#60;tr></label><br />
+        <label> <input type="radio" name="q24" value="c" />c) &#60;td> </label><br />
+        <label> <input type="radio" name="q24" value="d" />d) &#60;th> </label><br />
+        Answer: d) &#60;th>
+        <p>
+           25. Which attribute is used to specify the background color of an HTML element?</p>
+        <label> <input type="radio" name="q25" value="a" />a) color </label><br />
+        <label> <input type="radio" name="q25" value="b" />b) background-color</label><br />
+        <label> <input type="radio" name="q25" value="c" />c) style </label><br />
+        <label> <input type="radio" name="q25" value="d" />d) font-color </label><br />
+        Answer: b) background-color
+
+        <p>26. Which attribute is used to specify the font color of an HTML element? </p>
+        <label> <input type="radio" name="q26" value="a" />a) color </label><br />
+        <label> <input type="radio" name="q26" value="b" />b) background-color</label><br />
+        <label> <input type="radio" name="q26" value="c" />c) style </label><br />
+        <label> <input type="radio" name="q26" value="d" />d) font-color </label><br />
+        Answer: a) color
+        <p>
+           27. Which tag is used to define a section of a webpage in HTML?</p>
+
+        <label> <input type="radio" name="q27" value="a" />a) &#60;div> </label><br />
+        <label> <input type="radio" name="q27" value="b" />b) &#60;section></label><br />
+        <label> <input type="radio" name="q27" value="c" />c) &#60;article> </label><br />
+        <label> <input type="radio" name="q27" value="d" />d) &#60;aside> </label><br />
+        Answer: b) &#60;section>
+        <p>
+           28. Which tag is used to define a list item in an HTML list?</p>
+        <label> <input type="radio" name="q28" value="a" />a) &#60;ul> </label><br />
+        <label> <input type="radio" name="q28" value="b" />b) &#60;li></label><br />
+        <label> <input type="radio" name="q28" value="c" />c) &#60;ol> </label><br />
+        <label> <input type="radio" name="q28" value="d" />d) &#60;dl> </label><br />
+        Answer: b) &#60;li>
+        <p>
+           29. Which attribute is used to specify the font size of an HTML element?</p>
+        <label> <input type="radio" name="q29" value="a" />a) size </label><br />
+        <label> <input type="radio" name="q29" value="b" />b) font-size</label><br />
+        <label> <input type="radio" name="q29" value="c" />c) style </label><br />
+        <label> <input type="radio" name="q29" value="d" />d) font </label><br />
+        Answer: b) font-size
+        <p>
+           30. Which tag is used to define a definition list in HTML?</p>
+
+        <label> <input type="radio" name="q30" value="a" />a) &#60;ul> </label><br />
+        <label> <input type="radio" name="q30" value="b" />b) &#60;li></label><br />
+        <label> <input type="radio" name="q30" value="c" />c) &#60;ol> </label><br />
+        <label> <input type="radio" name="q30" value="d" />d) &#60;dl> </label><br />
+        Answer: d) &#60;dl>
+        <p>31. Which of the following tags is used to define a section in HTML5? </p>
+        <label> <input type="radio" name="q31" value="a" />a) &#60;article> </label><br />
+        <label> <input type="radio" name="q31" value="b" />b) &#60;div></label><br />
+        <label> <input type="radio" name="q31" value="c" />c) &#60;section> </label><br />
+        <label> <input type="radio" name="q31" value="d" />d) &#60;span> </label><br />
+        Answer: c) &#60;section>
+        <p>32. Which of the following attributes is used to specify the character encoding
+            in HTML5?</p>
+        <label> <input type="radio" name="q32" value="a" />a) charset </label><br />
+        <label> <input type="radio" name="q32" value="b" />b) encoding</label><br />
+        <label> <input type="radio" name="q32" value="c" />c) content-type </label><br />
+        <label> <input type="radio" name="q32" value="d" />d) type </label><br />
+        Answer: a) charset
+        <p>33. Which of the following tags is used to create a canvas element in HTML5?
+        </p>
+        <label> <input type="radio" name="q33" value="a" />a) &#60;canvas> </label><br />
+        <label> <input type="radio" name="q33" value="b" />b) &#60;paint></label><br />
+        <label> <input type="radio" name="q33" value="c" />c) &#60;brush> </label><br />
+        <label> <input type="radio" name="q33" value="d" />d) &#60;draw> </label><br />
+        Answer: a) &#60;canvas>
+        <p>34. Which of the following attributes is used to specify the size of the
+            viewport in HTML5?</p>
+        <label> <input type="radio" name="q34" value="a" />a) width </label><br />
+        <label> <input type="radio" name="q34" value="b" />b) size</label><br />
+        <label> <input type="radio" name="q34" value="c" />c) viewport </label><br />
+        <label> <input type="radio" name="q34" value="d" />d) meta </label><br />
+        Answer: d) meta
+        <p>
+            35. Which of the following tags is used to add a video with multiple
+            source options in HTML5?</p>
+        <label> <input type="radio" name="q35" value="a" />a) &#60;video>
+        </label><br />
+        <label> <input type="radio" name="q35" value="b" />b)
+            &#60;source></label><br />
+        <label> <input type="radio" name="q35" value="c" />c) &#60;media>
+        </label><br />
+        <label> <input type="radio" name="q35" value="d" />d) &#60;embed>
+        </label><br />
+        Answer: b)
+        <source>
+        <p>
+            36. Which of the following attributes is used to specify the type of a
+            script in HTML5?</p>
+        <label> <input type="radio" name="q36" value="a" />a) type </label><br />
+        <label> <input type="radio" name="q36" value="b" />b) src</label><br />
+        <label> <input type="radio" name="q36" value="c" />c) charset </label><br />
+        <label> <input type="radio" name="q36" value="d" />d) async </label><br />
+
+        Answer: a) Type
+        <p>
+            37. Which of the following tags is used to define a navigation section in
+            HTML5?</p>
+        <label> <input type="radio" name="q37" value="a" />a) &#60;nav>
+        </label><br />
+        <label> <input type="radio" name="q37" value="b" />b)
+            &#60;header></label><br />
+        <label> <input type="radio" name="q37" value="c" />c) &#60;menu>
+        </label><br />
+        <label> <input type="radio" name="q37" value="d" />d) &#60;section>
+        </label><br />
+
+        Answer: a) &#60;nav>
+        <p>
+
+            38. Which of the following attributes is used to specify the default
+            value of an input element in HTML5?
+        </p>
+        <label> <input type="radio" name="q38" value="a" />a) value
+        </label><br />
+        <label> <input type="radio" name="q38" value="b" />b)
+            default</label><br />
+        <label> <input type="radio" name="q38" value="c" />c) initial
+        </label><br />
+        <label> <input type="radio" name="q38" value="d" />d) preset
+        </label><br />
+
+        Answer: a) value
+        <p>
+            39. Which of the following tags is used to create a progress bar in
+            HTML5? </p>
+        <label> <input type="radio" name="q39" value="a" />a) &#60;progress>
+        </label><br />
+        <label> <input type="radio" name="q39" value="b" />b)
+            &#60;meter></label><br />
+        <label> <input type="radio" name="q39" value="c" />c) &#60;loading>
+        </label><br />
+        <label> <input type="radio" name="q39" value="d" />d) &#60;bar>
+        </label><br />
+        Answer: a) &#60;progress>
+        <p>
+           40. Which of the following tags is used to create a button in HTML?
+        </p>
+        <label> <input type="radio" name="q40" value="a" />a) &#60;input
+            type="button"> </label><br />
+        <label> <input type="radio" name="q40" value="b" />b)
+            &#60;button></label><br />
+        <label> <input type="radio" name="q40" value="c" />c) &#60;a href="#"
+            class="button"> </label><br />
+        <label> <input type="radio" name="q40" value="d" />d) All of the
+            above </label><br />
+        Answer: d) All of the above
+        <p>
+            41. Which of the following attributes is used to specify the
+            location of a data list in HTML5?</p>
+        <label> <input type="radio" name="q41" value="a" />a) list
+        </label><br />
+        <label> <input type="radio" name="q41" value="b" />b)
+            data</label><br />
+        <label> <input type="radio" name="q41" value="c" />c) source
+        </label><br />
+        <label> <input type="radio" name="q41" value="d" />d) location
+        </label><br />
+
+        Answer: a) list
+        <p>
+            42. Which of the following tags is used to create a dialog box in
+            HTML5? </p>
+        <label> <input type="radio" name="q42" value="a" />a) &#60;dialog>
+        </label><br />
+        <label> <input type="radio" name="q42" value="b" />b)
+            &#60;popup></label><br />
+        <label> <input type="radio" name="q42" value="c" />c) &#60;window>
+        </label><br />
+        <label> <input type="radio" name="q42" value="d" />d) &#60;alert>
+        </label><br />
+        Answer: a) &#60;dialog>
+        <p>
+            43. Which of the following attributes is used to specify the
+            autoplay behavior of a video in HTML5?</p>
+        <label> <input type="radio" name="q43" value="a" />a) autoplay
+        </label><br />
+        <label> <input type="radio" name="q43" value="b" />b)
+            play</label><br />
+        <label> <input type="radio" name="q43" value="c" />c) auto
+        </label><br />
+        <label> <input type="radio" name="q43" value="d" />d) start
+        </label><br />
+        Answer: a) autoplay
+        <p>
+            44. Which of the following tags is used to add a line break
+            in HTML? </p>
+        <label> <input type="radio" name="q44" value="a" />a) &#60;br>
+        </label><br />
+        <label> <input type="radio" name="q44" value="b" />b)
+            &#60;hr></label><br />
+        <label> <input type="radio" name="q44" value="c" />c) &#60;p>
+        </label><br />
+        <label> <input type="radio" name="q44" value="d" />d) &#60;nl>
+        </label><br />
+        Answer: a) &#60;br>
+        <p>
+            45. Which of the following tags is used to create a section
+            in HTML? </p>
+        <label> <input type="radio" name="q45" value="a" />a)
+            &#60;section> </label><br />
+        <label> <input type="radio" name="q45" value="b" />b)
+            &#60;div></label><br />
+        <label> <input type="radio" name="q45" value="c" />c)
+            &#60;article> </label><br />
+        <label> <input type="radio" name="q45" value="d" />d) &#60;aside>
+        </label><br />
+
+        Answer: a) &#60;section>
+        <p>46. Which of the following attributes is used to specify
+            the background color of an HTML element? </p>
+        <label> <input type="radio" name="q46" value="a" />a) bgcolor
+        </label><br />
+        <label> <input type="radio" name="q46" value="b" />b)
+            color</label><br />
+        <label> <input type="radio" name="q46" value="c" />c)
+            background-color </label><br />
+        <label> <input type="radio" name="q46" value="d" />d) style
+        </label><br />
+        Answer: c) background-color
+        <p> 47. What is the correct syntax for creating a hyperlink
+            in HTML?</p>
+        <label> <input type="radio" name="q47" value="a" />a) &#60;a
+            src="http://www.example.com">Link&#60;/a> </label><br />
+        <label> <input type="radio" name="q47" value="b" />b) &#60;a
+            href="http://www.example.com">Link&#60;/a></label><br />
+        <label> <input type="radio" name="q47" value="c" />c) &#60;a
+            link="http://www.example.com">Link&#60;/a>
+        </label><br />
+        <label> <input type="radio" name="q47" value="d" />d) &#60;a
+            url="http://www.example.com">Link&#60;/a> </label><br />
+        Answer: b) &#60;a href="http://www.example.com">Link&#60;/a>
+        <p>48. Which of the following tags is used to define the main
+            content of an HTML document?</p>
+        <label> <input type="radio" name="q48" value="a" />a)
+            &#60;head> </label><br />
+        <label> <input type="radio" name="q48" value="b" />b)
+            &#60;body></label><br />
+        <label> <input type="radio" name="q48" value="c" />c)
+            &#60;html> </label><br />
+        <label> <input type="radio" name="q48" value="d" />d)
+            &#60;main> </label><br />
+        Answer: b)&#60;body>
+        <p>
+            49. Which of the following is not a semantic HTML
+            tag?</p>
+        <label> <input type="radio" name="q49" value="a" />a)
+            &#60;article> </label><br />
+        <label> <input type="radio" name="q49" value="b" />b)
+            &#60;div></label><br />
+        <label> <input type="radio" name="q49" value="c" />c)
+            &#60;header> </label><br />
+        <label> <input type="radio" name="q49" value="d" />d)
+            &#60;nav> </label><br />
+        Answer: b) &#60;div>
+        <p>
+            50. What does the <img> tag do? </p>
+        <label> <input type="radio" name="q50" value="a" />a)
+            Displays a video </label><br />
+        <label> <input type="radio" name="q50" value="b" />b)
+            Displays an image</label><br />
+        <label> <input type="radio" name="q50" value="c" />c)
+            Creates a hyperlink </label><br />
+        <label> <input type="radio" name="q50" value="d" />d)
+            Creates a form </label><br />
+        Answer: b) Displays an images
+        <p>
+            51. Which of the following is not a block-level
+            element? </p>
+        <label> <input type="radio" name="q51" value="a" />a)
+            &#60;p> </label><br />
+        <label> <input type="radio" name="q51" value="b" />b)
+            &#60;div></label><br />
+        <label> <input type="radio" name="q51" value="c" />c)
+            &#60;span> </label><br />
+        <label> <input type="radio" name="q51" value="d" />d)
+            &#60;ul> </label><br />
+        Answer: c) &#60;span>
+        <p>52. Which of the following is not a valid
+            value for the "type" attribute of an input
+            tag? </p>
+        <label> <input type="radio" name="q52" value="a" />a) text </label><br />
+        <label> <input type="radio" name="q52" value="b" />b) email</label><br />
+        <label> <input type="radio" name="q52" value="c" />c) number </label><br />
+        <label> <input type="radio" name="q52" value="d" />d) password </label><br />
+        Answer: c) number
+        <p>53. What does the <a> tag do?</p>
+        <label> <input type="radio" name="q53" value="a" />a) Displays an image
+        </label><br />
+        <label> <input type="radio" name="q53" value="b" />b) Creates a
+            hyperlink</label><br />
+        <label> <input type="radio" name="q53" value="c" />c) Defines a paragraph
+        </label><br />
+        <label> <input type="radio" name="q53" value="d" />d) Defines a list
+        </label><br />
+        Answer: b) Creates a hyperlink
+        <p>54. What is the purpose of the "alt" attribute
+            in the <img> tag?</p>
+        <label> <input type="radio" name="q54" value="a" />a) It specifies the source
+            of the image </label><br />
+        <label> <input type="radio" name="q54" value="b" />b) It specifies the width of
+            the image</label><br />
+        <label> <input type="radio" name="q54" value="c" />c) It specifies the height
+            of the image </label><br />
+        <label> <input type="radio" name="q54" value="d" />d) It provides a description
+            of the image for screen readers and search
+            engines </label><br />
+        Answer: d) It provides a description of the
+        image for screen readers and search engines
+        <p> 55. What is the purpose of the
+            &#60;form> tag in HTML? </p>
+        <label> <input type="radio" name="q55" value="a" />a) It defines a
+            container for HTML elements
+        </label><br />
+        <label> <input type="radio" name="q55" value="b" />b) It defines a
+            hyperlink</label><br />
+        <label> <input type="radio" name="q55" value="c" />c) It defines a table
+        </label><br />
+        <label> <input type="radio" name="q55" value="d" />d) It creates a form for
+            user input </label><br />
+        Answer: d) It creates a form for user input
+        <p>56. Which of the following is not a valid
+            HTML5 element?</p>
+        <label> <input type="radio" name="q56" value="a" />a) &#60;video>
+        </label><br />
+        <label> <input type="radio" name="q56" value="b" />b)
+            &#60;audio></label><br />
+        <label> <input type="radio" name="q56" value="c" />c) &#60;input
+            type="date"> </label><br />
+        <label> <input type="radio" name="q56" value="d" />d) &#60;marquee>
+        </label><br />
+        Answer: d) &#60;marquee>
+        <p>57. Which attribute is used to set the
+            width of a table border in HTML?
+        </p>
+        <label> <input type="radio" name="q57" value="a" />a) border
+        </label><br />
+        <label> <input type="radio" name="q57" value="b" />b)
+            cellpadding</label><br />
+        <label> <input type="radio" name="q57" value="c" />c) cellspacing
+        </label><br />
+        <label> <input type="radio" name="q57" value="d" />d) width
+        </label><br />
+        Answer: A
+        <p>58. Which of the following is the
+            correct HTML5 DOCTYPE declaration?
+        </p>
+        <label> <input type="radio" name="q58" value="a" />a) &#60;!DOCTYPE
+            html5> </label><br />
+        <label> <input type="radio" name="q58" value="b" />b) &#60;!DOCTYPE
+            html PUBLIC "-//W3C//DTD HTML
+            5.0//EN"
+            "http://www.w3.org/TR/html5/strict.dtd"></label><br />
+        <label> <input type="radio" name="q58" value="c" />c) &#60;!DOCTYPE
+            html> </label><br />
+        <label> <input type="radio" name="q58" value="d" />d) &#60;!DOCTYPE
+            xhtml5> </label><br />
+
+        Answer: C
+        <p>59. Which tag is used to define a
+            section of a web page in HTML5?</p>
+        <label> <input type="radio" name="q59" value="a" />a) &#60;div>
+        </label><br />
+        <label> <input type="radio" name="q59" value="b" />b)
+            &#60;section></label><br />
+        <label> <input type="radio" name="q59" value="c" />c) &#60;article>
+        </label><br />
+        <label> <input type="radio" name="q59" value="d" />d) &#60;aside>
+        </label><br />
+
+        Answer: B
+
+        <p>60. Which attribute is used to set the
+            background color of an element in
+            HTML?</p>
+        <label> <input type="radio" name="q60" value="a" />a) bgcolor
+        </label><br />
+        <label> <input type="radio" name="q60" value="b" />b)
+            background</label><br />
+        <label> <input type="radio" name="q60" value="c" />c) color
+        </label><br />
+        <label> <input type="radio" name="q60" value="d" />d) style
+        </label><br />
+        Answer: D
+        <p>61. Which tag is used to create a
+            footer in HTML5? </p>
+        <label> <input type="radio" name="q61" value="a" />a) &#60;footer>
+        </label><br />
+        <label> <input type="radio" name="q61" value="b" />b)
+            &#60;h6></label><br />
+        <label> <input type="radio" name="q61" value="c" />c) &#60;section>
+        </label><br />
+        <label> <input type="radio" name="q61" value="d" />d) &#60;nav>
+        </label><br />
+        Answer: A
+        
+        <div class="containers">
+            <div class="submit-feedback">
+                <input type="submit" value="Submit" />
+            </div>
+          </div>
+    </form>
+    <div id="feedback"></div>
+</section>
+</div>
+</div>
+<div class="page_change">
+<a href="./CSS-Project.html" class="previous">&laquo; Previous</a> 
+<a href="./index.html" class="next">Next &raquo;</a>
+</div>
+</div>
+
+<footer>
+<a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+<p class="text-center">© Copyright by Shiwang Pandey</p></a>
+</footer>
+</body>
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+crossorigin="anonymous"
+></script>
+</html>

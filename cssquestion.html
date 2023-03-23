@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Paper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("form").submit(function (event) {
+          event.preventDefault(); // prevent form submission
+          var q1 = $("input[name='q1']:checked").val();
+          var q2 = $("input[name='q2']:checked").val();
+          var q3 = $("input[name='q3']:checked").val();
+          var q4 = $("input[name='q4']:checked").val();
+          var q5 = $("input[name='q5']:checked").val();
+          var q6 = $("input[name='q6']:checked").val();
+          var q7 = $("input[name='q7']:checked").val();
+          var q8 = $("input[name='q8']:checked").val();
+          var q9 = $("input[name='q9']:checked").val();
+          var q10 = $("input[name='q10']:checked").val();
+          var q11 = $("input[name='q11']:checked").val();
+          var q12 = $("input[name='q12']:checked").val();
+          var q13 = $("input[name='q13']:checked").val();
+          var q14 = $("input[name='q14']:checked").val();
+          var q15 = $("input[name='q15']:checked").val();
+          var q16 = $("input[name='q16']:checked").val();
+          var q17 = $("input[name='q17']:checked").val();
+          var q18 = $("input[name='q18']:checked").val();
+          var q19 = $("input[name='q19']:checked").val();
+          var q20 = $("input[name='q20']:checked").val();
+          var q21 = $("input[name='q21']:checked").val();
+          var q22 = $("input[name='q22']:checked").val();
+          var q23 = $("input[name='q23']:checked").val();
+          var q24 = $("input[name='q24']:checked").val();
+          var q25 = $("input[name='q25']:checked").val();
+          var q26 = $("input[name='q26']:checked").val();
+          var q27 = $("input[name='q27']:checked").val();
+          var q28 = $("input[name='q28']:checked").val();
+          var q29 = $("input[name='q29']:checked").val();
+          var q30 = $("input[name='q30']:checked").val();
+          var q31 = $("input[name='q31']:checked").val();
+          var q32 = $("input[name='q32']:checked").val();
+          var q33 = $("input[name='q33']:checked").val();
+          var q34 = $("input[name='q34']:checked").val();
+          var q35 = $("input[name='q35']:checked").val();
+          var q36 = $("input[name='q36']:checked").val();
+          var q37 = $("input[name='q37']:checked").val();
+          var q38 = $("input[name='q38']:checked").val();
+          var q39 = $("input[name='q39']:checked").val();
+          var q40 = $("input[name='q40']:checked").val();
+          var q41 = $("input[name='q41']:checked").val();
+          var q42 = $("input[name='q42']:checked").val();
+          var q43 = $("input[name='q43']:checked").val();
+          var q44 = $("input[name='q44']:checked").val();
+          var q45 = $("input[name='q45']:checked").val();
+          var q46 = $("input[name='q46']:checked").val();
+          var q47 = $("input[name='q47']:checked").val();
+          var q48 = $("input[name='q48']:checked").val();
+          var q49 = $("input[name='q49']:checked").val();
+          var q50 = $("input[name='q50']:checked").val();
+          var q51 = $("input[name='q51']:checked").val();
+          var q52 = $("input[name='q52']:checked").val();
+          var q53 = $("input[name='q53']:checked").val();
+          var q54 = $("input[name='q54']:checked").val();
+          var q55 = $("input[name='q55']:checked").val();
+          var q56 = $("input[name='q56']:checked").val();
+          var q57 = $("input[name='q57']:checked").val();
+          var q58 = $("input[name='q58']:checked").val();
+          var q59 = $("input[name='q59']:checked").val();
+          var q60 = $("input[name='q60']:checked").val();
+          var q61 = $("input[name='q61']:checked").val();
+
+          // check if all questions are answered
+          if (
+            q1 &&
+            q2 &&
+            q3 &&
+            q4 &&
+            q5 &&
+            q6 &&
+            q7 &&
+            q8 &&
+            q9 &&
+            q10 &&
+            q11 &&
+            q12 &&
+            q13 &&
+            q14 &&
+            q15 &&
+            q16 &&
+            q17 &&
+            q18 &&
+            q19 &&
+            q20 &&
+            q21 &&
+            q22 &&
+            q23 &&
+            q24 &&
+            q25 &&
+            q26 &&
+            q27 &&
+            q28 &&
+            q29 &&
+            q30 &&
+            q31 &&
+            q32 &&
+            q33 &&
+            q34 &&
+            q35 &&
+            q36 &&
+            q37 &&
+            q38 &&
+            q39 &&
+            q40 &&
+            q41 &&
+            q42 &&
+            q43 &&
+            q44 &&
+            q45 &&
+            q46 &&
+            q47 &&
+            q48 &&
+            q49 &&
+            q50
+          ) {
+            // check answers
+            var correctAnswers = [
+              "a",
+              "a",
+              "b",
+              "d",
+              "b",
+              "c",
+              "c",
+              "c",
+              "d",
+              "b",
+              "a",
+              "b",
+              "a",
+              "a",
+              "c",
+              "a",
+              "b",
+              "a",
+              "b",
+              "b",
+              "b",
+              "b",
+              "b",
+              "a",
+              "a",
+              "b",
+              "a",
+              "a",
+              "b",
+              "a",
+              "c",
+              "a",
+              "d",
+              "b",
+              "a",
+              "a",
+              "a",
+              "a",
+              "d",
+              "a",
+              "d",
+              "d",
+              "c",
+              "a",
+              "a",
+              "a",
+              "a",
+              "a",
+              "a",
+              "c",
+            ];
+            var userAnswers = [
+              q1,
+              q2,
+              q3,
+              q4,
+              q5,
+              q6,
+              q7,
+              q8,
+              q9,
+              q10,
+              q11,
+              q12,
+              q13,
+              q14,
+              q15,
+              q16,
+              q17,
+              q18,
+              q19,
+              q20,
+              q21,
+              q22,
+              q23,
+              q24,
+              q25,
+              q26,
+              q27,
+              q28,
+              q29,
+              q30,
+              q31,
+              q32,
+              q33,
+              q34,
+              q35,
+              q36,
+              q37,
+              q38,
+              q39,
+              q40,
+              q41,
+              q42,
+              q43,
+              q44,
+              q45,
+              q46,
+              q47,
+              q48,
+              q49,
+              q50,
+            ];
+            var score = 0;
+            var feedback = "";
+            for (var i = 0; i < correctAnswers.length; i++) {
+              if (userAnswers[i] === correctAnswers[i]) {
+                score++;
+                feedback += "<p>Question " + (i + 1) + ": Correct</p>";
+              } else {
+                feedback += "<p>Question " + (i + 1) + ": Incorrect</p>";
+              }
+            }
+            feedback +=
+              "<p>Score: " + score + "/" + correctAnswers.length + "</p>";
+            $("#feedback").html(feedback);
+          } else {
+            alert("Please answer all questions.");
+          }
+        });
+      });
+    </script>
+  </head>
+  <style>
+    label {
+      font-size: large;
+      display: flex;
+      align-items: center;
+    }
+    label input {
+      width: 34px;
+      height: 22px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    p {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+    /* .container{
+    width: 176px;
+    height: 94px;
+    display: flex;
+} */
+
+    /* button{
+    width: 165px;
+    height: 59px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+} */
+    :root {
+      --background-color: #ffe5e5;
+      --color: #000000;
+      --feedback-bg-color: #ffffff;
+      --feedback-secondary-color: #ffacac;
+      --feedback-primary-color: #53488d;
+      --feedback-icon-color: #ffffff;
+      --feedback-form-input: #f4f4f4;
+    }
+
+    /* body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--feedback-primary-color);
+} */
+
+    .center-content,
+    .submit-feedback,
+    .containers {
+      display: grid;
+      place-content: center;
+    }
+
+    .containers {
+      /* height: 100vh; */
+    }
+
+    .submit-feedback input {
+      padding: 5px 19px;
+      font-size: 22px;
+      cursor: pointer;
+      border-radius: 7px;
+      border-bottom-left-radius: 0;
+      background-color: var(--feedback-secondary-color);
+      color: var(--feedback-primary-color);
+      transition: all 0.3s;
+    }
+    .submit-feedback input:hover {
+      border-radius: 0px;
+      color: var(--feedback-primary-color);
+      background-color: var(--background-color);
+      background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffacac' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      animation: animatedBackground 5s linear infinite alternate;
+    }
+
+    @keyframes animatedBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 400px) {
+      label input {
+        width: 35px;
+        height: 22px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      label {
+        font-size: 20px;
+      }
+      p {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 21px;
+      }
+    }
+    @media screen and (min-width: 400px) and (max-width: 781px) {
+      label input {
+        width: 35px;
+        height: 22px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      label {
+        font-size: 20px;
+      }
+      p {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 21px;
+      }
+    }
+    @media screen and (min-width: 781px) and (max-width: 900px) {
+      label input {
+        width: 35px;
+        height: 22px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      label {
+        font-size: 20px;
+      }
+      p {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 21px;
+      }
+    }
+  </style>
+  <body
+    data-spy="scroll"
+    data-target=".scrollspy"
+    style="background-color: #e9ecef"
+  >
+    <div class="jumbotron">
+      <div class="container">
+        <ul>
+          <li>
+            <button type="button" class="btn btn-info">
+              <a href="/">HTML TUTORIAL</a>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-info active">
+              <a href="/Css.html">CSS TUTORIAL</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents">
+      <div class="row">
+        <div
+          class="col-xl-2 scrollspy"
+          style="max-height: 40%; position: sticky; margin-right: 5px"
+        >
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix">
+                <li><a href="./Css.html">CSS Introduction</a></li>
+                <li><a href="./CSS-history.html">CSS History</a></li>
+                <li>
+                  <a href="./css-TextEditor.html">CSS Text Editors</a>
+                </li>
+                <li><a href="./CSS-Basics.html">CSS Basics</a></li>
+                <li>
+                  <a href="./CSS-Layout&Positioning.html"
+                    >CSS Layout & Positioning</a
+                  >
+                </li>
+                <li>
+                  <a href="./CSS-Responsive-Design.html"
+                    >CSS Responsive Design</a
+                  >
+                </li>
+                <li><a href="./CSS-Typography.html">CSS Typography</a></li>
+                <li><a href="./CSS-Preprocessor.html">CSS Preprocessor</a></li>
+                <li>
+                  <a href="./CSS-FrameWork.html">CSS FrameWork</a>
+                </li>
+                <li>
+                  <a href="./CSS-Animation&Transition.html"
+                    >CSS Animations & Transitions</a
+                  >
+                </li>
+                <li>
+                  <a href="./CSS-Margin&Padding.html">CSS Margin and Padding</a>
+                </li>
+                <li>
+                  <a href="./CSS-Color&Background.html"
+                    >CSS Color & Background</a
+                  >
+                </li>
+                <li><a href="./CSS-Button.html">CSS Button And Hover</a></li>
+                <li><a href="./CSS-Project.html">CSS Project</a></li>
+                <li><a href="./CSS-gscode.html">CSS Slider Animation</a></li>
+                <li><a href="./cssquestion.html">CSS MCQ Question</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-xl-8">
+          <section id="introduction">
+            <h2><span class="fa fa-edit">&#10026;</span> CSS MCQ Question</h2>
+            <hr />
+
+            <form>
+              <p>1. What does CSS stand for?</p>
+              <label>
+                <input type="radio" name="q1" value="a" /> a) Cascading Style
+                Sheets </label
+              ><br />
+              <label>
+                <input type="radio" name="q1" value="b" /> b) Colorful Style
+                Sheets </label
+              ><br />
+              <label>
+                <input type="radio" name="q1" value="c" /> c) Computer Style
+                Sheets </label
+              ><br />
+              <label>
+                <input type="radio" name="q1" value="d" /> d) Creative Style
+                Sheets </label
+              ><br />
+
+              <p>
+                2. Which tag is used to link an external CSS file to an HTML
+                document?
+              </p>
+              <label>
+                <input type="radio" name="q2" value="a" /> a) &#60;link> </label
+              ><br />
+              <label>
+                <input type="radio" name="q2" value="b" /> b) &#60;css> </label
+              ><br />
+              <label>
+                <input type="radio" name="q2" value="c" /> c) &#60;style> </label
+              ><br />
+              <label>
+                <input type="radio" name="q2" value="d" /> d) &#60;script> </label
+              ><br />
+
+              <p>
+                3. Which property is used to change the background color of an
+                element?
+              </p>
+              <label>
+                <input type="radio" name="q3" value="a" /> a) color </label
+              ><br />
+              <label>
+                <input type="radio" name="q3" value="b" /> b) background-color </label
+              ><br />
+              <label>
+                <input type="radio" name="q3" value="c" /> c) text-color </label
+              ><br />
+              <label>
+                <input type="radio" name="q3" value="d" /> d) font-color</label
+              ><br />
+
+              <p>
+                4. Which of the following is not a way to add CSS to an HTML
+                document?
+              </p>
+              <label>
+                <input type="radio" name="q4" value="a" /> a) Inline </label
+              ><br />
+              <label>
+                <input type="radio" name="q4" value="b" /> b) Internal </label
+              ><br />
+              <label>
+                <input type="radio" name="q4" value="c" /> c) External </label
+              ><br />
+              <label>
+                <input type="radio" name="q4" value="d" /> d) Interstitial </label
+              ><br />
+
+              <p>5.Which property is used to change the color of text?</p>
+              <label>
+                <input type="radio" name="q5" value="a" /> a) background-color </label
+              ><br />
+              <label>
+                <input type="radio" name="q5" value="b" /> b) color </label
+              ><br />
+              <label>
+                <input type="radio" name="q5" value="c" /> c) font-color </label
+              ><br />
+              <label>
+                <input type="radio" name="q5" value="d" /> d) text-color </label
+              ><br />
+
+              <p>
+                6. Which property is used to change the background color of an
+                element?
+              </p>
+              <label>
+                <input type="radio" name="q6" value="a" /> a) color </label
+              ><br />
+              <label>
+                <input type="radio" name="q6" value="b" /> b) font-color </label
+              ><br />
+              <label>
+                <input type="radio" name="q6" value="c" /> c) background-color </label
+              ><br />
+              <label>
+                <input type="radio" name="q6" value="d" /> d) text-color </label
+              ><br />
+
+              <p>
+                7. Which property is used to set the font size of an element?
+              </p>
+              <label>
+                <input type="radio" name="q7" value="a" /> a) font-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q7" value="b" /> b) font-weight </label
+              ><br />
+              <label>
+                <input type="radio" name="q7" value="c" /> c) font-size </label
+              ><br />
+              <label>
+                <input type="radio" name="q7" value="d" /> d) text-size </label
+              ><br />
+
+              <p>
+                8. Which property is used to set the font family of an element?
+              </p>
+              <label>
+                <input type="radio" name="q8" value="a" /> a) font-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q8" value="b" /> b) font-weight </label
+              ><br />
+              <label>
+                <input type="radio" name="q8" value="c" /> c) font-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q8" value="d" /> d) text-family </label
+              ><br />
+
+              <p>9. Which property is used to add a border to an element?</p>
+              <label>
+                <input type="radio" name="q9" value="a" /> a) border-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q9" value="b" /> b) border-color </label
+              ><br />
+              <label>
+                <input type="radio" name="q9" value="c" /> c) border-size </label
+              ><br />
+              <label>
+                <input type="radio" name="q9" value="d" /> d) border </label
+              ><br />
+
+              <p>10. Which property is used to align text within an element?</p>
+              <label>
+                <input type="radio" name="q10" value="a" /> a) align </label
+              ><br />
+              <label>
+                <input type="radio" name="q10" value="b" /> b) text-align </label
+              ><br />
+              <label>
+                <input type="radio" name="q10" value="c" /> c) justify </label
+              ><br />
+              <label>
+                <input type="radio" name="q10" value="d" /> d) center </label
+              ><br />
+
+              <p>11. Which property is used to add padding to an element?</p>
+              <label>
+                <input type="radio" name="q11" value="a" /> a) padding </label
+              ><br />
+              <label>
+                <input type="radio" name="q11" value="b" /> b) margin </label
+              ><br />
+              <label>
+                <input type="radio" name="q11" value="c" /> c) spacing </label
+              ><br />
+              <label>
+                <input type="radio" name="q11" value="d" /> d) inset </label
+              ><br />
+
+              <p>12. Which property is used to add margin to an element?</p>
+              <label>
+                <input type="radio" name="q12" value="a" /> a) padding </label
+              ><br />
+              <label>
+                <input type="radio" name="q12" value="b" /> b) margin </label
+              ><br />
+              <label>
+                <input type="radio" name="q12" value="c" /> c) spacing </label
+              ><br />
+              <label>
+                <input type="radio" name="q12" value="d" /> d) inset </label
+              ><br />
+
+              <p>13 Which property is used to make text bold?</p>
+              <label>
+                <input type="radio" name="q13" value="a" /> a)
+                font-weight</label
+              ><br />
+              <label>
+                <input type="radio" name="q13" value="b" /> b) font-style</label
+              ><br />
+              <label>
+                <input type="radio" name="q13" value="c" /> c) font-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q13" value="d" /> d) text-family </label
+              ><br />
+
+              <p>14. Which property is used to make text italic?</p>
+              <label>
+                <input type="radio" name="q14" value="a" /> a) font-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q14" value="b" /> b) font-weight </label
+              ><br />
+              <label>
+                <input type="radio" name="q14" value="c" /> c) font-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q14" value="d" /> d) text-family </label
+              ><br />
+
+              <p>
+                15. Which property is used to add a background image to an
+                element?
+              </p>
+              <label>
+                <input type="radio" name="q15" value="a" /> a) background</label
+              ><br />
+              <label>
+                <input type="radio" name="q15" value="b" /> b) image </label
+              ><br />
+              <label>
+                <input type="radio" name="q15" value="c" /> c) background-image </label
+              ><br />
+              <label>
+                <input type="radio" name="q15" value="d" /> d) image-background </label
+              ><br />
+
+              <p>
+                16. Which property is used to change the height of an element?
+              </p>
+              <label>
+                <input type="radio" name="q16" value="a" /> a) height</label
+              ><br />
+              <label>
+                <input type="radio" name="q16" value="b" /> b) width </label
+              ><br />
+              <label>
+                <input type="radio" name="q16" value="c" /> c) size </label
+              ><br />
+              <label>
+                <input type="radio" name="q16" value="d" /> d) length </label
+              ><br />
+
+              <p>
+                17. Which property is used to change the width of an element?
+              </p>
+              <label>
+                <input type="radio" name="q17" value="a" /> a) height</label
+              ><br />
+              <label>
+                <input type="radio" name="q17" value="b" /> b) width </label
+              ><br />
+              <label>
+                <input type="radio" name="q17" value="c" /> c) size </label
+              ><br />
+              <label>
+                <input type="radio" name="q17" value="d" /> d) length </label
+              ><br />
+
+              <p>
+                18. Which property is used to set the font size of an element?
+              </p>
+              <label>
+                <input type="radio" name="q18" value="a" /> a) font-size </label
+              ><br />
+              <label>
+                <input type="radio" name="q18" value="b" /> b) font-weight </label
+              ><br />
+              <label>
+                <input type="radio" name="q18" value="c" /> c) font-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q18" value="d" /> d) text-family </label
+              ><br />
+
+              <p>
+                19. Which property is used to change the font family of an
+                element?
+              </p>
+              <label>
+                <input type="radio" name="q19" value="a" /> a) font-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q19" value="b" /> b) font-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q19" value="c" /> c) font </label
+              ><br />
+              <label>
+                <input type="radio" name="q19" value="d" /> d) text-family </label
+              ><br />
+
+              <p>20. Which property is used to align text within an element?</p>
+              <label>
+                <input type="radio" name="q20" value="a" /> a) text-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q20" value="b" /> b) text-align </label
+              ><br />
+              <label>
+                <input type="radio" name="q20" value="c" /> c) text-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q20" value="d" /> d) text </label
+              ><br />
+
+              <p>21. Which property is used to set the width of an element?</p>
+              <label>
+                <input type="radio" name="q21" value="a" /> a) height </label
+              ><br />
+              <label>
+                <input type="radio" name="q21" value="b" /> b) width </label
+              ><br />
+              <label>
+                <input type="radio" name="q21" value="c" /> c) size </label
+              ><br />
+              <label>
+                <input type="radio" name="q21" value="d" /> d) length </label
+              ><br />
+
+              <p>22. Which property is used to set the height of an element?</p>
+              <label>
+                <input type="radio" name="q22" value="a" /> a) width </label
+              ><br />
+              <label>
+                <input type="radio" name="q22" value="b" /> b) height </label
+              ><br />
+              <label>
+                <input type="radio" name="q22" value="c" /> c) size </label
+              ><br />
+              <label>
+                <input type="radio" name="q22" value="d" /> d) length </label
+              ><br />
+
+              <p>23. Which property is used to hide an element?</p>
+              <label>
+                <input type="radio" name="q23" value="a" /> a) display </label
+              ><br />
+              <label>
+                <input type="radio" name="q23" value="b" /> b) visibility </label
+              ><br />
+              <label>
+                <input type="radio" name="q23" value="c" /> c) hidden </label
+              ><br />
+              <label>
+                <input type="radio" name="q23" value="d" /> d) none </label
+              ><br />
+
+              <p>
+                24. Which property is used to set the position of an element?
+              </p>
+              <label>
+                <input type="radio" name="q24" value="a" /> a) position </label
+              ><br />
+              <label> <input type="radio" name="q24" value="b" /> b) top </label
+              ><br />
+              <label>
+                <input type="radio" name="q24" value="c" /> c) left </label
+              ><br />
+              <label>
+                <input type="radio" name="q24" value="d" /> d) right </label
+              ><br />
+
+              <p>
+                25. Which property is used to set the size of an element's font?
+              </p>
+              <label>
+                <input type="radio" name="q25" value="a" /> a) font-size </label
+              ><br />
+              <label>
+                <input type="radio" name="q25" value="b" /> b) font-weight </label
+              ><br />
+              <label>
+                <input type="radio" name="q25" value="c" /> c) font-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q25" value="d" /> d) text-family </label
+              ><br />
+
+              <p>
+                26. Which of the following is used to select an element with a
+                specific class in CSS?
+              </p>
+              <label> <input type="radio" name="q26" value="a" /> a) # </label
+              ><br />
+              <label> <input type="radio" name="q26" value="b" /> b) . </label
+              ><br />
+              <label> <input type="radio" name="q26" value="c" /> c) ^ </label
+              ><br />
+              <label> <input type="radio" name="q26" value="d" /> d) * </label
+              ><br />
+
+              <p>
+                27. Which CSS property is used to add a shadow to an element?
+              </p>
+              <label>
+                <input type="radio" name="q27" value="a" /> a) box-shadow </label
+              ><br />
+              <label>
+                <input type="radio" name="q27" value="b" /> b) shadow </label
+              ><br />
+              <label>
+                <input type="radio" name="q27" value="c" /> c) text-shadow </label
+              ><br />
+              <label> <input type="radio" name="q27" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                28. Which CSS property is used to set the opacity of an element?
+              </p>
+              <label>
+                <input type="radio" name="q28" value="a" /> a) opacity </label
+              ><br />
+              <label>
+                <input type="radio" name="q28" value="b" /> b) filter </label
+              ><br />
+              <label>
+                <input type="radio" name="q28" value="c" /> c) alpha </label
+              ><br />
+              <label> <input type="radio" name="q28" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                29. Which CSS property is used to create a transition effect?
+              </p>
+              <label>
+                <input type="radio" name="q29" value="a" /> a) animation </label
+              ><br />
+              <label>
+                <input type="radio" name="q29" value="b" /> b) transition </label
+              ><br />
+              <label>
+                <input type="radio" name="q29" value="c" /> c) transform </label
+              ><br />
+              <label> <input type="radio" name="q29" value="d" /> d) all </label
+              ><br />
+              <p>
+                30. Which CSS property is used to set the background image of an
+                element?
+              </p>
+              <label>
+                <input type="radio" name="q30" value="a" /> a) background-image </label
+              ><br />
+              <label>
+                <input type="radio" name="q30" value="b" /> b) background </label
+              ><br />
+              <label>
+                <input type="radio" name="q30" value="c" /> c) background-color </label
+              ><br />
+              <label> <input type="radio" name="q30" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                31. Which of the following selectors has the highest
+                specificity?
+              </p>
+              <label>
+                <input type="radio" name="q31" value="a" /> a) element </label
+              ><br />
+              <label>
+                <input type="radio" name="q31" value="b" /> b) class </label
+              ><br />
+              <label> <input type="radio" name="q31" value="c" /> c) id </label
+              ><br />
+              <label> <input type="radio" name="q31" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                32. Which CSS property is used to control the order of the boxes
+                in the z-axis?
+              </p>
+              <label>
+                <input type="radio" name="q32" value="a" /> a) z-index </label
+              ><br />
+              <label>
+                <input type="radio" name="q32" value="b" /> b) z-order </label
+              ><br />
+              <label>
+                <input type="radio" name="q32" value="c" /> c) z-axis </label
+              ><br />
+              <label> <input type="radio" name="q32" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                33. Which property is used to specify the shape of the cursor?
+              </p>
+              <label>
+                <input type="radio" name="q33" value="a" /> a)
+                cursor-type</label
+              ><br />
+              <label>
+                <input type="radio" name="q33" value="b" /> b) shape </label
+              ><br />
+              <label>
+                <input type="radio" name="q33" value="c" /> c) cursor-shape </label
+              ><br />
+              <label>
+                <input type="radio" name="q33" value="d" /> d) cursor </label
+              ><br />
+
+              <p>
+                34. Which of the following values for display property makes an
+                element disappear from the page but it still takes up space?
+              </p>
+              <label>
+                <input type="radio" name="q34" value="a" /> a) none </label
+              ><br />
+              <label>
+                <input type="radio" name="q34" value="b" /> b) hidden </label
+              ><br />
+              <label>
+                <input type="radio" name="q34" value="c" /> c) collapse </label
+              ><br />
+              <label> <input type="radio" name="q34" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                35. Which of the following CSS values is used to hide an element
+                from the page and remove it from the flow of the document?
+              </p>
+              <label>
+                <input type="radio" name="q35" value="a" /> a) none </label
+              ><br />
+              <label>
+                <input type="radio" name="q35" value="b" /> b) collapse </label
+              ><br />
+              <label>
+                <input type="radio" name="q35" value="c" /> c) hidden </label
+              ><br />
+              <label> <input type="radio" name="q35" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                36. Which property is used to set the distance between lines of
+                text in an element?
+              </p>
+              <label>
+                <input type="radio" name="q36" value="a" /> a) line-height </label
+              ><br />
+              <label>
+                <input type="radio" name="q36" value="b" /> b) line-spacing </label
+              ><br />
+              <label>
+                <input type="radio" name="q36" value="c" /> c) line-space </label
+              ><br />
+              <label> <input type="radio" name="q36" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                37. Which of the following CSS values specifies the order of a
+                flex item within a flex container?
+              </p>
+              <label>
+                <input type="radio" name="q37" value="a" /> a) order </label
+              ><br />
+              <label>
+                <input type="radio" name="q37" value="b" /> b) flex-order </label
+              ><br />
+              <label>
+                <input type="radio" name="q37" value="c" /> c) flex-direction </label
+              ><br />
+              <label> <input type="radio" name="q37" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                38. Which CSS property is used to add a shadow to an element?
+              </p>
+              <label>
+                <input type="radio" name="q38" value="a" /> a) box-shadow </label
+              ><br />
+              <label>
+                <input type="radio" name="q38" value="b" /> b) shadow </label
+              ><br />
+              <label>
+                <input type="radio" name="q38" value="c" /> c) text-shadow </label
+              ><br />
+              <label> <input type="radio" name="q38" value="d" /> d) all </label
+              ><br />
+
+              <p>39. which of the following is NOT a CSS property?</p>
+              <label>
+                <input type="radio" name="q39" value="a" /> a) font-family </label
+              ><br />
+              <label>
+                <input type="radio" name="q39" value="b" /> b) font-size </label
+              ><br />
+              <label>
+                <input type="radio" name="q39" value="c" /> c) font-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q39" value="d" /> d) href </label
+              ><br />
+
+              <p>40. Which CSS property is used to create rounded corners?</p>
+              <label>
+                <input type="radio" name="q40" value="a" /> a) border-radius </label
+              ><br />
+              <label>
+                <input type="radio" name="q40" value="b" /> b) border-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q40" value="c" /> c) border-width </label
+              ><br />
+              <label> <input type="radio" name="q40" value="d" /> d) all </label
+              ><br />
+
+              <p>
+                41. Which CSS property is used to change the font weight of
+                text?
+              </p>
+              <label>
+                <input type="radio" name="q41" value="a" /> a) font </label
+              ><br />
+              <label>
+                <input type="radio" name="q41" value="b" /> b) font-style </label
+              ><br />
+              <label>
+                <input type="radio" name="q41" value="c" /> c) font-size </label
+              ><br />
+              <label>
+                <input type="radio" name="q41" value="d" /> d) font-weight </label
+              ><br />
+
+              <p>42. What is the purpose of the CSS display property?</p>
+              <label>
+                <input type="radio" name="q42" value="a" /> a) To change the
+                font of an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q42" value="b" /> b) To change the
+                size of an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q42" value="c" /> c) To change the
+                color of an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q42" value="d" /> d) To control how an
+                element is displayed </label
+              ><br />
+
+              <p>43. What is the purpose of the CSS position property?</p>
+              <label>
+                <input type="radio" name="q43" value="a" /> a) To change the
+                font of an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q43" value="b" /> b) To change the
+                size of an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q43" value="c" /> c) To control the
+                position of an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q43" value="d" /> d) To control how an
+                element is displayed </label
+              ><br />
+
+              <p>
+                44. What is the difference between the CSS position properties
+                "static" and "relative"?
+              </p>
+              <label>
+                <input type="radio" name="q44" value="a" /> a) "Static" elements
+                are positioned based on the normal document flow, while
+                "relative" elements are positioned relative to their normal
+                position. </label
+              ><br />
+              <label>
+                <input type="radio" name="q44" value="b" /> b) "Static" elements
+                are not affected by the top, bottom, left, or right properties,
+                while "relative" elements are. </label
+              ><br />
+              <label>
+                <input type="radio" name="q44" value="c" /> c) "Static" elements
+                cannot be moved with the transform property, while "relative"
+                elements can. </label
+              ><br />
+              <label>
+                <input type="radio" name="q44" value="d" /> d) Static" elements
+                have a default z-index of 0, while "relative" elements have a
+                default z-index of 1. </label
+              ><br />
+
+              <p>
+                45. What is the CSS property used to create a grid-based layout?
+              </p>
+              <label>
+                <input type="radio" name="q45" value="a" /> a) grid-template </label
+              ><br />
+              <label>
+                <input type="radio" name="q45" value="b" /> b) grid-layout </label
+              ><br />
+              <label>
+                <input type="radio" name="q45" value="c" /> c) grid </label
+              ><br />
+              <label>
+                <input type="radio" name="q45" value="d" /> d)
+                grid-template-columns </label
+              ><br />
+
+              <p>
+                46. What is the CSS property used to control the stacking order
+                of elements?
+              </p>
+              <label>
+                <input type="radio" name="q46" value="a" /> a) z-index </label
+              ><br />
+              <label>
+                <input type="radio" name="q46" value="b" /> b) z-order </label
+              ><br />
+              <label>
+                <input type="radio" name="q46" value="c" /> c) z-position </label
+              ><br />
+              <label>
+                <input type="radio" name="q46" value="d" /> d) z-axis </label
+              ><br />
+
+              <p>47. What is the purpose of the CSS "box-sizing" property?</p>
+              <label>
+                <input type="radio" name="q47" value="a" /> a) To control the
+                size of an element's box model </label
+              ><br />
+              <label>
+                <input type="radio" name="q47" value="b" /> b) To control the
+                position of an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q47" value="c" /> c) To add a border
+                to an element </label
+              ><br />
+              <label>
+                <input type="radio" name="q47" value="d" /> d) To control the
+                padding and border of an element </label
+              ><br />
+
+              <p>
+                48. What is the difference between the CSS "flex" and "grid"
+                layout systems?
+              </p>
+              <label>
+                <input type="radio" name="q48" value="a" /> a) "Flex" is a
+                one-dimensional layout system, while "grid" is a two-dimensional
+                layout system. </label
+              ><br />
+              <label>
+                <input type="radio" name="q48" value="b" /> b) "Flex" is a
+                two-dimensional layout system, while "grid" is a one-dimensional
+                layout system. </label
+              ><br />
+              <label>
+                <input type="radio" name="q48" value="c" /> c) "Flex" is a
+                one-dimensional layout system, while "grid" is a
+                three-dimensional layout system. </label
+              ><br />
+              <label>
+                <input type="radio" name="q48" value="d" /> d) "Flex" is a
+                two-dimensional layout system, while "grid" is a
+                three-dimensional layout system. </label
+              ><br />
+
+              <p>
+                49. What is the CSS property used to create a responsive design
+                that adapts to different screen sizes?
+              </p>
+              <label>
+                <input type="radio" name="q49" value="a" /> a) @media </label
+              ><br />
+              <label>
+                <input type="radio" name="q49" value="b" /> b) @responsive </label
+              ><br />
+              <label>
+                <input type="radio" name="q49" value="c" /> c) @adapt </label
+              ><br />
+              <label>
+                <input type="radio" name="q49" value="d" /> d) @viewport </label
+              ><br />
+
+              <p>
+                50. What is the CSS property used to create a dropdown menu?
+              </p>
+              <label>
+                <input type="radio" name="q50" value="a" /> a) dropdown </label
+              ><br />
+              <label>
+                <input type="radio" name="q50" value="b" /> b) dropdown-menu </label
+              ><br />
+              <label>
+                <input type="radio" name="q50" value="c" /> c) dropdown-content </label
+              ><br />
+              <label>
+                <input type="radio" name="q50" value="d" /> d) dropdown-list </label
+              ><br />
+
+              <div class="containers">
+                <div class="submit-feedback">
+                  <input type="submit" value="Submit" />
+                </div>
+              </div>
+            </form>
+            <div id="feedback"></div>
+          </section>
+        </div>
+      </div>
+      <div class="page_change">
+        <a href="./CSS-Project.html" class="previous">&laquo; Previous</a>
+        <a href="./index.html" class="next">Next &raquo;</a>
+      </div>
+    </div>
+
+    <footer>
+      <a
+        href="https://www.linkedin.com/in/shiwang-pandey/"
+        style="text-decoration: none"
+      >
+        <p class="text-center">© Copyright by Shiwang Pandey</p></a
+      >
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+</html>
