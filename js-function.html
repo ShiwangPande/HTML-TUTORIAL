@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container ">
+       <ul>
+        <li >
+          <button type="button" class=" btn btn-info"> <a   href="/">HTML TUTORIAL</a> </button>
+
+        </li>
+        <li>
+          <button type="button" class="btn btn-info "> <a  href="/Css.html">CSS TUTORIAL</a> </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-info "> <a  href="/js.html">JS TUTORIAL</a> </button>
+        </li>
+       </ul>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents" >
+      <div class="row">
+        <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+                <li><a href="./js.html">JavaScript Introduction</a></li>
+                <li><a href="./js-variable.html">JavaScript variable</a></li>
+                <li><a href="./js-CFloop.html">JavaScript Control Flow and Loops</a></li>
+                <li><a href="./js-function.html">JavaScript Function</a></li>
+                <li><a href="./js-array&obj.html">JavaScript Arrays and Objects</a></li>
+                <li><a href="./js-event.html">JavaScript Events and Event Handling</a></li>
+                <li><a href="./js-asynchronus.html">JavaScript Asynchronous Programming</a></li>
+                <li><a href="./js-DOM.html">JavaScript DOM Manipulation</a></li>
+                <li><a href="./js-Modules.html">JavaScript Modules</a></li>
+              </ul>
+      </div>
+    </nav>
+      </div>
+      
+
+        <div class="col-xl-8">
+            <section id="introduction">
+                <h2><span class="fa fa-edit"></span> Functions</h2>
+                <hr>
+                <img class="history__img" src="./img/jsfunction.png" alt="">
+               
+              <h4><span class="fa fa-edit"></span>&starf;</span> Functions:</h4>
+              <p>Functions are reusable blocks of code that can be called multiple times. JavaScript allows you to define functions with parameters and return values.</p>
+              <ul>
+                <li type="none">&#10148;  &nbsp;&nbsp;  A function is a block of code that performs a specific task and can be reused throughout your code.
+</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                 
+                  In JavaScript, functions are first-class citizens, meaning they can be passed as arguments to other functions, returned from functions, and stored in variables.
+                  
+</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can be defined using the function keyword, as well as using arrow functions, which were introduced in ECMAScript 6.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  A function can accept parameters, which are variables that are passed into the function when it is called. These parameters are used within the function to perform its task.
+                  </li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  A function can also return a value using the return keyword. This value can then be used by the calling code.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  Functions can have local variables, which are variables that are defined within the function and are only accessible within that function.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  Functions can also have global variables, which are variables that are defined outside of any function and are accessible throughout your code.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  JavaScript has several built-in functions, such as console.log() and alert(), which perform common tasks.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  Functions can be used to create objects, which are collections of properties and methods that can be used to perform specific tasks.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  JavaScript also has anonymous functions, which are functions that do not have a name and are defined inline. These functions are often used as callbacks, which are functions that are passed as arguments to other functions and are called when a specific event occurs.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; A function in JavaScript is a block of code designed to perform a particular task.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can be defined using the function keyword followed by the function name, parameter list (enclosed in parentheses), and the function body (enclosed in curly braces).</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can also be defined using arrow notation (=>) for shorter and more concise code.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can take parameters (values) as inputs and can return a value as output using the return keyword.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can be called by their name followed by parentheses containing any arguments passed to them.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can be assigned to variables or passed as arguments to other functions.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can be declared and called later in the code using function expressions.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can be defined inside other functions (nested functions) to limit their scope and increase code modularity.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions have their own scope and can access variables defined in their outer (enclosing) scope. This is known as closure.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Functions can also be used as constructors to create new objects using the new keyword.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Function declarations are hoisted (moved to the top of the code) during the compilation phase of JavaScript, which allows them to be called before they are defined in the code.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  JavaScript has several built-in functions that can be used for common tasks, such as console.log() for printing to the console and Math.random() for generating random numbers.</li>
+
+              </ul>
+            </p>
+       
+            <h4><span class="fa fa-edit"></span>&starf;</span> Control Flow:</h4>
+            <!-- <br> -->
+            <p>
+              <ul>
+                <li type="none">&#10148;  &nbsp;&nbsp; Functions are one of the key building blocks of JavaScript. They are used to group a set of related statements together to perform a specific task. There are several types of functions in JavaScript, including:</li>
+                <h4><span class="fa fa-edit"></span>&#49;&#8228;</span> Named Functions:</h4>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+
+                  
+                  
+                  These are functions that are declared with a name and can be called using that name.
+                  They can be defined using the function keyword followed by the function name and parameter list.</li>
+                  <h4><span class="fa fa-edit"></span>&#50;&#8228;</span> Anonymous Functions:</h4>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  
+                  These are functions that are not named and are often used as arguments to other functions or as the return value of a function.
+                  They can be defined using the function keyword without a name.</li>
+                  <h4><span class="fa fa-edit"></span>&#51;&#8228;</span> Arrow Functions:</h4>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  These are a more concise way of writing functions and were introduced in ES6.
+                  They use the => syntax instead of the function keyword and can be used to write both named and anonymous functions.</li>
+                  <h4><span class="fa fa-edit"></span>&#52;&#8228;</span>  Higher-Order Functions:</h4>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                 
+                  
+                  These are functions that take other functions as arguments or return functions as their return value.
+                  They are often used for tasks such as filtering or mapping arrays.</li>
+                  <h4><span class="fa fa-edit"></span>&#53;&#8228;</span> Constructor Functions:</h4>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  
+                  These are functions that are used to create new objects.
+                  They are typically defined using the function keyword and the new operator is used to create new instances of the object.</li>
+                  <h4><span class="fa fa-edit"></span>&#54;&#8228;</span> Callback Functions:</h4>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  
+                  
+                  These are functions that are passed as arguments to another function and are called when a certain event or condition occurs.
+                  They are commonly used in asynchronous programming.</li>
+                  <h4><span class="fa fa-edit"></span>&#55;&#8228;</span>  Immediately Invoked Function Expressions (IIFEs):</h4>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                 
+                  
+                  These are functions that are defined and immediately called without being assigned to a variable.
+                  They are often used to create a local scope for variables and functions to avoid polluting the global scope.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  <div class="text-boxes">
+                  <div class="text-box Jsfunction1Box">
+                      <div class="topic">Function Declaration:</div>
+                      <textarea id="Jsfunction1Box" readonly>
+  
+                        function greet(name) {
+                          console.log(`Hello, ${name}!`);
+                        }
+                        
+  
+                          
+              </textarea>
+                      <button id="Jsfunction1Button">Copy Codes</button>
+                  </div>
+              </div>
+              </li>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  <div class="text-boxes">
+                  <div class="text-box Jsfunction2Box">
+                      <div class="topic">Function Expression:</div>
+                      <textarea id="Jsfunction2Box" readonly>
+                        const greet = function(name) {
+                          console.log(`Hello, ${name}!`);
+                        }                        
+              </textarea>
+                      <button id="Jsfunction2Button">Copy Codes</button>
+                  </div>
+              </div>
+              </li>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  <div class="text-boxes">
+                  <div class="text-box Jsfunction3Box">
+                      <div class="topic">Arrow Function:</div>
+                      <textarea id="Jsfunction3Box" readonly>
+                        const greet = (name) => {
+                          console.log(`Hello, ${name}!`);
+                        }                                               
+              </textarea>
+                      <button id="Jsfunction3Button">Copy Codes</button>
+                  </div>
+              </div>
+              </li>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  <div class="text-boxes">
+                  <div class="text-box Jsfunction4Box">
+                      <div class="topic">Constructor Function:</div>
+                      <textarea id="Jsfunction4Box" readonly>
+                        function Person(name, age) {
+                          this.name = name;
+                          this.age = age;
+                        }
+                        
+                        const person1 = new Person('John', 30);
+                        console.log(person1); // Output: { name: 'John', age: 30 }
+                                                                     
+              </textarea>
+                      <button id="Jsfunction4Button">Copy Codes</button>
+                  </div>
+              </div>
+              </li>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  <div class="text-boxes">
+                  <div class="text-box Jsfunction5Box">
+                      <div class="topic">Method:</div>
+                      <textarea id="Jsfunction5Box" readonly>
+                        const person = {
+                          name: 'John',
+                          age: 30,
+                          greet: function() {
+                            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+                          }
+                        };
+                        
+                        person.greet(); // Output: Hello, my name is John and I am 30 years old.                                                                
+              </textarea>
+                      <button id="Jsfunction5Button">Copy Codes</button>
+                  </div>
+              </div>
+              </li>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  <div class="text-boxes">
+                  <div class="text-box Jsfunction6Box">
+                      <div class="topic">Higher-Order Function:</div>
+                      <textarea id="Jsfunction6Box" readonly>
+                        function makeAdder(x) {
+                          return function(y) {
+                            return x + y;
+                          };
+                        }
+                        
+                        const add5 = makeAdder(5);
+                        console.log(add5(3)); // Output: 8
+                                                                                     
+              </textarea>
+                      <button id="Jsfunction6Button">Copy Codes</button>
+                  </div>
+              </div>
+              </li>
+              </ul>
+              
+            
+            </p>
+          </section>
+          </div>
+        </div>
+        <div class="page_change">
+        <a href="./js-CFloop.html" class="previous">&laquo; Previous</a> 
+        <a href="./js-array&obj.html" class="next">Next &raquo;</a>
+      </div>
+      </div>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+        <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+<script> let Jsfunction1Box = document.getElementById("Jsfunction1Box");
+  let Jsfunction1Button = document.getElementById("Jsfunction1Button");
+
+  Jsfunction1Button.onclick = function() {
+    Jsfunction1Box.select();
+    document.execCommand("copy");
+    Jsfunction1Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction2Box = document.getElementById("Jsfunction2Box");
+  let Jsfunction2Button = document.getElementById("Jsfunction2Button");
+
+  Jsfunction2Button.onclick = function() {
+    Jsfunction2Box.select();
+    document.execCommand("copy");
+    Jsfunction2Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction3Box = document.getElementById("Jsfunction3Box");
+  let Jsfunction3Button = document.getElementById("Jsfunction3Button");
+
+  Jsfunction3Button.onclick = function() {
+    Jsfunction3Box.select();
+    document.execCommand("copy");
+    Jsfunction3Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction4Box = document.getElementById("Jsfunction4Box");
+  let Jsfunction4Button = document.getElementById("Jsfunction4Button");
+
+  Jsfunction4Button.onclick = function() {
+    Jsfunction4Box.select();
+    document.execCommand("copy");
+    Jsfunction4Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction5Box = document.getElementById("Jsfunction5Box");
+  let Jsfunction5Button = document.getElementById("Jsfunction5Button");
+
+  Jsfunction5Button.onclick = function() {
+    Jsfunction5Box.select();
+    document.execCommand("copy");
+    Jsfunction5Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction6Box = document.getElementById("Jsfunction6Box");
+  let Jsfunction6Button = document.getElementById("Jsfunction6Button");
+
+  Jsfunction6Button.onclick = function() {
+    Jsfunction6Box.select();
+    document.execCommand("copy");
+    Jsfunction6Button.innerText = "Codes Copied"
+  }</script>
+
+</html>

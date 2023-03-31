@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>HTML TUTORIAL</title>
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+    <div class="jumbotron">
+      <div class="container ">
+       <ul>
+        <li >
+          <button type="button" class=" btn btn-info"> <a   href="/">HTML TUTORIAL</a> </button>
+
+        </li>
+        <li>
+          <button type="button" class="btn btn-info "> <a  href="/Css.html">CSS TUTORIAL</a> </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-info "> <a  href="/js.html">JS TUTORIAL</a> </button>
+        </li>
+       </ul>
+      </div>
+    </div>
+    <!--end of .jumbotron-->
+
+    <div class="contents" >
+      <div class="row">
+        <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+                <li><a href="./js.html">JavaScript Introduction</a></li>
+                <li><a href="./js-variable.html">JavaScript variable</a></li>
+                <li><a href="./js-CFloop.html">JavaScript Control Flow and Loops</a></li>
+                <li><a href="./js-function.html">JavaScript Function</a></li>
+                <li><a href="./js-array&obj.html">JavaScript Arrays and Objects</a></li>
+                <li><a href="./js-event.html">JavaScript Events and Event Handling</a></li>
+                <li><a href="./js-asynchronus.html">JavaScript Asynchronous Programming</a></li>
+                <li><a href="./js-DOM.html">JavaScript DOM Manipulation</a></li>
+                <li><a href="./js-Modules.html">JavaScript Modules</a></li>
+              </ul>
+      </div>
+    </nav>
+      </div>
+      
+
+        <div class="col-xl-8">
+            <section id="introduction">
+                <h2><span class="fa fa-edit"></span> Control Flow and Loops</h2>
+                <hr>
+                <img class="history__img" src="./img/jscfloop.png" alt="">
+               
+              <h4><span class="fa fa-edit"></span>&starf;</span> Control Flow and Loops:</h4>
+              <p>JavaScript provides a variety of control structures like if-else statements, switch statements, and loops like for loops, while loops, and do-while loops to control the flow of the program.</p>
+              <ul>
+                <li type="none">&#10148;  &nbsp;&nbsp;  Control Flow determines the order in which statements are executed in a program.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Conditional statements like if/else and switch/case are used to control the flow of execution based on conditions.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Loops allow you to repeat a block of code multiple times.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  There are three types of loops in JavaScript: for loop, while loop, and do-while loop.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The for loop is typically used when you know how many times you need to iterate over a block of code.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The while loop is used when you don't know how many times you need to iterate, but you have a condition that needs to be met.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The do-while loop is similar to the while loop, but it always executes at least once before checking the condition.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  You can use the break keyword to exit a loop prematurely.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  You can use the continue keyword to skip over a particular iteration of a loop.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Nested loops allow you to loop over multiple arrays or collections simultaneously.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The forEach() method is a higher-order function that allows you to loop over an array and execute a function for each element.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The map() method is a higher-order function that allows you to loop over an array and return a new array with the results of a function applied to each element.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The reduce() method is a higher-order function that allows you to loop over an array and accumulate a value based on the results of a function applied to each element.</li>
+              </ul>
+            </p>
+       
+            <h4><span class="fa fa-edit"></span>&starf;</span> Control Flow:</h4>
+            <!-- <br> -->
+            <p>
+              <ul>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  Control flow is the order in which statements are executed in a program.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  JavaScript provides several statements for controlling the flow of execution in a program, such as if/else, switch, and ternary operator.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The if/else statement allows you to conditionally execute code based on a Boolean expression.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The switch statement is used to evaluate a single expression against multiple cases and execute the corresponding code block.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The ternary operator is a shorthand way to write an if/else statement that returns a value based on a condition.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+
+                  Undefined represents the absence of a defined value.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+
+                  Objects are used to represent more complex data structures and can contain multiple values of different data types.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  JavaScript also has a special data type called "NaN", which stands for "Not a Number" and is returned when a mathematical operation cannot be performed.</li>
+              </ul>
+            </p>
+            <h4><span class="fa fa-edit"></span>&starf;</span>  Loops:</h4>
+            <!-- <br> -->
+            <p>
+              <ul>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  Loops allow you to repeat a block of code multiple times.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  JavaScript provides several loop statements, such as for, while, and do/while.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The for loop allows you to execute a block of code a fixed number of times.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The while loop allows you to execute a block of code as long as a specified condition is true.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The do/while loop is similar to the while loop, but the code block is executed at least once before the condition is checked again.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The for...in and for...of loops are used to iterate over the properties of an object or the elements of an array, respectively.</li>
+                <li type="none">&#10148;  &nbsp;&nbsp; 
+                  The break statement can be used to exit a loop prematurely, while the continue statement can be used to skip to the next iteration of the loop.</li>
+              </ul>
+            </p>
+            <p>
+              <ul>
+                <li type="none">&#10148;  &nbsp;&nbsp;
+                  <div class="text-boxes">
+                  <div class="text-box CSSResDesignBox">
+                      <div class="topic">HTML Code:</div>
+                      <textarea id="CSSResDesignBox" readonly>
+  
+                        // Control flow - if statement
+  let num = 10;
+  
+  if (num > 0) {
+    console.log(`${num} is a positive number.`);
+  } else if (num < 0) {
+    console.log(`${num} is a negative number.`);
+  } else {
+    console.log(`${num} is zero.`);
+  }
+  
+  // Loops - for loop
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+  
+  // Loops - while loop
+  let i = 1;
+  while (i <= 10) {
+    console.log(i);
+    i++;
+  }
+  
+  // Loops - do while loop
+  let j = 1;
+  do {
+    console.log(j);
+    j++;
+  } while (j <= 10);
+  
+                          
+              </textarea>
+                      <button id="CSSResDesignButton">Copy Codes</button>
+                  </div>
+              </div>
+              </li>
+              <li type="none">&#10148;  &nbsp;&nbsp; In the code above, we have used an if statement to demonstrate control flow based on the value of the num variable. We then used a for loop, a while loop, and a do while loop to demonstrate different ways of iterating over a sequence of numbers from 1 to 10.</li>
+            
+              </ul>
+              
+            
+            </p>
+          </section>
+          </div>
+        </div>
+        <div class="page_change">
+        <a href="./favicons.html" class="previous">&laquo; Previous</a> 
+        <a href="./history.html" class="next">Next &raquo;</a>
+      </div>
+      </div>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+        <p class="text-center">© Copyright by Shiwang Pandey</p></a>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+
+
+</html>

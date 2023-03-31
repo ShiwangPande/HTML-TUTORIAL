@@ -1,0 +1,44 @@
+
+
+
+php
+Copy code
+
+
+Variables
+Variables are used to store data in JavaScript. You can declare a variable using the "var" keyword, followed by the variable name. For example:
+
+csharp
+Copy code
+
+
+csharp
+Copy code
+
+
+
+csharp
+Copy code
+
+
+
+
+scss
+Copy code
+
+
+
+Loops allow you to execute a block of code repeatedly. There are two types of loops in JavaScript: the for loop and the while loop. Here is an example of a for loop:
+
+css
+Copy code
+
+
+FunctionsFunctions are blocks of code that can be called to perform a specific task. You can define a function using the "function" keyword, followed by the function name and the parameters in parentheses. Here is an example:
+
+javascript
+Copy code
+
+In this example, we defined a function named "addNumbers" that takes two parameters (x and y) and returns their sum.
+
+Conclusion

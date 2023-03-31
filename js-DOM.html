@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <title>HTML TUTORIAL</title>
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy" style="background-color: #e9ecef;">
+  <div class="jumbotron">
+    <div class="container ">
+      <ul>
+        <li>
+          <button type="button" class=" btn btn-info"> <a href="/">HTML TUTORIAL</a> </button>
+
+        </li>
+        <li>
+          <button type="button" class="btn btn-info "> <a href="/Css.html">CSS TUTORIAL</a> </button>
+        </li>
+        <li>
+          <button type="button" class="btn btn-info "> <a  href="/js.html">JS TUTORIAL</a> </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--end of .jumbotron-->
+
+  <div class="contents">
+    <div class="row">
+      <div class="col-xl-2  scrollspy" style="max-height: 40%; position: sticky; margin-right: 5px">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+            <input type="checkbox" />
+
+            <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu" class="menu hidden-xs hidden-sm" data-spy="affix" >
+    
+              <li><a href="./js.html">JavaScript Introduction</a></li>
+              <li><a href="./js-variable.html">JavaScript variable</a></li>
+              <li><a href="./js-CFloop.html">JavaScript Control Flow and Loops</a></li>
+              <li><a href="./js-function.html">JavaScript Function</a></li>
+              <li><a href="./js-array&obj.html">JavaScript Arrays and Objects</a></li>
+              <li><a href="./js-event.html">JavaScript Events and Event Handling</a></li>
+              <li><a href="./js-asynchronus.html">JavaScript Asynchronous Programming</a></li>
+              <li><a href="./js-DOM.html">JavaScript DOM Manipulation</a></li>
+              <li><a href="./js-Modules.html">JavaScript Modules</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+
+      <div class="col-xl-8">
+        <section id="introduction">
+          <h2><span class="fa fa-edit"></span>DOM Manipulation</h2>
+          <hr>
+          <img class="history__img" src="./img/htmlintro.png" alt="">
+         
+          <h4><span class="fa fa-edit"></span>&starf;</span> DOM Manipulation</h4>
+          <p>JavaScript can be used to manipulate the Document Object Model (DOM) of an HTML page. You can use JavaScript to modify the content, style, and structure of HTML elements on the page.</p>
+          <ul>
+            <li type="none">&#10148; &nbsp;&nbsp; The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.
+
+     </li>
+            <li type="none">&#10148; &nbsp;&nbsp;         JavaScript is a scripting language that can be used to manipulate the DOM, allowing you to dynamically modify web pages and respond to user interactions.
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              DOM manipulation with JavaScript involves accessing and modifying HTML elements, styles, attributes, and content on a web page.
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              The most common way to access elements in the DOM is by using the document object and its various methods, such as getElementById(), getElementsByClassName(), and getElementsByTagName().
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              Once you have accessed an element, you can modify its properties, such as its innerHTML, textContent, and attributes, using JavaScript.
+              
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              You can also add or remove elements to/from the DOM using methods like createElement(), appendChild(), and removeChild().
+              
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              In addition to modifying the DOM directly, you can also use JavaScript to respond to user events, such as clicks, mouseovers, and keypresses, and change the DOM accordingly.
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              It's important to keep in mind that manipulating the DOM can be expensive in terms of performance, so it's best to use efficient methods and avoid excessive DOM manipulation.
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              There are also many libraries and frameworks, such as jQuery and React, that can simplify and optimize DOM manipulation in JavaScript applications.</li>
+           <!--asfava  -->
+              <li type="none">&#10148; &nbsp;&nbsp;The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree-like structure, with nodes representing various elements, attributes, and text.
+</li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              JavaScript can be used to manipulate the DOM in various ways, including changing the content of elements, adding or removing elements, and changing the style or behavior of elements.
+              
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              One common way to access elements in the DOM is using the document.getElementById() method, which returns a reference to the element with the specified ID.
+              </li>
+
+            <li type="none">&#10148; &nbsp;&nbsp;
+              Another way to access elements in the DOM is using the document.querySelector() method, which allows you to select elements based on CSS selectors.
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              Once you have a reference to an element in the DOM, you can manipulate its content using various properties such as innerHTML or textContent.
+              
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              You can also add or remove elements from the DOM using methods such as appendChild() or removeChild().
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              CSS styles can be applied to elements in the DOM using the style property, which allows you to set various style properties such as color, font-size, and background-color.
+              
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              
+              JavaScript can also be used to add event listeners to elements in the DOM, allowing you to respond to user interactions such as clicks or keyboard input.
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              Common event listeners include click, mouseover, keydown, and submit, among others.
+              </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              JavaScript frameworks such as jQuery and React provide additional tools and abstractions for working with the DOM, making it easier to build complex and dynamic user interfaces.</li>
+           
+           <!-- ocmplete here -->
+              
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              <div class="text-boxes">
+                <div class="text-box Jsfunction1Box">
+                  <div class="topic">Function Declaration:</div>
+                  <textarea id="Jsfunction1Box" readonly>
+
+                        function greet(name) {
+                          console.log(`Hello, ${name}!`);
+                        }
+                        
+  
+                          
+              </textarea>
+                  <button id="Jsfunction1Button">Copy Codes</button>
+                </div>
+              </div>
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              <div class="text-boxes">
+                <div class="text-box Jsfunction2Box">
+                  <div class="topic">Function Expression:</div>
+                  <textarea id="Jsfunction2Box" readonly>
+                        const greet = function(name) {
+                          console.log(`Hello, ${name}!`);
+                        }                        
+              </textarea>
+                  <button id="Jsfunction2Button">Copy Codes</button>
+                </div>
+              </div>
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              <div class="text-boxes">
+                <div class="text-box Jsfunction3Box">
+                  <div class="topic">Arrow Function:</div>
+                  <textarea id="Jsfunction3Box" readonly>
+                        const greet = (name) => {
+                          console.log(`Hello, ${name}!`);
+                        }                                               
+              </textarea>
+                  <button id="Jsfunction3Button">Copy Codes</button>
+                </div>
+              </div>
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              <div class="text-boxes">
+                <div class="text-box Jsfunction4Box">
+                  <div class="topic">Constructor Function:</div>
+                  <textarea id="Jsfunction4Box" readonly>
+                        function Person(name, age) {
+                          this.name = name;
+                          this.age = age;
+                        }
+                        
+                        const person1 = new Person('John', 30);
+                        console.log(person1); // Output: { name: 'John', age: 30 }
+                                                                     
+              </textarea>
+                  <button id="Jsfunction4Button">Copy Codes</button>
+                </div>
+              </div>
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              <div class="text-boxes">
+                <div class="text-box Jsfunction5Box">
+                  <div class="topic">Method:</div>
+                  <textarea id="Jsfunction5Box" readonly>
+                        const person = {
+                          name: 'John',
+                          age: 30,
+                          greet: function() {
+                            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+                          }
+                        };
+                        
+                        person.greet(); // Output: Hello, my name is John and I am 30 years old.                                                                
+              </textarea>
+                  <button id="Jsfunction5Button">Copy Codes</button>
+                </div>
+              </div>
+            </li>
+            <li type="none">&#10148; &nbsp;&nbsp;
+              <div class="text-boxes">
+                <div class="text-box Jsfunction6Box">
+                  <div class="topic">Higher-Order Function:</div>
+                  <textarea id="Jsfunction6Box" readonly>
+                        function makeAdder(x) {
+                          return function(y) {
+                            return x + y;
+                          };
+                        }
+                        
+                        const add5 = makeAdder(5);
+                        console.log(add5(3)); // Output: 8
+                                                                                     
+              </textarea>
+                  <button id="Jsfunction6Button">Copy Codes</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="page_change">
+      <a href="./js-asynchronus.html" class="previous">&laquo; Previous</a>
+      <a href="./js-Modules.html" class="next">Next &raquo;</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/shiwang-pandey/" style="text-decoration: none;">
+      <p class="text-center">© Copyright by Shiwang Pandey</p>
+    </a>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script> let Jsfunction1Box = document.getElementById("Jsfunction1Box");
+  let Jsfunction1Button = document.getElementById("Jsfunction1Button");
+
+  Jsfunction1Button.onclick = function () {
+    Jsfunction1Box.select();
+    document.execCommand("copy");
+    Jsfunction1Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction2Box = document.getElementById("Jsfunction2Box");
+  let Jsfunction2Button = document.getElementById("Jsfunction2Button");
+
+  Jsfunction2Button.onclick = function () {
+    Jsfunction2Box.select();
+    document.execCommand("copy");
+    Jsfunction2Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction3Box = document.getElementById("Jsfunction3Box");
+  let Jsfunction3Button = document.getElementById("Jsfunction3Button");
+
+  Jsfunction3Button.onclick = function () {
+    Jsfunction3Box.select();
+    document.execCommand("copy");
+    Jsfunction3Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction4Box = document.getElementById("Jsfunction4Box");
+  let Jsfunction4Button = document.getElementById("Jsfunction4Button");
+
+  Jsfunction4Button.onclick = function () {
+    Jsfunction4Box.select();
+    document.execCommand("copy");
+    Jsfunction4Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction5Box = document.getElementById("Jsfunction5Box");
+  let Jsfunction5Button = document.getElementById("Jsfunction5Button");
+
+  Jsfunction5Button.onclick = function () {
+    Jsfunction5Box.select();
+    document.execCommand("copy");
+    Jsfunction5Button.innerText = "Codes Copied"
+  }</script>
+<script> let Jsfunction6Box = document.getElementById("Jsfunction6Box");
+  let Jsfunction6Button = document.getElementById("Jsfunction6Button");
+
+  Jsfunction6Button.onclick = function () {
+    Jsfunction6Box.select();
+    document.execCommand("copy");
+    Jsfunction6Button.innerText = "Codes Copied"
+  }</script>
+
+</html>
